@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 16px;
+  align-items: center;
+  & > div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  h4 {
+    color: #3f3f3f;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+  }
+}
+.action {
+  display: flex;
+}
+
+.table {
+  & :global table {
+    padding: 20px;
+  }
+}
+
+.modalContent {
+  h2 {
+    color: #3f3f3f;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    input {
+      padding: 16px;
+      color: #3f3f3f;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.42px;
+    }
+  }
+  .switch {
+    display: flex;
+    gap: 8px;
+    & :global .ant-switch-checked {
+      background: green;
+    }
+  }
+}
+.paginate {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

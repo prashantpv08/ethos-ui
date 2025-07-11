@@ -1,0 +1,24 @@
+.customSize {
+  @apply mb-8;
+  
+  :global(.slick-slide) {
+    @apply flex justify-center items-center;
+
+    display: flex !important;
+
+    img {
+      @apply max-w-full h-auto object-contain;
+      max-width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+      margin: 0 auto !important;
+    }
+  }
+
+  :global(.slick-thumb li) {
+    width: 40px;
+  }
+  :global(.slick-thumb li.slick-active img){
+    border: 2px solid var(--primary); 
+   }
+}

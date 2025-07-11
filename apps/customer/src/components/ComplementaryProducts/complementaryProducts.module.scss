@@ -1,0 +1,28 @@
+.categoriesHolder {
+  @apply p-6 mt-1;
+  border-top: 3px solid #ecebd3;
+}
+
+.cardImage {
+  border: 1px solid var(--border-light);
+  height: 120px;
+  border-radius: 8px;
+  @apply flex items-center justify-center;
+}
+
+.complementarySlider ul li {
+  padding-right: 8px;
+}
+
+.slider .icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background-color: #fff;
+  button {
+    font-size: 18px;
+    padding: 5px;
+  }
+}

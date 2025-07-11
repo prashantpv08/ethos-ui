@@ -1,0 +1,89 @@
+.header {
+  @apply p-4 pb-0;
+  & .headerMenu {
+    @apply flex justify-between items-center;
+  }
+  & .headerTags {
+    @apply flex gap-3 mt-4;
+    overflow-x: auto;
+  }
+}
+.foodItemHolder {
+  width: 100%;
+  .productList {
+    overflow-y: auto;
+  }
+  .tabpanel {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 16px 0;
+    margin: 0 24px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  > div {
+    & button {
+      padding: 5px 6px;
+      font-size: 14px;
+      min-width: auto;
+      text-transform: capitalize;
+      &[aria-expanded='true'] {
+        opacity: 0 !important;
+      }
+    }
+    &:first-child {
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+.footItems {
+  border-radius: 16px 16px 0 0;
+}
+
+.foodItemHolder {
+  :global .rs-nav-horizontal {
+    @apply flex justify-between pb-2;
+  }
+}
+
+.addtoCart {
+  @apply fixed px-4 py-2.5 flex justify-between z-50 bottom-0	w-full left-0 items-center;
+  background: var(--primary-color);
+  color: #fff;
+  & .buttonWhite {
+    background: #fff !important;
+    color: var(--primary-color) !important;
+  }
+  & .addtoCartItem {
+    @apply flex flex-col gap-1 pr-2;
+    & span {
+      color: #fff;
+    }
+  }
+}
+
+.search_bar {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  margin-right: 14px;
+  input {
+    outline: none;
+    width: 100%;
+    padding: 0 0.75rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #333;
+    background-color: transparent;
+  }
+}

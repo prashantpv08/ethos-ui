@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS Invoice</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+      }
+      .receipt-wrapper {
+        width: 80mm;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+      }
+      .receipt {
+        padding: 10px;
+        width: 100%;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .logo img {
+        max-width: 100%;
+        height: auto;
+      }
+      h2,
+      h3 {
+        text-align: center;
+        margin: 5px 0;
+      }
+      .details {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .header-info,
+      .order-info {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+        margin-bottom: 5px;
+      }
+      .header-info {
+        border-top: 1px solid black;
+        border-bottom: none;
+        margin: 0;
+      }
+      .items {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+      .items th,
+      .items td {
+        text-align: left;
+        padding: 4px 0;
+      }
+      .items th:last-child,
+      .items td:last-child {
+        text-align: right;
+      }
+      .items th {
+        border-bottom: 1px dashed black;
+      }
+      .totals {
+        width: 100%;
+        border-top: 1px dashed black;
+        margin-top: 10px;
+      }
+      .totals td {
+        padding: 4px 0;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .text-right {
+        text-align: right;
+      }
+      @media print {
+        html,
+        body {
+          height: auto;
+        }
+        .receipt-wrapper {
+          margin: 0;
+          padding: 0;
+          height: auto;
+          width: 80mm;
+        }
+        .receipt {
+          padding: 0;
+        }
+        .header-info,
+        .order-info {
+          page-break-inside: avoid;
+        }
+        .footer {
+          page-break-after: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="receipt-wrapper">
+      <div class="receipt">
+        <div class="logo">
+          <img
+            src="https://ethosorder-storage.s3.amazonaws.com/1721239848726-2150914761.jpg"
+            alt="Restaurant Logo"
+          />
+        </div>
+        <h2>Restaurant Name</h2>
+        <h3>Business Name</h3>
+        <div class="details">
+          VAT No. 1234 567 987<br />
+          Altet Avenue, 17<br />
+          03208, Alicante – Spain<br />
+          Tel: +34 671 445 693<br />
+        </div>
+        <div class="header-info">
+          <div>Invoice No. 999999999</div>
+          <div class="text-right">User: JOHN / Online Payment</div>
+        </div>
+        <div class="order-info">
+          <div>Table No. 88 / Takeaway</div>
+          <div class="text-right">
+            Order No. 9876543673<br />27/05/2024 13:00
+          </div>
+        </div>
+        <table class="items">
+          <thead>
+            <tr>
+              <th>QTY</th>
+              <th>ITEM</th>
+              <th>PRICE</th>
+              <th>AMOUNT</th>
+              <th>TAX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>FARM FRESH PIZZA</td>
+              <td>12,00€</td>
+              <td>12,00€</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>FRENCH FRIES</td>
+              <td>5,00€</td>
+              <td>10,00€</td>
+              <td>1%</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>COCA COLA 330ml</td>
+              <td>2,50€</td>
+              <td>2,50€</td>
+              <td>4%</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="totals">
+          <tr>
+            <td>SUBTOTAL</td>
+            <td style="text-align: right">24,50 €</td>
+          </tr>
+          <!-- <tr>
+            <td>BASE TAX</td>
+            <td style="text-align: right"></td>
+          </tr>
+          <tr>
+            <td>TAX (10%)</td>
+            <td style="text-align: right">2,20 €</td>
+          </tr>
+          <tr>
+            <td>TAX (15%)</td>
+            <td style="text-align: right">0,38 €</td>
+          </tr> -->
+          <tr>
+            <td>TOTAL TAX(Included/Excluded)</td>
+            <td style="text-align: right">2,58 €</td>
+          </tr>
+          <tr>
+            <td><strong>TOTAL</strong></td>
+            <td style="text-align: right"><strong>27,08 €</strong></td>
+          </tr>
+        </table>
+        <div class="footer">
+          <p>THANK YOU!! (Note 1)</p>
+          <p>GOOD BYE! (Note 2)</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

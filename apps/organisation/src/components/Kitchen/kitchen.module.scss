@@ -1,0 +1,29 @@
+.header {
+  @apply flex justify-between;
+}
+
+.border {
+  @apply pb-1 mb-1;
+  &:last-child {
+    @apply pb-0 mb-0;
+    border: none;
+  }
+}
+
+.loader {
+  @apply p-3;
+  border: 1px solid #eee;
+}
+
+.card {
+  @apply mt-4 pt-2;
+  border-top: 1px solid #eee;
+  height: 200px;
+  overflow-y: auto !important;
+  position: relative;
+
+  .button {
+    position: absolute;
+    bottom: 0;
+  }
+}

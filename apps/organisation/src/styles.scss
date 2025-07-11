@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+
+:root {
+  --primary: #1259ff;
+  --light-grey: #f5f5f5;
+  --dark: #3f3f3f;
+  --secondary: #7c7c7c;
+  --border-light: #5f0707;
+}
+html {
+  overflow: hidden;
+}
+.error {
+  font-size: 12px;
+  color: red;
+  padding-top: 5px;
+}
+
+.success {
+  font-size: 12px;
+  color: green;
+  padding-top: 5px;
+}
+
+.MuiTabs-scroller {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.MuiTabPanel-root {
+  padding: 24px 0 0 !important;
+}
+.MuiTab-labelIcon {
+  font-size: 14px !important;
+  min-height: auto !important;
+  text-transform: capitalize !important;
+  .MuiIconButton-root {
+    padding-right: 8px !important;
+  }
+}
+
+.highlightedRow {
+  background-color: #e2e2e2;
+  transition: background-color 0.5s ease;
+}
+.MuiDataGrid-filler{
+  display: none;
+}

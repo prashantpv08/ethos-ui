@@ -1,0 +1,15 @@
+.orderbox {
+  margin: 0 auto;
+  @apply mb-6;
+  border: 1px solid #5eac4a;
+  border-radius: 12px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: max-content;
+  padding: 10px 40px;
+  box-shadow: 0 38px 25px rgba(0, 0, 0, 0.05);
+  .orderNo {
+    color: var(--primary-color);
+  }
+}

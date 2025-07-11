@@ -1,0 +1,37 @@
+.paginate {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.orderPrices {
+  @apply flex  justify-between;
+
+  &:last-child {
+    border-top: 1px solid var(--light-grey);
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+}
+
+.info {
+  @apply flex justify-between;
+}
+
+.input {
+  @apply flex pt-6 gap-2;
+  input {
+    height: 70px;
+    text-align: center;
+    font-size: 25px !important;
+  }
+}
+
+.selectedProductDetails {
+  @apply pb-5 mb-5;
+  border-bottom: 1px solid #eee;
+  &:last-child {
+    @apply pb-0 mb-0;
+    border-bottom: none;
+  }
+}

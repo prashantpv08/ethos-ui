@@ -1,0 +1,41 @@
+.card {
+  @apply p-4;
+}
+
+.tip {
+  @apply p-4;
+  border-top: 3px solid #ecebd3;
+}
+.inputHolder {
+  @apply flex gap-x-3 pt-4;
+}
+
+.details {
+  @apply p-4;
+  border-top: 3px solid #ecebd3;
+}
+
+.orderDetails {
+  @apply flex flex-col gap-y-3;
+  & li {
+    @apply flex justify-between;
+  }
+}
+
+.orderList {
+  @apply flex flex-col gap-y-3;
+  & li {
+    @apply flex justify-between;
+    &:last-child {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 10px;
+    }
+  }
+}
+// .divider {
+//   border-width: 5px;
+//   border-color: var(--bg-light);
+//   margin: 0 -15px;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }

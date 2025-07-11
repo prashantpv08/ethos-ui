@@ -1,0 +1,13 @@
+.toppings-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  button {
+    justify-content: flex-start;
+    text-transform: none !important;
+  }
+}
+
+.continueBtn {
+  margin-top: auto !important;
+}

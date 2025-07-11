@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #5eac4a;
+  --text-color: #3f3f3f;
+  --border-light: #e6e6e6;
+  --bg-light: #eef3ff;
+  --error: #ff5000;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    color: var(--text-color);
+  }
+
+  p,
+  a,
+  input {
+    color: var(--text-color);
+  }
+}
+
+html {
+  height: 100vh;
+}
+body {
+  min-height: 100dvh;
+}
+
+.page-bg {
+  @apply bg-white rounded-lg;
+}
+
+.sticky-footer-container {
+  @apply fixed bottom-0 right-0 left-0 z-10 bg-white justify-between flex items-center py-2.5 px-4 gap-4;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-footer {
+  overflow-y: scroll;
+}
+
+.pageHolder {
+  @apply p-4 flex flex-col bg-white flex-1;
+  border-radius: 16px 16px 0 0;
+}
+.grow {
+  @apply flex flex-col;
+  height: calc(100dvh - 102px);
+  overflow-y: auto;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

@@ -1,0 +1,54 @@
+.accountWrap {
+  .info {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+  .headingBorder {
+    border-bottom: 1px solid var(--border-light);
+  }
+  .left {
+    @apply xl:pr-4;
+    border-right: 1px solid var(--border-light);
+  }
+  .restaurantLogo {
+    border: 1px solid var(--border-light);
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > span {
+      @apply h-full xl:w-full;
+      img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    & .editBtn {
+      position: absolute;
+      top: -10px;
+      right: -5px;
+    }
+  }
+}
+.header {
+  @apply inline-flex items-center pb-4 mb-6 w-full;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.downloadBtn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .accountWrap {
+    .left {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2016",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@ethos-frontend/apollo": ["ui/src/apolloWrapper/index.tsx"],
+      "@ethos-frontend/components": ["ui/src/components/index.ts"],
+      "@ethos-frontend/constants": ["ui/src/constants/index.ts"],
+      "@ethos-frontend/context": ["ui/src/context/index.ts"],
+      "@ethos-frontend/hoc": ["ui/src/hoc/index.ts"],
+      "@ethos-frontend/hook": ["ui/src/hooks/index.ts"],
+      "@ethos-frontend/i18n": ["ui/src/i18n.ts"],
+      "@ethos-frontend/locale": ["ui/src/locale/index.ts"],
+      "@ethos-frontend/ui": ["ui/src/index.ts"],
+      "@ethos-frontend/utils": ["ui/src/utils/index.ts"],
+      "@organisation/api/*": ["apps/organisation/src/api/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

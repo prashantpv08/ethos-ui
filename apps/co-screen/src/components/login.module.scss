@@ -1,0 +1,21 @@
+.login {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.status {
+  & :global .MuiDataGrid-columnHeaderTitleContainer {
+    justify-content: center;
+  }
+  & :global .MuiDataGrid-columnHeaderTitle {
+    font-size: 18px;
+    overflow: visible !important;
+  }
+  & :global .MuiDataGrid-columnHeaderTitleContainerContent {
+    overflow: visible !important;
+  }
+  & :global .MuiDataGrid-cell {
+    text-align: center !important;
+  }
+}

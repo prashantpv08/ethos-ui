@@ -1,0 +1,32 @@
+.header {
+  @apply flex flex-col gap-y-2 relative;
+  .productImg {
+    margin-bottom: 15px;
+  }
+  & .details {
+    @apply flex items-center gap-2;
+  }
+  & .sliderImg {
+    height: 320px;
+  }
+  & .bestSeller {
+    @apply flex justify-between rounded items-center;
+
+    & span {
+      color: var(--primary-color);
+      background: var(--bg-light);
+      padding: 5px 10px;
+      @apply flex justify-between rounded text-xs;
+    }
+  }
+}
+.foodTopup {
+  @apply flex flex-col gap-y-2 px-6 py-4;
+  border-top: 3px solid #ecebd3;
+}
+.radioHeader {
+  @apply flex justify-between items-center pb-6;
+}
+.countHolder {
+  @apply flex gap-y-2 justify-between w-full items-center;
+}

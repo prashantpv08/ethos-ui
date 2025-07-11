@@ -1,0 +1,48 @@
+.AppHeader {
+  @apply flex flex-col p-4;
+
+  & .welcome {
+    @apply flex justify-between w-full flex-col gap-4;
+    & .welcomeLeft {
+      @apply flex gap-2 w-full items-center;
+      & .cart {
+        @apply ml-auto;
+        button {
+          color: var(--text-color);
+          padding: 0;
+          min-height: 0;
+          min-width: 0;
+        }
+      }
+    }
+    & .welcomeRight {
+      @apply flex items-center;
+      .tabelNumber {
+        @apply flex items-center gap-2;
+        background: #fff;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        button {
+          padding: 0;
+          min-height: 0;
+          min-width: 0;
+        }
+      }
+    }
+    & img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 50px;
+      top: 10px;
+    }
+  }
+  & .badge{
+    & :global .MuiBadge-badge{
+      background-color: var(--primary-color);
+      font-size: 12px;
+    }
+  }
+}
