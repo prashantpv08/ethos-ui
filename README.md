@@ -56,6 +56,19 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Set up task distribution across multiple machines](https://nx.dev/nx-cloud/features/distribute-task-execution)
 - [Learn more how to setup CI](https://nx.dev/recipes/ci)
 
+## Nx Cloud token
+
+This workspace no longer stores `nxCloudAccessToken` in `nx.json`.
+Provide your Nx Cloud access token using the `NX_CLOUD_ACCESS_TOKEN` environment
+variable. For example:
+
+```bash
+export NX_CLOUD_ACCESS_TOKEN=<your-token>
+```
+
+Set this variable in your CI secrets or in a local `.env` file so Nx commands
+can authenticate with Nx Cloud.
+
 ## Connect with us!
 
 - [Join the community](https://nx.dev/community)

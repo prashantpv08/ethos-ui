@@ -102,6 +102,5 @@
       "options": {}
     }
   },
-  "useInferencePlugins": false,
-  "nxCloudAccessToken": "Yjk5ZDgzY2QtMThkMS00NTYwLTkwNTgtN2M4Y2NlMmM2MzIzfHJlYWQtd3JpdGU="
+  "useInferencePlugins": false
 }
