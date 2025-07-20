@@ -54,4 +54,10 @@ export const LoginForm = React.lazy(() =>
   }))
 );
 
+export const LanguageDropdown = React.lazy(() =>
+  import('./LanguageDropdown').then((module) => ({
+    default: module.LanguageDropdown,
+  }))
+);
+
 export type { FormFieldProps } from "./FormFields";

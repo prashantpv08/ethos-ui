@@ -16,7 +16,7 @@ import { useLayoutEffect, useState } from 'react';
 import { t } from 'i18next';
 import { ForgetPasswordModal } from './forgetPasswordModal';
 import i18n from '@ethos-frontend/i18n';
-import { LoginForm } from '@ethos-frontend/components';
+import { LanguageDropdown, LoginForm } from '@ethos-frontend/components';
 
 export const Login = () => {
   const { pathname } = useLocation();
@@ -79,6 +79,9 @@ export const Login = () => {
 
   return (
     <div className={styles.login}>
+      <div className="flex justify-end pb-4">
+        <LanguageDropdown />
+      </div>
       <Heading variant="h3" weight="bold">
         {loginPage ? t('auth.signInTitle') : t('auth.employeeLogin')}
       </Heading>
