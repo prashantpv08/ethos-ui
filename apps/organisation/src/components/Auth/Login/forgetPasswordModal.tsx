@@ -5,12 +5,9 @@ import {
   ERROR_MESSAGES,
 } from '@ethos-frontend/constants';
 import { useRestMutation } from '@ethos-frontend/hook';
-import { Heading, Modal, PrimaryButton } from '@ethos-frontend/ui';
-import { useForm } from 'react-hook-form';
+import { Heading, Modal } from '@ethos-frontend/ui';
 import { t } from 'i18next';
-import * as Yup from 'yup';
-import { ControlledInput } from '@ethos-frontend/components';
-import { yupResolver } from '@hookform/resolvers/yup';
+import { ForgotPasswordForm } from '@ethos-frontend/components';
 import { toast } from 'react-toastify';
 
 interface IForgetPassword {
@@ -19,23 +16,11 @@ interface IForgetPassword {
   loginPage: boolean;
 }
 
-const validationSchema = Yup.object().shape({
-  email: Yup.string().required(t('errors.requiredField')),
-});
-
 export const ForgetPasswordModal = ({
   forgetPasswordModal,
   setForgetPasswordModal,
   loginPage,
 }: IForgetPassword) => {
-  const {
-    handleSubmit,
-    control,
-    formState: { errors },
-    reset,
-  } = useForm({
-    resolver: yupResolver(validationSchema),
-  });
 
   const { mutateAsync } = useRestMutation(
     loginPage
@@ -70,7 +55,6 @@ export const ForgetPasswordModal = ({
       open={forgetPasswordModal}
       onClose={() => {
         setForgetPasswordModal(false);
-        reset({ email: '' });
       }}
       title="Forget Password"
     >
@@ -80,24 +64,7 @@ export const ForgetPasswordModal = ({
             ? t('auth.forgetPassword')
             : t('auth.employeeForgetPassword')}
         </Heading>
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          noValidate
-          className="flex flex-col gap-4"
-        >
-          <ControlledInput
-            fullWidth
-            control={control}
-            name={'email'}
-            type={loginPage ? 'email' : 'text'}
-            label={loginPage ? t('auth.email') : t('auth.username')}
-            errors={errors}
-            helperText={errors}
-          />
-          <div className="ml-auto">
-            <PrimaryButton type="submit">{t('auth.sendEmail')}</PrimaryButton>
-          </div>
-        </form>
+        <ForgotPasswordForm onSubmit={onSubmit} orderStatus={!loginPage} />
       </>
     </Modal>
   );
