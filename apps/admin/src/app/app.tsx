@@ -1,11 +1,8 @@
-import { Provider } from 'react-redux';
 import RoutesWrapper from '../Router';
 import '../styles/index.scss';
-import store, { persistor } from '../redux/store';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-import { PersistGate } from 'redux-persist/integration/react';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
@@ -56,14 +53,10 @@ const App = () => {
   });
   return (
     <ThemeProvider theme={theme}>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <BrowserRouter>
-            <RoutesWrapper />
-          </BrowserRouter>
-        </PersistGate>
-        <ToastContainer hideProgressBar />
-      </Provider>
+      <BrowserRouter>
+        <RoutesWrapper />
+      </BrowserRouter>
+      <ToastContainer hideProgressBar />
     </ThemeProvider>
   );
 };
