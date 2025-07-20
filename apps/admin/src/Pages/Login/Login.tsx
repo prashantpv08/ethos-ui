@@ -100,7 +100,6 @@ export default function Login(): JSX.Element {
       localStorage.setItem("admin_password", password);
     }
 
-    console.log("yes wer are hrere");
 
     const payload = {
       email,
@@ -119,7 +118,6 @@ export default function Login(): JSX.Element {
         const {
           data: { data },
         } = s;
-        console.log("response =>", data);
         if (data?.accessToken) {
           dispatch(
             login({
@@ -153,7 +151,6 @@ export default function Login(): JSX.Element {
       (e: any) => {
         setLoad(false);
         if (e?.data && e?.data.message) {
-          console.log(e.data.message);
           if (
             e?.data?.message === "We did not find any account with this email."
           ) {
@@ -166,7 +163,6 @@ export default function Login(): JSX.Element {
           }
         } else {
           notify(null, "error");
-          console.log(e);
         }
       }
     );
