@@ -5,11 +5,10 @@ import { routeTypes } from '../types';
 import PrivateRoute from './customRoute';
 import Header from '../Containers/Header';
 import Footer from '../Containers/Footer';
-import { RootState, useAppSelector } from '../redux/store';
 import Loading from '../Components/Loading';
 
 function RoutesWrapper() {
-  const { status } = useAppSelector((state: RootState) => state.auth);
+  const status = Boolean(localStorage.getItem('token'));
   return (
     <Suspense fallback={<Loading />}>
       <Routes>

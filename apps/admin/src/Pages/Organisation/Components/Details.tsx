@@ -5,26 +5,21 @@ import PageHeading from '../../../Components/PageHaeding';
 import SectionContainer from '../../../Components/SectionContainer';
 import { Box, Grid, Typography } from '@mui/material';
 import dayjs from 'dayjs';
-import { useDispatch } from 'react-redux';
 import { getOrgDetails } from '../action';
 import Loading from '../../../Components/Loading';
 
 const Details = () => {
   const { state }: any = useLocation();
   const [detailsData, setDetailsData] = useState<any>({});
-  const dispatch: any = useDispatch();
   const [loading, setLoading] = useState<any>(true);
 
   useEffect(() => {
-    dispatch(
-      getOrgDetails({ id: state?.orgData._id }, (data: any) => {
-        console.log(data);
-        if (data) {
-          setDetailsData(data?.data);
-          setLoading(false);
-        }
-      })
-    );
+    getOrgDetails({ id: state?.orgData._id }, (data: any) => {
+      if (data) {
+        setDetailsData(data?.data);
+        setLoading(false);
+      }
+    });
   }, []);
 
   // console.log(detailsData);

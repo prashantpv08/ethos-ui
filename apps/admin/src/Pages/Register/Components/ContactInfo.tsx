@@ -6,13 +6,10 @@ import InputField from "../../../Components/Input";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { RootState, useAppSelector } from "../../../redux/store";
 import { useEffect, useState } from "react";
 import { putApiCall } from "../../../api/methods";
 import endPoints from "../../../api/endpoint";
 import { notify } from "../../../Utils/toastify";
-import { saveUserData, updateStep } from "../../../redux/authSlice";
-import { useDispatch } from "react-redux";
 import { ErrorMsg } from "../../../helpers/contants";
 import dayjs from "dayjs";
 
@@ -74,11 +71,9 @@ interface Props {
 }
 
 export default function ContactInfo({ changeStep }: Props) {
-  const { userData } = useAppSelector((state: RootState) => state.auth);
+  const userData: any = {};
   const [load, setLoad] = useState<boolean>(false);
-  const { countryList } = useAppSelector((state: RootState) => state.common);
-
-  const dispatch = useDispatch();
+  const countryList: any[] = [];
   const {
     control,
     handleSubmit,
@@ -131,13 +126,6 @@ export default function ContactInfo({ changeStep }: Props) {
         } = s;
         if (statusCode && statusCode === 202) {
           notify("Contact Information saved successfully. ", "success");
-          dispatch(updateStep("LEGAL_DOC"));
-          dispatch(
-            saveUserData({
-              key: "businessInfo",
-              value: data.businessInfo,
-            })
-          );
           changeStep(2);
         }
       },

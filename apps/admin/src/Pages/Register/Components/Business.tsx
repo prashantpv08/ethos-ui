@@ -13,9 +13,7 @@ import { putApiCall } from '../../../api/methods'
 import endPoints from '../../../api/endpoint'
 import InputCheckbox from '../../../Components/CheckBox'
 import { notify } from '../../../Utils/toastify'
-import { useDispatch } from 'react-redux'
-import { saveUserData, updateStep } from '../../../redux/authSlice'
-import { RootState, useAppSelector } from '../../../redux/store'
+
 import { ErrorMsg } from '../../../helpers/contants'
 import { businessType } from '../../../Utils/constantData'
 
@@ -70,12 +68,9 @@ interface Props {
 export default function Business({ changeStep }: Props) {
   const [load, setLoad] = useState<boolean>(false)
   const [loadingData, setLodingData] = useState<boolean>(false)
-  const dispatch = useDispatch()
-  const { countryList, departmentList } = useAppSelector(
-    (state: RootState) => state.common
-  )
-
-  const { userData } = useAppSelector((state: RootState) => state.auth)
+  const countryList: any[] = []
+  const departmentList: any[] = []
+  const userData: any = {}
 
   const {
     control,
@@ -118,13 +113,6 @@ export default function Business({ changeStep }: Props) {
         } = s
         if (statusCode && statusCode === 202) {
           notify('Business Information saved successfully. ', 'success')
-          dispatch(updateStep({ step: 'CONTACT_INFO' }))
-          dispatch(
-            saveUserData({
-              key: 'businessInfo',
-              value: data.businessInfo,
-            })
-          )
           changeStep(1)
         }
       },
