@@ -1,9 +1,21 @@
 import RoutesWrapper from '../Router';
 import '../styles/index.scss';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { BrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ApolloWrapper from '@ethos-frontend/apollo';
+import { EOThemeProvider } from '@ethos-frontend/ui';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      throwOnError: true,
+      retry: false,
+    },
+  },
+});
 
 const App = () => {
   const theme = createTheme({
@@ -52,12 +64,16 @@ const App = () => {
     },
   });
   return (
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <RoutesWrapper />
-      </BrowserRouter>
-      <ToastContainer hideProgressBar />
-    </ThemeProvider>
+    <ApolloWrapper>
+      <QueryClientProvider client={queryClient}>
+        <EOThemeProvider customTheme={theme}>
+          <BrowserRouter>
+            <RoutesWrapper />
+          </BrowserRouter>
+          <ToastContainer hideProgressBar />
+        </EOThemeProvider>
+      </QueryClientProvider>
+    </ApolloWrapper>
   );
 };
 
