@@ -7,7 +7,6 @@ import ResetPassword from '../Pages/ResetPassword/ResetPassword';
 import ForgotPassword from '../Pages/Forgot/ForgotPassword';
 import Footer from './Footer';
 import { useEffect } from 'react';
-import { RootState, useAppSelector } from '../redux/store';
 import { ROUTES } from '../helpers/contants';
 interface Props {
   page: string | undefined;
@@ -15,7 +14,6 @@ interface Props {
 
 export default function AuthLayout({ page }: Props): JSX.Element {
   const navigate = useNavigate();
-  const { status, userData } = useAppSelector((state: RootState) => state.auth);
 
   // useEffect(() => {
   //   if (status) {

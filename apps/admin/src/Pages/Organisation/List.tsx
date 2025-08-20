@@ -30,7 +30,6 @@ import React, { useEffect } from 'react';
 import CustomButton from '../../Components/CustomButton';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../helpers/contants';
-import { useDispatch, useSelector } from 'react-redux';
 import NoData from '../../Components/Nodata';
 import SearchInput from '../../Components/searchInput';
 import TablePagination from '../../Components/Pagination';
@@ -67,7 +66,6 @@ const CommissionSchema = yup
 
 export default function ClientMain() {
   const navigate = useNavigate();
-  const dispatch: any = useDispatch();
   const [orgList, setOrgList] = React.useState<any>([]);
   const [activeOrgList, setActiveOrgList] = React.useState<any>([]);
 
@@ -122,39 +120,31 @@ export default function ClientMain() {
 
   useEffect(() => {
     // setLoading(true);
-    dispatch(
-      getOrgList(
-        {
-          searchKey: searchTerm,
-        },
-        (data: any) => {
-          console.log(data);
-
-          if (data) {
-            setOrgList(data);
-            setLoading(false);
-          }
-          // console.log("data =>", data);
-          // setData()
+    getOrgList(
+      {
+        searchKey: searchTerm,
+      },
+      (data: any) => {
+        if (data) {
+          setOrgList(data);
+          setLoading(false);
         }
-      ),
+      },
       () => {
         setLoading(false);
-      }
+      },
     );
 
-    dispatch(
-      getActiveOrgList((data: any) => {
+    getActiveOrgList(
+      (data: any) => {
         if (data) {
           setActiveOrgList(data);
           setLoading(false);
         }
-        // console.log("data =>", data);
-        // setData()
-      }),
+      },
       () => {
         setLoading(false);
-      }
+      },
     );
   }, [debouncedSearchTerm]);
 
@@ -171,24 +161,20 @@ export default function ClientMain() {
 
   const handleChangePage = (event: unknown, newPage: number) => {
     setPage(newPage);
-    dispatch(
-      getOrgList(
-        {
-          searchKey: searchTerm,
-          pageNo: newPage,
-        },
-        (data: any) => {
-          if (data) {
-            setOrgList(data);
-            setLoading(false);
-          }
-          // console.log("data =>", data);
-          // setData()
+    getOrgList(
+      {
+        searchKey: searchTerm,
+        pageNo: newPage,
+      },
+      (data: any) => {
+        if (data) {
+          setOrgList(data);
+          setLoading(false);
         }
-      ),
+      },
       () => {
         setLoading(false);
-      }
+      },
     );
   };
 
@@ -229,46 +215,39 @@ export default function ClientMain() {
   };
 
   const getOrgListMethod = () => {
-    dispatch(
-      getOrgList(
-        {
-          searchKey: searchTerm,
-          pageNo: page,
-        },
-        (data: any) => {
-          if (data) {
-            if (status === 'active') {
-              toast.success('Status has been updated successfully.');
-            }
-            setOrgList(data);
-            setLoading(false);
+    getOrgList(
+      {
+        searchKey: searchTerm,
+        pageNo: page,
+      },
+      (data: any) => {
+        if (data) {
+          if (status === 'active') {
+            toast.success('Status has been updated successfully.');
           }
+          setOrgList(data);
+          setLoading(false);
         }
-      ),
+      },
       () => {
         setLoading(false);
-      }
+      },
     );
   };
 
   const handleUserAction = (status: string) => {
     if (status === 'blocked') {
-      dispatch(
-        blockOrg({ id: selectedId._id }, () => {
-          toast.success('Status has been updated successfully.');
-          setAnchorEl(null);
-          getOrgListMethod();
-        })
-      );
+      blockOrg({ id: selectedId._id }, () => {
+        toast.success('Status has been updated successfully.');
+        setAnchorEl(null);
+        getOrgListMethod();
+      });
     } else {
-      dispatch(
-        updateUserAction({ id: selectedId._id, type: status }, () => {
-          toast.success('Status has been updated successfully.');
-
-          setAnchorEl(null);
-          getOrgListMethod();
-        })
-      );
+      updateUserAction({ id: selectedId._id, type: status }, () => {
+        toast.success('Status has been updated successfully.');
+        setAnchorEl(null);
+        getOrgListMethod();
+      });
     }
   };
 
@@ -282,14 +261,12 @@ export default function ClientMain() {
 
   const onSubmit = (data: any) => {
     // console.log("DDD=>", data);
-    dispatch(
-      updateCommission(
-        { ...data, orgIds: data.orgIds.map((item: any) => item.id) },
-        () => {
-          setOpenModel(!openModel);
-          toast.success('Organisation Comission updated.');
-        }
-      )
+    updateCommission(
+      { ...data, orgIds: data.orgIds.map((item: any) => item.id) },
+      () => {
+        setOpenModel(!openModel);
+        toast.success('Organisation Comission updated.');
+      },
     );
   };
 
@@ -317,27 +294,20 @@ export default function ClientMain() {
 
   const handleDeleteBanner = () => {
     // console.log(selectedId)
-    dispatch(
-      deleteORG(selectedId._id, () => {
-        setAnchorEl(null);
-        SetOpenDeleteModel(!openDeleteModel);
-        toast.success('Organisation has been deleted.');
-        getOrgListMethod();
-      })
-    );
+    deleteORG(selectedId._id, () => {
+      setAnchorEl(null);
+      SetOpenDeleteModel(!openDeleteModel);
+      toast.success('Organisation has been deleted.');
+      getOrgListMethod();
+    });
   };
 
   const handleReject = () => {
-    dispatch(
-      updateUserAction(
-        { id: selectedId._id, type: 'rejected', comment },
-        () => {
-          setAnchorEl(null);
-          setRejectModel(!rejectModel);
-          getOrgListMethod();
-        }
-      )
-    );
+    updateUserAction({ id: selectedId._id, type: 'rejected', comment }, () => {
+      setAnchorEl(null);
+      setRejectModel(!rejectModel);
+      getOrgListMethod();
+    });
   };
 
   if (loading) {

@@ -3,11 +3,9 @@ import CustomButton from '../../Components/CustomButton'
 import { ROUTES } from '../../helpers/contants'
 import Images from '../../Utils/images'
 import { useEffect } from 'react'
-import { RootState, useAppSelector } from '../../redux/store'
 
 function Welcome() {
   const navigate = useNavigate()
-  const { userData } = useAppSelector((state: RootState) => state.auth)
   // useEffect(() => {
   //   if (userData.formNextStep !== undefined) {
   //     navigate(ROUTES.BUSINESSINFO)

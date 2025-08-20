@@ -7,7 +7,6 @@ import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import CustomTable from "../../Components/CustomTable";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../../helpers/contants";
-import { useDispatch } from "react-redux";
 // import { getAndSetProductList } from '../../redux/products'
 import NoData from "../../Components/Nodata";
 // import Filter from '../../Components/Filter'
@@ -46,7 +45,6 @@ function a11yProps(index: number) {
 
 export default function OrdersList() {
   const [value, setValue] = React.useState(0);
-  const dispatch = useDispatch();
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);

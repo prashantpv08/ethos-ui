@@ -3,9 +3,6 @@ import Images from '../Utils/images';
 import React, { useEffect } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { RootState, useAppSelector } from '../redux/store';
-import { useDispatch } from 'react-redux';
-import { logout } from '../redux/authSlice';
 import { resetAuthorizationToken } from '../api';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ROUTES } from '../helpers/contants';
@@ -15,12 +12,8 @@ import { AxiosResponse } from 'axios';
 import { notify } from '../Utils/toastify';
 
 export default function Header(): JSX.Element {
-  const dispatch = useDispatch();
-
-  const { userData } = useAppSelector((state: RootState) => state.auth);
-  const userDetails = useAppSelector(
-    (state: RootState) => state?.profile?.userData
-  );
+  const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+  const userDetails = {} as any;
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -35,14 +28,10 @@ export default function Header(): JSX.Element {
       postApiCall(
         endPoints.logout,
         {},
-        (s: AxiosResponse) => {
-          const {
-            data: { data },
-          } = s;
-          // console.log("response =>", data);
-          dispatch(logout());
+        () => {
+          localStorage.clear();
           resetAuthorizationToken();
-          // navigate("/");
+          navigate(ROUTES.LOGIN);
         },
         (e: any) => {
           if (e?.data && e?.data.message) {
