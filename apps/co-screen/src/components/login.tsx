@@ -1,5 +1,5 @@
 import { Heading, PrimaryButton } from '@ethos-frontend/ui';
-import { GridContainer, LoginForm } from '@ethos-frontend/components';
+import { GridContainer, LanguageDropdown, LoginForm } from '@ethos-frontend/components';
 import { useRestMutation } from '@ethos-frontend/hook';
 import { API_METHODS, ORDER_SCREEN_API_URL } from '@ethos-frontend/constants';
 import { useNavigate } from 'react-router-dom';
@@ -51,6 +51,9 @@ export const Login = () => {
         className="h-screen"
       >
         <div className="xl:col-start-4 xl:col-end-6 col-start-1 col-end-9 sm:py-10 p-5 grid items-center">
+          <div className="flex justify-end pb-4">
+            <LanguageDropdown />
+          </div>
           <div className="flex flex-col gap-5 w-full md:w-80 mx-auto">
             <Heading variant="h3" weight="bold">
               {t('auth.signIn')}
