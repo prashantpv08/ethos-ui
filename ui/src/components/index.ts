@@ -54,4 +54,28 @@ export const LoginForm = React.lazy(() =>
   }))
 );
 
+export const RegisterForm = React.lazy(() =>
+  import('./RegisterForm').then((module) => ({
+    default: module.RegisterForm,
+  }))
+);
+
+export const ForgotPasswordForm = React.lazy(() =>
+  import('./ForgotPasswordForm').then((module) => ({
+    default: module.ForgotPasswordForm,
+  }))
+);
+
+export const ResetPasswordForm = React.lazy(() =>
+  import('./ResetPasswordForm').then((module) => ({
+    default: module.ResetPasswordForm,
+  }))
+);
+
+export const LanguageDropdown = React.lazy(() =>
+  import('./LanguageDropdown').then((module) => ({
+    default: module.LanguageDropdown,
+  }))
+);
+
 export type { FormFieldProps } from "./FormFields";

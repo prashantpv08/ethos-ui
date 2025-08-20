@@ -15,6 +15,7 @@ export default function Login(): JSX.Element {
     {
       onSuccess: (res) => {
         const data = res.data;
+
         if (data?.accessToken) {
           localStorage.setItem('token', data.accessToken);
           localStorage.setItem('userData', JSON.stringify(data));
