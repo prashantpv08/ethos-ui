@@ -32,7 +32,6 @@ export const Language = () => {
     }
   }, [userData?.lang]);
 
-  console.log(userData, 'userData');
   
 
   const { isPending, mutateAsync } = mutation;

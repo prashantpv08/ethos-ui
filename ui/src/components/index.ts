@@ -72,4 +72,10 @@ export const ResetPasswordForm = React.lazy(() =>
   }))
 );
 
-export type { FormFieldProps } from './FormFields';
+export const LanguageDropdown = React.lazy(() =>
+  import('./LanguageDropdown').then((module) => ({
+    default: module.LanguageDropdown,
+  }))
+);
+
+export type { FormFieldProps } from "./FormFields";

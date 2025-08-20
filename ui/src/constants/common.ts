@@ -67,7 +67,7 @@ export const getPaymentType = () => [
 
 export const employeeLoginUrl = '/auth/user/login';
 export const loginUrl = '/login';
-export const SUPPORTED_LANGUAGES = ['en-US', 'es', 'sv'];
+export const SUPPORTED_LANGUAGES = ['en-US', 'es', 'sv', 'fr'];
 
 export const getLanguageOptions = () => [
   { label: i18n.t('languages.en-US'), value: 'en-US' },
