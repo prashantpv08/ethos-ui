@@ -1,5 +1,4 @@
 import RoutesWrapper from '../Router';
-import '../styles/index.scss';
 import { createTheme } from '@mui/material/styles';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
