@@ -8,6 +8,7 @@ import { FormFieldProps, FormFields } from '../FormFields';
 interface ILoginForm {
   onSubmit: (data: Record<string, string>) => void;
   orderStatus?: boolean;
+  loading?: boolean;
 }
 
 const getValidationSchema = () => {
@@ -35,7 +36,7 @@ const getValidationSchema = () => {
   });
 };
 
-export const LoginForm = ({ onSubmit, orderStatus = false }: ILoginForm) => {
+export const LoginForm = ({ onSubmit, orderStatus = false, loading }: ILoginForm) => {
   const {
     handleSubmit,
     control,
@@ -68,7 +69,7 @@ export const LoginForm = ({ onSubmit, orderStatus = false }: ILoginForm) => {
     >
       <FormFields fields={fields} errors={errors} control={control} />
 
-      <PrimaryButton fullWidth type="submit">
+      <PrimaryButton fullWidth type="submit" loading={loading}>
         {t('auth.signIn')}
       </PrimaryButton>
     </form>

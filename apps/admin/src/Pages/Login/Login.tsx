@@ -1,13 +1,20 @@
-import { LoginForm, GridContainer } from '@ethos-frontend/components';
-import { Heading, PrimaryButton } from '@ethos-frontend/ui';
-import { useRestMutation } from '@ethos-frontend/hook';
-import { API_URL, API_METHODS } from '@ethos-frontend/constants';
-import { handleError } from '@ethos-frontend/utils';
-import { useNavigate } from 'react-router-dom';
-import { ROUTES } from '../../helpers/contants';
+import { GridContainer, LoginForm } from "@ethos-frontend/components";
+import { Heading } from "@ethos-frontend/ui";
+import { useRestMutation } from "@ethos-frontend/hook";
+import { API_URL, API_METHODS } from "@ethos-frontend/constants";
+import {
+  getNumberOfCols,
+  handleError,
+  useResponsive,
+} from "@ethos-frontend/utils";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../helpers/contants";
+import { useTranslation } from "react-i18next";
 
-export default function Login(): JSX.Element {
+export default function Login() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
+  const { isDesktop, isMobile } = useResponsive();
 
   const { mutate, isPending } = useRestMutation(
     API_URL.login,
@@ -17,15 +24,15 @@ export default function Login(): JSX.Element {
         const data = res.data;
 
         if (data?.accessToken) {
-          localStorage.setItem('token', data.accessToken);
-          localStorage.setItem('userData', JSON.stringify(data));
+          localStorage.setItem("token", data.accessToken);
+          localStorage.setItem("userData", JSON.stringify(data));
         }
         navigate(ROUTES.DASHBOARD);
       },
       onError: (err) => {
         handleError(err);
       },
-    },
+    }
   );
 
   const onSubmit = (data: Record<string, unknown>) => {
@@ -33,21 +40,21 @@ export default function Login(): JSX.Element {
   };
 
   return (
-    <GridContainer columns={4} className="h-screen">
-      <div className="col-start-1 col-end-5 sm:py-10 p-5 grid items-center">
+    <GridContainer
+      columns={getNumberOfCols({
+        isDesktop,
+        isMobile,
+        mobileCol: 4,
+        desktopCol: 8,
+      })}
+      className="h-screen"
+    >
+      <div className="xl:col-start-4 xl:col-end-6 col-start-1 col-end-9 sm:py-10 p-5 grid items-center">
         <div className="flex flex-col gap-5 w-full md:w-80 mx-auto">
           <Heading variant="h3" weight="bold">
-            Sign In
+            {t("auth.signIn")}
           </Heading>
           <LoginForm onSubmit={onSubmit} loading={isPending} />
-          <div className="flex justify-center">
-            <PrimaryButton
-              variant="text"
-              onClick={() => navigate(ROUTES.FORGOT_PASSWORD)}
-            >
-              Forgot Password
-            </PrimaryButton>
-          </div>
         </div>
       </div>
     </GridContainer>
