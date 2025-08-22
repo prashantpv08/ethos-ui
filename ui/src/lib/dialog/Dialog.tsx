@@ -19,6 +19,7 @@ export interface IDialogProps {
   onCancel?: () => void;
   children: React.ReactNode;
   size?: 'xs' | 'md' | 'lg' | 'xl';
+  confirmDisabled?: boolean;
 }
 
 const Title = styled(DialogTitle)(({ theme }) => ({
@@ -75,6 +76,7 @@ const Dialog: React.FC<IDialogProps> = ({
   onCancel,
   children,
   size = 'xs',
+  confirmDisabled = false,
 }) => {
   return (
     <DialogContainer open={open} onClose={onCancel} size={size}>
@@ -90,7 +92,11 @@ const Dialog: React.FC<IDialogProps> = ({
           </PrimaryButton>
         )}
         {confirmText && (
-          <PrimaryButton variant="contained" onClick={onConfirm}>
+          <PrimaryButton
+            variant="contained"
+            onClick={onConfirm}
+            disabled={confirmDisabled}
+          >
             {confirmText}
           </PrimaryButton>
         )}

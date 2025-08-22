@@ -2,11 +2,10 @@ import { Avatar, Button, Menu, MenuItem } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { resetAuthorizationToken } from "../api";
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../helpers/contants";
-import { postApiCall } from "../api/methods";
-import endPoints from "../api/endpoint";
+import { useRestMutation } from "@ethos-frontend/hook";
+import { API_URL } from "@ethos-frontend/constants";
 
 export default function Header() {
   const userData = JSON.parse(localStorage.getItem("userData") || "{}");
@@ -22,31 +21,21 @@ export default function Header() {
 
   const handleClose = (action: string) => {
     if (action === "logout") {
-      postApiCall(
-        endPoints.logout,
-        {},
-        () => {
+      logoutMutation.mutate(undefined, {
+        onSettled: () => {
           localStorage.clear();
-          resetAuthorizationToken();
           navigate(ROUTES.LOGIN);
         },
-        (e: any) => {
-          if (e?.data && e?.data.message) {
-            console.log(e.data.message);
-          } else {
-            // notify(null, "error");
-          }
-        }
-      );
+      });
     }
 
     setAnchorEl(null);
   };
 
   const navigate = useNavigate();
+  const logoutMutation = useRestMutation(API_URL.logout, { method: "POST" });
   return (
-    <header className="flex items-center justify-between bg-white px-4 py-2 border-b">
-      <div className="text-xl font-semibold">Logo</div>
+    <header className="flex items-center justify-end bg-white px-4 py-2 border-b">
       <div className="flex items-center">
         <Button
           id="basic-button"

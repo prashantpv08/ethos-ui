@@ -42,6 +42,12 @@ export const API_URL = {
   adminCashier: `${STATIC.ADMIN}/cashierlog/transactions`,
   complementary: `${STATIC.ADMIN}/complementary`,
   complementaryList: `${STATIC.ADMIN}/complementary/list`,
+  orgList: `${STATIC.ADMIN}/organisation`,
+  approveOrg: `${STATIC.ADMIN}/organisation/approval`,
+  updateCommission: `${STATIC.ADMIN}/organisation/updateCommission`,
+  deleteOrGetOrg: `${STATIC.ADMIN}/organisation`,
+  activeOrg: `${STATIC.ADMIN}/organisation/activeOrgs`,
+  blockOrg: `${STATIC.ADMIN}/organisation/status`,
   app: `${STATIC.ADMIN}/setting/app`,
   logout: `${STATIC.ADMIN}/logout`
 };
