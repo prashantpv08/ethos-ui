@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { pageRoutes } from './routes';
 import { routeTypes } from '../types';
-import Layout from '../Containers/Layout';
+import Layout from '../layout/Layout';
 import Loading from '../Components/Loading';
 import { withConditionalRoute } from '@ethos-frontend/hoc';
 import { ROUTES } from '../helpers/contants';
