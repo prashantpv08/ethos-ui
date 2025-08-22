@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Containers/Header';
 import SideNavigation from '../Containers/SideNavigation';
 import { Iconbutton } from '@ethos-frontend/ui';
@@ -6,6 +7,7 @@ import {
   ArrowBackIosNewOutlined,
   ArrowForwardIosOutlined,
 } from '@mui/icons-material';
+import { EthosLogo, EthosSmallLogo } from '@ethos-frontend/assets';
 
 interface Props {
   children?: ReactNode;
@@ -36,6 +38,9 @@ export default function Layout({ children }: Props): JSX.Element {
           collapsed ? 'w-16' : 'w-72'
         }`}
       >
+        <Link to="/" className="flex items-center justify-center py-4">
+          {collapsed ? <EthosSmallLogo /> : <EthosLogo />}
+        </Link>
         <div className="absolute top-4 right-4">
           <Iconbutton
             MuiIcon={collapsed ? ArrowForwardIosOutlined : ArrowBackIosNewOutlined}

@@ -12,13 +12,14 @@ import {
   GridSortModel,
 } from "@mui/x-data-grid-premium";
 import { Menu, MenuItem } from "@mui/material";
-import { getOrgList, deleteORG, updateUserAction, blockOrg } from "./action";
 import WarningDialog from "../../Components/WarningDialog";
 import RejectDialog from "../../Components/RejectDialog";
 import CommissionDialog from "../../Components/CommissionDialog";
 import { toast } from "react-toastify";
 import { Search, MoreVert } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
+import { useRestMutation, useRestQuery } from "@ethos-frontend/hook";
+import { API_URL } from "@ethos-frontend/constants";
 
 export default function List() {
   const { t } = useTranslation();
@@ -31,7 +32,6 @@ export default function List() {
   ]);
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [selectedRow, setSelectedRow] = useState<any>(null);
   const [commissionOpen, setCommissionOpen] = useState(false);
@@ -49,49 +49,69 @@ export default function List() {
     setAnchorEl(null);
   };
 
+  const listUrl = `${API_URL.orgList}?pageNo=${page + 1}&limit=${pageSize}&sortOrder=${
+    sortModel[0]?.sort === "asc" ? 1 : -1
+  }&sortBy=${sortModel[0]?.field}${search ? `&searchKey=${search}` : ""}`;
+
+  const { data, isLoading, refetch } = useRestQuery<any>([
+    "org-list",
+    page,
+    pageSize,
+    sortModel,
+    search,
+  ], listUrl);
+
+  useEffect(() => {
+    if (data) {
+      const mapped = (data?.data || []).map((org: any) => ({
+        id: org._id,
+        name: `${org.ownerFName} ${org.ownerLName}`,
+        email: org.email,
+        status: org.status,
+        orgNumber: org.orgNumber,
+        businessType: org.businessType,
+        orgName: org.orgName,
+      }));
+      setRows(mapped);
+      setRowCount(data?.totalItems || 0);
+    }
+  }, [data]);
+
+  const deleteMutation = useRestMutation(
+    `${API_URL.deleteOrGetOrg}/${selectedRow?.id ?? ""}`,
+    { method: "DELETE" }
+  );
+
   const handleDelete = () => {
-    deleteORG(selectedRow.id, () => {
-      setDeleteOpen(false);
-      fetchData();
+    deleteMutation.mutate(undefined, {
+      onSuccess: () => {
+        setDeleteOpen(false);
+        refetch();
+      },
     });
   };
+
+  const statusMutation = useRestMutation(
+    `${API_URL.approveOrg}/${selectedRow?.id ?? ""}`,
+    { method: "PATCH" }
+  );
+
+  const blockMutation = useRestMutation(
+    `${API_URL.blockOrg}/${selectedRow?.id ?? ""}`,
+    { method: "PATCH" }
+  );
 
   const handleReject = (comment: string) => {
-    updateUserAction({ id: selectedRow.id, type: "rejected", comment }, () => {
-      setRejectOpen(false);
-      fetchData();
-    });
-  };
-
-  const fetchData = () => {
-    setLoading(true);
-    getOrgList(
+    statusMutation.mutate(
+      { type: "rejected", ...(comment && { comment }) },
       {
-        pageNo: page + 1,
-        limit: pageSize,
-        sortBy: sortModel[0]?.field,
-        sortOrder: sortModel[0]?.sort === "asc" ? 1 : -1,
-        searchKey: search,
-      },
-      (data: any) => {
-        const mapped = (data?.data || []).map((org: any) => ({
-          id: org._id,
-          name: `${org.ownerFName} ${org.ownerLName}`,
-          email: org.email,
-          status: org.status,
-          orgNumber: org.orgNumber,
-          businessType: org.businessType,
-          orgName: org.orgName,
-        }));
-        setRows(mapped);
-        setRowCount(data?.totalItems || 0);
-        setLoading(false);
-      },
-      () => setLoading(false)
+        onSuccess: () => {
+          setRejectOpen(false);
+          refetch();
+        },
+      }
     );
   };
-
-  useEffect(fetchData, [page, pageSize, sortModel, search]);
 
   useEffect(() => {
     const t = setTimeout(() => setSearch(query), 300);
@@ -125,17 +145,24 @@ export default function List() {
 
   const handleUserAction = (status: string) => {
     if (status === "blocked") {
-      blockOrg({ id: selectedRow._id }, () => {
-        toast.success("Status has been updated successfully.");
-        setAnchorEl(null);
-        fetchData();
+      blockMutation.mutate(undefined, {
+        onSuccess: () => {
+          toast.success("Status has been updated successfully.");
+          setAnchorEl(null);
+          refetch();
+        },
       });
     } else {
-      updateUserAction({ id: selectedRow._id, type: status }, () => {
-        toast.success("Status has been updated successfully.");
-        setAnchorEl(null);
-        fetchData();
-      });
+      statusMutation.mutate(
+        { type: status },
+        {
+          onSuccess: () => {
+            toast.success("Status has been updated successfully.");
+            setAnchorEl(null);
+            refetch();
+          },
+        }
+      );
     }
   };
 
@@ -170,7 +197,7 @@ export default function List() {
         onPageSizeChange={setPageSize}
         sortModel={sortModel}
         onSortModelChange={setSortModel}
-        loading={loading}
+        loading={isLoading}
       />
       <Menu anchorEl={anchorEl} open={openMenu} onClose={handleMenuClose}>
         {selectedRow?.status !== "active" &&
@@ -214,7 +241,7 @@ export default function List() {
       <CommissionDialog
         open={commissionOpen}
         onClose={() => setCommissionOpen(false)}
-        onSaved={fetchData}
+        onSaved={refetch}
       />
       <RejectDialog
         open={rejectOpen}
