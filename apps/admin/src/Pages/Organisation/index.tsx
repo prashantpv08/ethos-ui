@@ -1,4 +1,3 @@
-import PageLayout from "../../Containers/PageLayout";
 import Details from "./Components/Details";
 import List from "./List";
 // import EditUser from "./components/EditUser";
@@ -12,9 +11,9 @@ const Organisation = (props: Props) => {
   const { page } = props;
 
   return (
-    <PageLayout>
-      <div>{page === "organisation" ? <List /> : page === "organisation-details" ? <Details /> :null}</div>
-    </PageLayout>
+    <div>
+      {page === "organisation" ? <List /> : page === "organisation-details" ? <Details /> : null}
+    </div>
   );
 };
 

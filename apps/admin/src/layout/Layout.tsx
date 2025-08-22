@@ -1,6 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Header from '../Containers/Header';
-import Footer from '../Containers/Footer';
 import SideNavigation from '../Containers/SideNavigation';
 
 interface Props {
@@ -45,7 +44,6 @@ export default function Layout({ children }: Props): JSX.Element {
       <div className="flex flex-1 flex-col">
         <Header />
         <main className="flex-1 overflow-y-auto p-4 bg-white">{children}</main>
-        <Footer />
       </div>
     </div>
   );

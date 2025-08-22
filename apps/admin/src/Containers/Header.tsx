@@ -1,14 +1,13 @@
 import { Avatar, Button, Menu, MenuItem } from '@mui/material';
 import Images from '../Utils/images';
-import React, { useEffect } from 'react';
+import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { resetAuthorizationToken } from '../api';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../helpers/contants';
 import { postApiCall } from '../api/methods';
 import endPoints from '../api/endpoint';
-import { AxiosResponse } from 'axios';
 import { notify } from '../Utils/toastify';
 
 export default function Header(): JSX.Element {
@@ -48,12 +47,9 @@ export default function Header(): JSX.Element {
 
   const navigate = useNavigate();
   return (
-    <header className="header">
-      <div className="logo">
-        {/* <img src={Images.LOGO} alt="Logo" /> */}
-        <h1>Logo</h1>
-      </div>
-      <div className="authAction">
+    <header className="flex items-center justify-between bg-white px-4 py-2 border-b">
+      <div className="text-xl font-semibold">Logo</div>
+      <div className="flex items-center">
         <Button
           id="basic-button"
           aria-controls={open ? 'basic-menu' : undefined}
@@ -61,13 +57,10 @@ export default function Header(): JSX.Element {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-          <div className="userDropdown">
+          <div className="flex items-center gap-2">
             <Avatar
               alt="User name"
               src={
-                // userDetails?.profilePicture
-                //   ? userDetails?.profilePicture
-                //   : Images.AUTH_BG_1
                 userDetails?.profilePicture
                   ? userDetails.profilePicture
                   : userData?.profilePicture
@@ -75,19 +68,11 @@ export default function Header(): JSX.Element {
                   : Images.AUTH_BG_1
               }
             />
-            {/* IN CASE OF NO IMAGE AVAULABLE */}
-            {/* <Avatar>H</Avatar> */}
-            <div className="info">
-              <h4>
-                {userData?.type}
-                {/* {userDetails.ownerFName
-                  ? userDetails.ownerFName
-                  : userData.ownerFName}{" "}
-                {userDetails.ownerLName
-                  ? userDetails.ownerLName
-                  : userData.ownerLName} */}
-              </h4>
-              <p>{userDetails?.email ? userDetails.email : userData.email}</p>
+            <div className="hidden sm:block text-left">
+              <h4 className="text-sm font-medium">{userData?.type}</h4>
+              <p className="text-xs">
+                {userDetails?.email ? userDetails.email : userData.email}
+              </p>
             </div>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </div>
@@ -109,14 +94,6 @@ export default function Header(): JSX.Element {
             horizontal: 'right',
           }}
         >
-          {/* <MenuItem
-            onClick={() => {
-              navigate(ROUTES.EDIT_PROFILE)
-            }}
-          >
-            Profile
-          </MenuItem> */}
-          {/* <MenuItem onClick={() => handleClose('')}>My account</MenuItem> */}
           <MenuItem onClick={() => handleClose('logout')}>Logout</MenuItem>
         </Menu>
       </div>
