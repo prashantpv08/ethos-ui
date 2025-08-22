@@ -1,4 +1,3 @@
-import { notify } from '../../Utils/toastify';
 import endPoints from '../../api/endpoint';
 import { deleteApiCall, getApiCall, patchApiCall } from '../../api/methods';
 
@@ -16,9 +15,9 @@ export const getOrgList = (
     (e: any) => {
       errorCallBack?.();
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -33,9 +32,9 @@ export const getActiveOrgList = (callback?: any, errorCallBack?: any) => {
     (e: any) => {
       errorCallBack?.();
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -50,9 +49,9 @@ export const getOrgDetails = (values?: any, callback?: any) => {
     },
     (e: any) => {
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -68,9 +67,9 @@ export const updateCommission = (values: any, callback: any) => {
     (e: any) => {
       callback?.();
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -87,9 +86,9 @@ export const blockOrg = (values: any, callback: any) => {
     (e: any) => {
       callback?.();
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -104,9 +103,9 @@ export const deleteORG = (id: number, callback: Function) => {
     },
     (e: any) => {
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );
@@ -123,9 +122,9 @@ export const updateUserAction = (values: any, callback: any) => {
     (e: any) => {
       callback?.();
       if (e?.data && e?.data.message) {
-        notify(e.data.message, 'error');
+        // notify(e.data.message, 'error');
       } else {
-        notify(null, 'error');
+        // notify(null, 'error');
       }
     },
   );

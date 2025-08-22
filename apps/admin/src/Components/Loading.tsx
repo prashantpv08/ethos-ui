@@ -1,9 +1,10 @@
-import Images from "../Utils/images";
+import { CircularProgress } from "@mui/material";
 
-export default function Loading(){
-    return(
-        <div className="loading">
-            <img src={Images.LOADING} alt="Loading" />
-        </div>
-    )
+export default function Loading() {
+  return (
+    <div className="loading">
+        <CircularProgress />
+      {/* <img src={Images.LOADING} alt="Loading" /> */}
+    </div>
+  );
 }

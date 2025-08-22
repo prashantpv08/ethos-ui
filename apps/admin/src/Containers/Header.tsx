@@ -1,17 +1,15 @@
-import { Avatar, Button, Menu, MenuItem } from '@mui/material';
-import Images from '../Utils/images';
-import React from 'react';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { resetAuthorizationToken } from '../api';
-import { useNavigate } from 'react-router-dom';
-import { ROUTES } from '../helpers/contants';
-import { postApiCall } from '../api/methods';
-import endPoints from '../api/endpoint';
-import { notify } from '../Utils/toastify';
+import { Avatar, Button, Menu, MenuItem } from "@mui/material";
+import React from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { resetAuthorizationToken } from "../api";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../helpers/contants";
+import { postApiCall } from "../api/methods";
+import endPoints from "../api/endpoint";
 
-export default function Header(): JSX.Element {
-  const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+export default function Header() {
+  const userData = JSON.parse(localStorage.getItem("userData") || "{}");
   const userDetails = {} as any;
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -23,7 +21,7 @@ export default function Header(): JSX.Element {
   };
 
   const handleClose = (action: string) => {
-    if (action === 'logout') {
+    if (action === "logout") {
       postApiCall(
         endPoints.logout,
         {},
@@ -36,7 +34,7 @@ export default function Header(): JSX.Element {
           if (e?.data && e?.data.message) {
             console.log(e.data.message);
           } else {
-            notify(null, 'error');
+            // notify(null, "error");
           }
         }
       );
@@ -52,9 +50,9 @@ export default function Header(): JSX.Element {
       <div className="flex items-center">
         <Button
           id="basic-button"
-          aria-controls={open ? 'basic-menu' : undefined}
+          aria-controls={open ? "basic-menu" : undefined}
           aria-haspopup="true"
-          aria-expanded={open ? 'true' : undefined}
+          aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
           <div className="flex items-center gap-2">
@@ -64,8 +62,8 @@ export default function Header(): JSX.Element {
                 userDetails?.profilePicture
                   ? userDetails.profilePicture
                   : userData?.profilePicture
-                  ? userData.profilePicture
-                  : Images.AUTH_BG_1
+                    ? userData.profilePicture
+                    : null
               }
             />
             <div className="hidden sm:block text-left">
@@ -83,18 +81,18 @@ export default function Header(): JSX.Element {
           open={open}
           onClose={handleClose}
           MenuListProps={{
-            'aria-labelledby': 'user-button',
+            "aria-labelledby": "user-button",
           }}
           anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'right',
+            vertical: "bottom",
+            horizontal: "right",
           }}
           transformOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
+            vertical: "top",
+            horizontal: "right",
           }}
         >
-          <MenuItem onClick={() => handleClose('logout')}>Logout</MenuItem>
+          <MenuItem onClick={() => handleClose("logout")}>Logout</MenuItem>
         </Menu>
       </div>
     </header>

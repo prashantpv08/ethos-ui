@@ -1,35 +1,36 @@
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from "react";
 import {
   Table,
   TextField,
   Heading,
   PrimaryButton,
   Iconbutton,
-} from '@ethos-frontend/ui';
+} from "@ethos-frontend/ui";
 import {
   GridColDef,
   GridRowsProp,
   GridSortModel,
-} from '@mui/x-data-grid-premium';
-import { Menu, MenuItem } from '@mui/material';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import {
-  getOrgList,
-  deleteORG,
-  updateUserAction,
-} from './action';
-import WarningDialog from '../../Components/WarningDialog';
-import RejectDialog from '../../Components/RejectDialog';
-import CommissionDialog from '../../Components/CommissionDialog';
+} from "@mui/x-data-grid-premium";
+import { Menu, MenuItem } from "@mui/material";
+import { getOrgList, deleteORG, updateUserAction, blockOrg } from "./action";
+import WarningDialog from "../../Components/WarningDialog";
+import RejectDialog from "../../Components/RejectDialog";
+import CommissionDialog from "../../Components/CommissionDialog";
+import { toast } from "react-toastify";
+import { Search, MoreVert } from "@mui/icons-material";
+import { useTranslation } from "react-i18next";
 
-export default function List(): JSX.Element {
+export default function List() {
+  const { t } = useTranslation();
   const [rows, setRows] = useState<GridRowsProp>([]);
   const [rowCount, setRowCount] = useState(0);
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(10);
-  const [sortModel, setSortModel] = useState<GridSortModel>([]);
-  const [query, setQuery] = useState('');
-  const [search, setSearch] = useState('');
+  const [sortModel, setSortModel] = useState<GridSortModel>([
+    { field: "email", sort: "asc" },
+  ]);
+  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [selectedRow, setSelectedRow] = useState<any>(null);
@@ -56,7 +57,7 @@ export default function List(): JSX.Element {
   };
 
   const handleReject = (comment: string) => {
-    updateUserAction({ id: selectedRow.id, type: 'rejected', comment }, () => {
+    updateUserAction({ id: selectedRow.id, type: "rejected", comment }, () => {
       setRejectOpen(false);
       fetchData();
     });
@@ -69,20 +70,24 @@ export default function List(): JSX.Element {
         pageNo: page + 1,
         limit: pageSize,
         sortBy: sortModel[0]?.field,
-        sortOrder: sortModel[0]?.sort === 'asc' ? 1 : -1,
+        sortOrder: sortModel[0]?.sort === "asc" ? 1 : -1,
         searchKey: search,
       },
       (data: any) => {
         const mapped = (data?.data || []).map((org: any) => ({
           id: org._id,
-          name: org.name,
+          name: `${org.ownerFName} ${org.ownerLName}`,
           email: org.email,
+          status: org.status,
+          orgNumber: org.orgNumber,
+          businessType: org.businessType,
+          orgName: org.orgName,
         }));
         setRows(mapped);
         setRowCount(data?.totalItems || 0);
         setLoading(false);
       },
-      () => setLoading(false),
+      () => setLoading(false)
     );
   };
 
@@ -98,21 +103,41 @@ export default function List(): JSX.Element {
   };
 
   const columns: GridColDef[] = [
-    { field: 'name', headerName: 'Name', flex: 1 },
-    { field: 'email', headerName: 'Email', flex: 1 },
+    { field: "orgName", headerName: "Organisation Name", flex: 1 },
+    { field: "name", headerName: "Owner Name", flex: 1 },
+    { field: "orgNumber", headerName: "Organisation Number", flex: 1 },
+    { field: "email", headerName: "Email", flex: 1, minWidth: 300 },
+    { field: "businessType", headerName: "Business Type", flex: 1 },
+    { field: "status", headerName: "Status", flex: 1 },
     {
-      field: 'actions',
-      headerName: 'Actions',
+      field: "actions",
+      headerName: "Actions",
       sortable: false,
       flex: 0.5,
       renderCell: (params) => (
         <Iconbutton
-          MuiIcon={MoreVertIcon}
+          MuiIcon={MoreVert}
           onClick={(e) => handleMenu(e as any, params.row)}
         />
       ),
     },
   ];
+
+  const handleUserAction = (status: string) => {
+    if (status === "blocked") {
+      blockOrg({ id: selectedRow._id }, () => {
+        toast.success("Status has been updated successfully.");
+        setAnchorEl(null);
+        fetchData();
+      });
+    } else {
+      updateUserAction({ id: selectedRow._id, type: status }, () => {
+        toast.success("Status has been updated successfully.");
+        setAnchorEl(null);
+        fetchData();
+      });
+    }
+  };
 
   return (
     <div className="p-4">
@@ -120,10 +145,12 @@ export default function List(): JSX.Element {
         <Heading variant="h5">Organisation</Heading>
         <div className="flex items-center gap-2">
           <TextField
-            size="small"
-            name="search"
-            placeholder="Search"
             onChange={handleSearch}
+            placeholder={t("search")}
+            label={t("search")}
+            leftIcon={<Search />}
+            size="medium"
+            name="search"
           />
           <PrimaryButton
             variant="contained"
@@ -146,14 +173,35 @@ export default function List(): JSX.Element {
         loading={loading}
       />
       <Menu anchorEl={anchorEl} open={openMenu} onClose={handleMenuClose}>
-        <MenuItem
-          onClick={() => {
-            setRejectOpen(true);
-            handleMenuClose();
-          }}
-        >
-          Reject
-        </MenuItem>
+        {selectedRow?.status !== "active" &&
+          selectedRow?.status !== "rejected" &&
+          selectedRow?.status !== "blocked" && (
+            <MenuItem onClick={() => handleUserAction("active")}>
+              Approve
+            </MenuItem>
+          )}
+        {selectedRow?.status === "active" && (
+          <MenuItem onClick={() => handleUserAction("blocked")}>Block</MenuItem>
+        )}
+
+        {selectedRow?.status === "blocked" && (
+          <MenuItem onClick={() => handleUserAction("blocked")}>
+            Active
+          </MenuItem>
+        )}
+
+        {selectedRow?.status !== "rejected" &&
+          selectedRow?.status !== "active" &&
+          selectedRow?.status !== "blocked" && (
+            <MenuItem
+              onClick={() => {
+                setRejectOpen(true);
+                handleMenuClose();
+              }}
+            >
+              Reject
+            </MenuItem>
+          )}
         <MenuItem
           onClick={() => {
             setDeleteOpen(true);

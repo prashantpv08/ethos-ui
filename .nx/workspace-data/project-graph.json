@@ -22972,17 +22972,17 @@
       },
       {
         "source": "admin",
-        "target": "npm:@mui/material",
-        "type": "static"
-      },
-      {
-        "source": "admin",
         "target": "npm:react",
         "type": "static"
       },
       {
         "source": "admin",
-        "target": "npm:react-hook-form",
+        "target": "ui",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:@mui/material",
         "type": "static"
       },
       {
@@ -22997,11 +22997,6 @@
       },
       {
         "source": "admin",
-        "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "admin",
         "target": "npm:yup",
         "type": "static"
       },
@@ -23012,12 +23007,12 @@
       },
       {
         "source": "admin",
-        "target": "npm:react-toastify",
+        "target": "npm:react-hook-form",
         "type": "static"
       },
       {
         "source": "admin",
-        "target": "ui",
+        "target": "npm:react-toastify",
         "type": "static"
       },
       {
@@ -23032,12 +23027,12 @@
       },
       {
         "source": "admin",
-        "target": "npm:aws-sdk",
+        "target": "npm:@mui/x-data-grid-premium",
         "type": "static"
       },
       {
         "source": "admin",
-        "target": "npm:@testing-library/react",
+        "target": "npm:axios",
         "type": "static"
       },
       {
@@ -54153,5 +54148,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1755861895451
+  "computedAt": 1755889225598
 }
