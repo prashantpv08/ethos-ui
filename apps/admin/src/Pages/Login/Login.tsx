@@ -6,6 +6,7 @@ import { API_URL, API_METHODS } from "@ethos-frontend/constants";
 import {
   getNumberOfCols,
   handleError,
+  handleSuccess,
   useResponsive,
 } from "@ethos-frontend/utils";
 import { useNavigate } from "react-router-dom";
@@ -22,13 +23,8 @@ export default function Login() {
     { method: API_METHODS.POST },
     {
       onSuccess: (res) => {
-        const data = res.data;
-
-        if (data?.accessToken) {
-          localStorage.setItem("token", data.accessToken);
-          localStorage.setItem("userData", JSON.stringify(data));
-        }
-        navigate(ROUTES.DASHBOARD);
+        handleSuccess(res, t("success.login"), navigate, ROUTES.DASHBOARD);
+        localStorage.setItem("userData", JSON.stringify(res.data));
       },
       onError: (err) => {
         handleError(err);

@@ -2,43 +2,30 @@ import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { pageRoutes } from './routes';
 import { routeTypes } from '../types';
-import PrivateRoute from './customRoute';
-import Header from '../Containers/Header';
-import Footer from '../Containers/Footer';
+import Layout from '../Containers/Layout';
 import Loading from '../Components/Loading';
+import { withConditionalRoute } from '@ethos-frontend/hoc';
+import { ROUTES } from '../helpers/contants';
 
 function RoutesWrapper() {
-  const status = Boolean(localStorage.getItem('token'));
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
         {pageRoutes.map((route: routeTypes) => {
-          if (route.isPrivate) {
-            return (
-              <Route
-                key={route.id}
-                path={route.path}
-                element={
-                  <PrivateRoute isLoggedIn={status}>
-                    <div className="main">
-                      <Header />
-                      <div className="mainContainer">
-                        <route.Component {...route.pageProp} />
-                      </div>
-                      <Footer />
-                    </div>
-                  </PrivateRoute>
-                }
-              />
-            );
-          }
-          return (
-            <Route
-              key={route.id}
-              path={route.path}
-              element={<route.Component {...route.pageProp} />}
-            />
-          );
+          const Guarded = withConditionalRoute({
+            component: () =>
+              route.isPrivate ? (
+                <Layout>
+                  <route.Component {...route.pageProp} />
+                </Layout>
+              ) : (
+                <route.Component {...route.pageProp} />
+              ),
+            redirectIfAuthenticated: !route.isPrivate,
+            redirectTo: route.isPrivate ? ROUTES.LOGIN : ROUTES.DASHBOARD,
+          });
+
+          return <Route key={route.id} path={route.path} element={<Guarded />} />;
         })}
         <Route path="*" element={<div>Error Screen here</div>} />
       </Routes>

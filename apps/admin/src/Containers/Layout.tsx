@@ -1,17 +1,17 @@
-import { Outlet } from 'react-router-dom'
-import Header from './Header'
-import Footer from './Footer'
+import type { ReactNode } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
-export default function Layout(): JSX.Element {
+interface Props {
+  children?: ReactNode;
+}
+
+export default function Layout({ children }: Props): JSX.Element {
   return (
-    <>
-      <div className="main">
-        <Header />
-        <div className="mainContainer">
-          <Outlet />
-        </div>
-        <Footer />
-      </div>
-    </>
-  )
+    <div className="main">
+      <Header />
+      <div className="mainContainer">{children}</div>
+      <Footer />
+    </div>
+  );
 }
