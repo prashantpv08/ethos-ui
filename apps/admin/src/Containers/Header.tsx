@@ -35,8 +35,7 @@ export default function Header() {
   const navigate = useNavigate();
   const logoutMutation = useRestMutation(API_URL.logout, { method: "POST" });
   return (
-    <header className="flex items-center justify-between bg-white px-4 py-2 border-b">
-      <div className="text-xl font-semibold">Logo</div>
+    <header className="flex items-center justify-end bg-white px-4 py-2 border-b">
       <div className="flex items-center">
         <Button
           id="basic-button"
