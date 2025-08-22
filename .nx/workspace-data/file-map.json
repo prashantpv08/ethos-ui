@@ -32,6 +32,9 @@
     "@ethos-frontend/utils": [
       "ui/src/utils/index.ts"
     ],
+    "@ethos-frontend/assets": [
+      "ui/src/assets/index.tsx"
+    ],
     "@organisation/api/*": [
       "apps/organisation/src/api/*"
     ]
@@ -40,20 +43,28 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "apps/.DS_Store",
+        "hash": "16019197583954815094"
+      },
+      {
+        "file": "appspec.yml",
+        "hash": "1771599891193535147"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "15554043170078602512"
+      },
+      {
+        "file": "storybook-migration-summary.md",
+        "hash": "4565494848689173010"
+      },
+      {
+        "file": "tax.html",
+        "hash": "3998199932679906846"
+      },
+      {
         "file": "pnpm-lock.yaml",
         "hash": "18056836014932079878"
-      },
-      {
-        "file": "scripts/start_server.sh",
-        "hash": "5631448983292931722"
-      },
-      {
-        "file": "CHANGELOG.md",
-        "hash": "16184507339836904816"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
       },
       {
         "file": "scripts/restart_server.sh",
@@ -61,1555 +72,42 @@
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "3513963557648902561"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "15554043170078602512"
-      },
-      {
-        "file": ".DS_Store",
-        "hash": "15676146132430466888"
-      },
-      {
-        "file": "storybook-migration-summary.md",
-        "hash": "4565494848689173010"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14674157652840731827"
+        "hash": "924875193486690378"
       },
       {
         "file": "package.json",
         "hash": "2823075340304183719"
       },
       {
-        "file": "appspec.yml",
-        "hash": "1771599891193535147"
+        "file": "scripts/start_server.sh",
+        "hash": "5631448983292931722"
       },
       {
-        "file": "apps/.DS_Store",
-        "hash": "16019197583954815094"
+        "file": ".DS_Store",
+        "hash": "15676146132430466888"
       },
       {
-        "file": "README.md",
-        "hash": "3529177930900412919"
+        "file": ".gitignore",
+        "hash": "14674157652840731827"
       },
       {
-        "file": "tax.html",
-        "hash": "3998199932679906846"
+        "file": "CHANGELOG.md",
+        "hash": "16184507339836904816"
       },
       {
         "file": "nx.json",
         "hash": "1306008920371401655"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "README.md",
+        "hash": "3529177930900412919"
       }
     ],
     "projectFileMap": {
-      "organisation": [
-        {
-          "file": "apps/organisation/.DS_Store",
-          "hash": "13495788884776276622"
-        },
-        {
-          "file": "apps/organisation/.env-example",
-          "hash": "7839000509089865638"
-        },
-        {
-          "file": "apps/organisation/.env.example",
-          "hash": "17002092421539052989"
-        },
-        {
-          "file": "apps/organisation/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/organisation/index.html",
-          "hash": "251616744654156053"
-        },
-        {
-          "file": "apps/organisation/jest.config.ts",
-          "hash": "8933257161034305742"
-        },
-        {
-          "file": "apps/organisation/postcss.config.js",
-          "hash": "16465077120109045112",
-          "deps": [
-            "npm:postcss-import",
-            "npm:tailwindcss",
-            "npm:autoprefixer"
-          ]
-        },
-        {
-          "file": "apps/organisation/project.json",
-          "hash": "12039479299852331495"
-        },
-        {
-          "file": "apps/organisation/src/.DS_Store",
-          "hash": "6145100241134610483"
-        },
-        {
-          "file": "apps/organisation/src/api/client/Interceptor.ts",
-          "hash": "1456283681955095106",
-          "deps": [
-            "npm:react",
-            "npm:axios",
-            "npm:react-toastify",
-            "ui",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/fragments/order.ts",
-          "hash": "12743498482608718283",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/index.ts",
-          "hash": "12876037799643893209"
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/Account.ts",
-          "hash": "6409725773603111518",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/Inventory.ts",
-          "hash": "18046904464596260668",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/Order.ts",
-          "hash": "10831149177103640044",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/ProductManagement.ts",
-          "hash": "13044237638559977234",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/Receipe.ts",
-          "hash": "659470979000338956",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/Units.ts",
-          "hash": "6585281612821989995",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/mutations/UserManagement.ts",
-          "hash": "4662851806961991926",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/Account.ts",
-          "hash": "15173344263663238945",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/Inventory.ts",
-          "hash": "9562704499099262405",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/Orders.ts",
-          "hash": "13649825488878630912",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/ProductManagement.ts",
-          "hash": "15739643690351776681",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/Receipe.ts",
-          "hash": "4046796052005485851",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/Units.ts",
-          "hash": "1327356735839474904",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/UserManagement.ts",
-          "hash": "531740187000020210",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/api/queries/refreshToken.ts",
-          "hash": "12031490714559626070",
-          "deps": [
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/app.tsx",
-          "hash": "1952440830399833411",
-          "deps": [
-            "npm:react-router-dom",
-            "ui",
-            "npm:aws-sdk",
-            "npm:react-toastify",
-            "npm:@tanstack/react-query",
-            "npm:react",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/assets/logo.svg",
-          "hash": "4115867920610272835"
-        },
-        {
-          "file": "apps/organisation/src/assets/smallLogo.svg",
-          "hash": "12344569172406716174"
-        },
-        {
-          "file": "apps/organisation/src/commonUtils/CommonUtils.ts",
-          "hash": "7453327977931618111"
-        },
-        {
-          "file": "apps/organisation/src/components/.DS_Store",
-          "hash": "3478818338243194469"
-        },
-        {
-          "file": "apps/organisation/src/components/Account/account.module.scss",
-          "hash": "1967203094638751449"
-        },
-        {
-          "file": "apps/organisation/src/components/Account/account.tsx",
-          "hash": "6602449019252350709",
-          "deps": [
-            "npm:@mui/lab",
-            "npm:@mui/material",
-            "npm:react",
-            "ui",
-            "npm:react-router-dom",
-            "npm:@mui/icons-material",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/accountPreferences.tsx",
-          "hash": "97683888386475501",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react",
-            "ui",
-            "npm:@apollo/client",
-            "npm:yup",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/bill.tsx",
-          "hash": "11404374940504235401",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-hook-form",
-            "npm:react-toastify",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/changePassword.tsx",
-          "hash": "12094482296895143596",
-          "deps": [
-            "ui",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react-toastify",
-            "npm:react-i18next",
-            "npm:i18next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/editProfile.tsx",
-          "hash": "6981477202960593229",
-          "deps": [
-            "npm:@mui/icons-material",
-            "npm:react",
-            "ui",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react-router-dom",
-            "npm:react-toastify",
-            "npm:@react-google-maps/api",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/generateQR.tsx",
-          "hash": "11997923397004789060",
-          "deps": [
-            "ui",
-            "npm:react",
-            "npm:react-qr-code"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/index.ts",
-          "hash": "1259918280655135165"
-        },
-        {
-          "file": "apps/organisation/src/components/Account/language.tsx",
-          "hash": "17021234685377141457",
-          "deps": [
-            "ui",
-            "npm:react-i18next",
-            "npm:react-toastify",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/profileDetails.tsx",
-          "hash": "5077373031348720361",
-          "deps": [
-            "ui",
-            "npm:react-router-dom",
-            "npm:@mui/material",
-            "npm:react-i18next",
-            "npm:@mui/lab"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/profileView.tsx",
-          "hash": "12213563033063435762",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Account/theme.tsx",
-          "hash": "11816208931912545099",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/AddressAutocomplete/addressAutocomplete.tsx",
-          "hash": "10852887396221888270",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@react-google-maps/api"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/AddressAutocomplete/index.ts",
-          "hash": "13003301745530103565"
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Auth.module.scss",
-          "hash": "15350447044364321819"
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Login/forgetPasswordModal.tsx",
-          "hash": "979587396010450553",
-          "deps": [
-            "ui",
-            "npm:i18next",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Login/index.ts",
-          "hash": "4685521742094777712"
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Login/login.tsx",
-          "hash": "15983253702547082764",
-          "deps": [
-            "ui",
-            "npm:react-router-dom",
-            "npm:react-toastify",
-            "npm:react",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Registration/index.ts",
-          "hash": "3937659821659390890"
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Registration/previewDetail.tsx",
-          "hash": "8416692428733055053",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react-router-dom",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Registration/registration.tsx",
-          "hash": "17669521816691118779",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:react-router-dom",
-            "npm:react-toastify",
-            "npm:@react-google-maps/api",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Registration/stepFormOne.tsx",
-          "hash": "12484341121265367550",
-          "deps": [
-            "npm:react-hook-form",
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/Registration/stepFormTwo.tsx",
-          "hash": "1447866709000673913",
-          "deps": [
-            "ui",
-            "npm:react-hook-form",
-            "npm:react",
-            "npm:@mui/icons-material",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/ResetPassword/index.ts",
-          "hash": "17339073374089190593"
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/ResetPassword/resetPassword.tsx",
-          "hash": "15392455376881525566",
-          "deps": [
-            "ui",
-            "npm:i18next",
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Auth/index.ts",
-          "hash": "17543588481262691032"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/DeleteGroupConfirmModal/deleteGroupConfirmModal.tsx",
-          "hash": "4964092104635287870",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/DeleteGroupConfirmModal/index.ts",
-          "hash": "11742636567230301098"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/DeleteModal/deleteModal.tsx",
-          "hash": "15550768235529312215",
-          "deps": [
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/DeleteModal/index.ts",
-          "hash": "13720365717706694542"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Dropzone/dropzone.module.scss",
-          "hash": "16623611359694741801"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Dropzone/dropzone.tsx",
-          "hash": "12613225069634512726",
-          "deps": [
-            "npm:react",
-            "npm:react-dropzone",
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Dropzone/index.ts",
-          "hash": "17053843189780681575"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/ExportReportModal/ExportReportModal.tsx",
-          "hash": "2363459742474100073",
-          "deps": [
-            "ui",
-            "npm:react",
-            "npm:react-i18next",
-            "npm:date-fns"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/ExportReportModal/index.ts",
-          "hash": "7007448747920184364"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/FileUploadSection/fileUploadSection.tsx",
-          "hash": "13713278175349645206",
-          "deps": [
-            "ui",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Header/header.module.scss",
-          "hash": "12113843891927069710"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Header/header.tsx",
-          "hash": "8025732550458163217",
-          "deps": [
-            "ui",
-            "npm:react",
-            "npm:@mui/icons-material",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/Header/index.ts",
-          "hash": "4756858329168719436"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/ItemsDetail/index.ts",
-          "hash": "7048196803991213602"
-        },
-        {
-          "file": "apps/organisation/src/components/Common/ItemsDetail/itemDetail.tsx",
-          "hash": "4493587889531221755",
-          "deps": [
-            "npm:react",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Common/index.ts",
-          "hash": "5573933766054769215"
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/dashboard.module.scss",
-          "hash": "14438187761431618310"
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/dashboard.tsx",
-          "hash": "16403010094992351976",
-          "deps": [
-            "ui",
-            "npm:react-icons",
-            "npm:react",
-            "npm:react-i18next",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/dashboardCards.tsx",
-          "hash": "8096531829573000542",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/index.ts",
-          "hash": "14616188069614169909"
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/orderCount.tsx",
-          "hash": "11127794299844579823",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-i18next",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/recentOrder.tsx",
-          "hash": "17048019435431390615",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/revenueChart.tsx",
-          "hash": "14046892597366860472",
-          "deps": [
-            "ui",
-            "npm:react",
-            "npm:recharts",
-            "npm:react-i18next",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/topSelling.tsx",
-          "hash": "11877936750635634971",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Dashboard/totalCashPie.tsx",
-          "hash": "3772987949949159221",
-          "deps": [
-            "ui",
-            "npm:recharts",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Kitchen/card.tsx",
-          "hash": "12402495272770601684",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/material",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Kitchen/index.ts",
-          "hash": "576509309544685463"
-        },
-        {
-          "file": "apps/organisation/src/components/Kitchen/kitchen.module.scss",
-          "hash": "8654514714508787712"
-        },
-        {
-          "file": "apps/organisation/src/components/Kitchen/kitchen.tsx",
-          "hash": "5306090999307543554",
-          "deps": [
-            "npm:react",
-            "npm:@apollo/client",
-            "ui",
-            "npm:react-router-dom",
-            "npm:@mui/material",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Cashier/cashierList.tsx",
-          "hash": "12845816947440510640",
-          "deps": [
-            "ui",
-            "npm:react",
-            "npm:@apollo/client",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Cashier/cashierReport.tsx",
-          "hash": "7453232544379211377",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-router-dom",
-            "npm:@apollo/client",
-            "npm:@mui/x-date-pickers-pro",
-            "npm:dayjs",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Cashier/index.ts",
-          "hash": "9073618433108614974"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Cashier/userCashierDetail.tsx",
-          "hash": "11889200446077961558",
-          "deps": [
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react",
-            "npm:react-i18next",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Inventory/index.ts",
-          "hash": "6665466065447410121"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Inventory/inventory.tsx",
-          "hash": "17298718592609732402",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@apollo/client",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:@mui/icons-material",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Logs/index.ts",
-          "hash": "6522581955592901832"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Logs/logs.tsx",
-          "hash": "9528623433971789834",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "ui",
-            "npm:@mui/x-date-pickers-pro",
-            "npm:dayjs",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/index.ts",
-          "hash": "3352184959596170982"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/rawMaterial.tsx",
-          "hash": "13917083027459310011",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:react-i18next",
-            "npm:@mui/icons-material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/rawMaterialForm.tsx",
-          "hash": "3102875804939477639",
-          "deps": [
-            "ui",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/form.tsx",
-          "hash": "9510571644578365379",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react-router-dom",
-            "npm:@apollo/client",
-            "npm:@mui/material",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/index.tsx",
-          "hash": "11330189998438333285"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/recipe.module.scss",
-          "hash": "10736825949623315593"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/recipe.tsx",
-          "hash": "11165128086402864287",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:react-router-dom",
-            "ui",
-            "npm:@mui/material",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Inventory/index.ts",
-          "hash": "3955207534106696630"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/OrderDetails/orderDetails.tsx",
-          "hash": "979099096268745218",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:react-router-dom",
-            "ui",
-            "npm:react-i18next",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/OrderList/orderList.tsx",
-          "hash": "17880095840980055336",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-router-dom",
-            "npm:react-toastify",
-            "npm:@mui/icons-material",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/OrderList/orderTable.tsx",
-          "hash": "9167369964750168794",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-router-dom",
-            "npm:react",
-            "npm:@apollo/client",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/index.ts",
-          "hash": "1205618863636248683"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/order.module.scss",
-          "hash": "2208977435692860748"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/orderDetailsTable.tsx",
-          "hash": "11744973097968389420",
-          "deps": [
-            "ui",
-            "npm:dayjs",
-            "npm:@mui/icons-material",
-            "npm:react",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/orderHistory.tsx",
-          "hash": "15802790927283124663",
-          "deps": [
-            "ui",
-            "npm:@mui/material",
-            "npm:react",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/orderSummary.tsx",
-          "hash": "6202731095707717723",
-          "deps": [
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/payCounter.tsx",
-          "hash": "11145139042916013187",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react-router-dom",
-            "ui",
-            "npm:react",
-            "npm:@mui/icons-material",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Order/tipCouponModal.tsx",
-          "hash": "3510258743792015159",
-          "deps": [
-            "ui",
-            "npm:@hookform/resolvers",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Category/category.tsx",
-          "hash": "8199128764817367687",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Category/index.ts",
-          "hash": "3411949239235525801"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Characterstics/characterstics.tsx",
-          "hash": "9849255306950288369",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Characterstics/index.ts",
-          "hash": "14069004596041631656"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/comboOptions.tsx",
-          "hash": "14266387210557580756",
-          "deps": [
-            "npm:react-hook-form",
-            "npm:react",
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/comboProductsSelection.tsx",
-          "hash": "11892462272416486424",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/combos.tsx",
-          "hash": "17638197407349128086",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:@mui/icons-material",
-            "ui",
-            "npm:react-router-dom",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/combosForm.tsx",
-          "hash": "7478249968100861067",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:react-router-dom",
-            "npm:@apollo/client",
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/combosView.tsx",
-          "hash": "13855994531430828334",
-          "deps": [
-            "npm:react",
-            "npm:@apollo/client",
-            "npm:react-router-dom",
-            "ui",
-            "npm:i18next",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Combos/index.ts",
-          "hash": "9115389354879691154"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ComplementaryProduct/complementary.tsx",
-          "hash": "17778470674555127859",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:@apollo/client",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ComplementaryProduct/index.ts",
-          "hash": "4441612462290943642"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Modifier/index.ts",
-          "hash": "367415222958666117"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Modifier/modifier.tsx",
-          "hash": "2832406079658397744",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:i18next",
-            "npm:react-hook-form"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/Product.modal.ts",
-          "hash": "14665774391695518327"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/basicDetails.tsx",
-          "hash": "987627290214448684",
-          "deps": [
-            "npm:react-hook-form",
-            "ui",
-            "npm:react-router-dom",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/commonTabs.tsx",
-          "hash": "7691818366287087372",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/material",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/extraDetails.tsx",
-          "hash": "11530183142330102541",
-          "deps": [
-            "ui",
-            "npm:react-hook-form",
-            "npm:react-router-dom",
-            "npm:react",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/formTypes.ts",
-          "hash": "17376359199628029187",
-          "deps": [
-            "npm:react-hook-form"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/index.ts",
-          "hash": "9515463142417284117"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/productForm.tsx",
-          "hash": "9631435498147858477",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:react-router-dom",
-            "npm:@apollo/client",
-            "ui",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductForm/validationSchema.ts",
-          "hash": "11539775966331433938",
-          "deps": [
-            "ui",
-            "npm:yup",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/index.ts",
-          "hash": "1378878126652930384"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/productManagement.module.scss",
-          "hash": "17583090672413145762"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/productManagement.tsx",
-          "hash": "11911297813025187858",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:@mui/icons-material",
-            "ui",
-            "npm:react-router-dom",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductView/commonDetailsView.tsx",
-          "hash": "13251819029051419418",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-slick"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductView/index.ts",
-          "hash": "9274177107088693735"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductView/productView.module.scss",
-          "hash": "18139885922174825707"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductView/productView.tsx",
-          "hash": "4911079944002432466",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:i18next",
-            "ui",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/ProductView/types.ts",
-          "hash": "1921108168695139813"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/Product/index.ts",
-          "hash": "1611948449096044155"
-        },
-        {
-          "file": "apps/organisation/src/components/Managements/index.ts",
-          "hash": "4780808370968418978"
-        },
-        {
-          "file": "apps/organisation/src/components/Tax/index.ts",
-          "hash": "1665809060856417963"
-        },
-        {
-          "file": "apps/organisation/src/components/Tax/tax.module.scss",
-          "hash": "1904683834433464315"
-        },
-        {
-          "file": "apps/organisation/src/components/Tax/tax.tsx",
-          "hash": "8451115314951011621",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Transaction/index.ts",
-          "hash": "6961150892355133278"
-        },
-        {
-          "file": "apps/organisation/src/components/Transaction/transaction.tsx",
-          "hash": "13033218966205609860",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Transaction/transactionFormModal.tsx",
-          "hash": "12443344255180082202",
-          "deps": [
-            "npm:react",
-            "ui",
-            "npm:react-hook-form",
-            "npm:@hookform/resolvers",
-            "npm:yup",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/Units/index.ts",
-          "hash": "11094164227715487761"
-        },
-        {
-          "file": "apps/organisation/src/components/Units/units.tsx",
-          "hash": "3632809575290402255",
-          "deps": [
-            "npm:react",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "ui",
-            "npm:@apollo/client",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/User/index.ts",
-          "hash": "16455189457810195197"
-        },
-        {
-          "file": "apps/organisation/src/components/User/userForm.tsx",
-          "hash": "7017052319131724185",
-          "deps": [
-            "ui",
-            "npm:react-hook-form",
-            "npm:@apollo/client",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/components/User/userList.tsx",
-          "hash": "17210578379703390959",
-          "deps": [
-            "npm:@apollo/client",
-            "npm:react",
-            "ui",
-            "npm:@mui/x-data-grid-premium",
-            "npm:react-hook-form",
-            "npm:yup",
-            "npm:@hookform/resolvers",
-            "npm:react-toastify",
-            "npm:i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/constants/index.ts",
-          "hash": "2510119414760349942"
-        },
-        {
-          "file": "apps/organisation/src/constants/messages.ts",
-          "hash": "5444174238596973454"
-        },
-        {
-          "file": "apps/organisation/src/context/socket.tsx",
-          "hash": "11736972974834282289",
-          "deps": [
-            "npm:react",
-            "npm:socket.io-client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/context/user.tsx",
-          "hash": "7101403459190286745",
-          "deps": [
-            "npm:axios",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/organisation/src/hoc/withPermission.tsx",
-          "hash": "14841504307339160464",
-          "deps": [
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/hooks/index.ts",
-          "hash": "7095104498547180919"
-        },
-        {
-          "file": "apps/organisation/src/hooks/useFileUpload.ts",
-          "hash": "416536727117797462",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/hooks/useFinalPrice.ts",
-          "hash": "5756424535000021626",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/hooks/useProductList.ts",
-          "hash": "858757956443521476",
-          "deps": [
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/hooks/useStepForm.ts",
-          "hash": "12898557491584299318",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/hooks/useTransactionCodes.ts",
-          "hash": "11098777210108345452",
-          "deps": [
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/layout/Layout.module.scss",
-          "hash": "384939516101574517"
-        },
-        {
-          "file": "apps/organisation/src/layout/Layout.tsx",
-          "hash": "9830525943112247771",
-          "deps": [
-            "npm:react-router-dom",
-            "npm:@mui/material",
-            "npm:react",
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react-i18next",
-            "npm:@apollo/client",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/layout/header.tsx",
-          "hash": "11013341114826816997",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react-router-dom",
-            "npm:@apollo/client",
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react",
-            "npm:react-toastify",
-            "npm:@tanstack/react-query",
-            "npm:react-i18next"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/main.tsx",
-          "hash": "17913026649747484406",
-          "deps": [
-            "npm:react-dom"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/pages/Auth/Auth.tsx",
-          "hash": "15335283618887041222",
-          "deps": [
-            "npm:react-router-dom",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/pages/Auth/index.ts",
-          "hash": "10055867674555374016"
-        },
-        {
-          "file": "apps/organisation/src/pages/Profile/Profile.tsx",
-          "hash": "18265826908645779973"
-        },
-        {
-          "file": "apps/organisation/src/pages/Profile/index.ts",
-          "hash": "16101952292047954576"
-        },
-        {
-          "file": "apps/organisation/src/pages/noAccess.tsx",
-          "hash": "8184680771316784103",
-          "deps": [
-            "ui",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/routes/appRoutes.tsx",
-          "hash": "16108422937819342927",
-          "deps": [
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:@mui/material",
-            "npm:react-i18next",
-            "npm:@tanstack/react-query",
-            "ui",
-            "npm:@apollo/client"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/routes/index.ts",
-          "hash": "8234680082801519771"
-        },
-        {
-          "file": "apps/organisation/src/routes/privateRoutes.tsx",
-          "hash": "6889831725211465495",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:i18next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/routes/publicRoutes.tsx",
-          "hash": "7660678765598288417",
-          "deps": [
-            "npm:react-router-dom",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/styles.scss",
-          "hash": "4930613235665952370"
-        },
-        {
-          "file": "apps/organisation/src/svg.d.ts",
-          "hash": "7594992203284815493",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/utils/deleteImage.ts",
-          "hash": "2035278663035560859",
-          "deps": [
-            "npm:aws-sdk"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/utils/permission.tsx",
-          "hash": "8153711136475619095",
-          "deps": [
-            "npm:react-router-dom",
-            "npm:react",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/utils/productUtil.ts",
-          "hash": "15819879062198510772"
-        },
-        {
-          "file": "apps/organisation/src/utils/uploadImage.ts",
-          "hash": "17514877254648562744",
-          "deps": [
-            "npm:aws-sdk",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/organisation/src/vite-env.d.ts",
-          "hash": "4346551397233632145"
-        },
-        {
-          "file": "apps/organisation/tailwind.config.js",
-          "hash": "14242995927995164225",
-          "deps": [
-            "npm:tailwindcss"
-          ]
-        },
-        {
-          "file": "apps/organisation/tsconfig.app.json",
-          "hash": "7323242329642577182"
-        },
-        {
-          "file": "apps/organisation/tsconfig.json",
-          "hash": "749806647945258561"
-        },
-        {
-          "file": "apps/organisation/vite.config.ts",
-          "hash": "10443397684192132330",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite",
-            "npm:vite-plugin-svgr"
-          ]
-        }
-      ],
       "customer": [
         {
           "file": "apps/customer/.DS_Store",
@@ -4779,153 +3277,6 @@
           "hash": "13998840040434192437"
         }
       ],
-      "co-screen": [
-        {
-          "file": "apps/co-screen/.env.example",
-          "hash": "1629375566748642154"
-        },
-        {
-          "file": "apps/co-screen/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/co-screen/index.html",
-          "hash": "17195752053801648739"
-        },
-        {
-          "file": "apps/co-screen/jest.config.ts",
-          "hash": "13573378800732097977"
-        },
-        {
-          "file": "apps/co-screen/postcss.config.js",
-          "hash": "13598591179375906364"
-        },
-        {
-          "file": "apps/co-screen/project.json",
-          "hash": "7738431956459585992"
-        },
-        {
-          "file": "apps/co-screen/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/co-screen/src/app/app.module.scss",
-          "hash": "8887387885984320532"
-        },
-        {
-          "file": "apps/co-screen/src/app/app.spec.tsx",
-          "hash": "11453869490004956352",
-          "deps": [
-            "npm:@testing-library/react",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/app/app.tsx",
-          "hash": "12249789390943445042",
-          "deps": [
-            "ui",
-            "npm:react-toastify",
-            "npm:react",
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/co-screen/src/components/forgetPasswordModal.tsx",
-          "hash": "17140477209008098846",
-          "deps": [
-            "ui",
-            "npm:i18next",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/login.module.scss",
-          "hash": "11418399029589831016"
-        },
-        {
-          "file": "apps/co-screen/src/components/login.tsx",
-          "hash": "7121912769551005434",
-          "deps": [
-            "ui",
-            "npm:react-router-dom",
-            "npm:react-i18next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/routes.tsx",
-          "hash": "17592712419662302251",
-          "deps": [
-            "npm:react-router-dom",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/socket.tsx",
-          "hash": "10298422232549115300",
-          "deps": [
-            "npm:react",
-            "npm:socket.io-client"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/status.tsx",
-          "hash": "3577941260065535055",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:@mui/x-data-grid-premium"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/main.tsx",
-          "hash": "3751753673953770956",
-          "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/styles.scss",
-          "hash": "2866083945719690482"
-        },
-        {
-          "file": "apps/co-screen/tailwind.config.js",
-          "hash": "14242995927995164225",
-          "deps": [
-            "npm:tailwindcss"
-          ]
-        },
-        {
-          "file": "apps/co-screen/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "apps/co-screen/tsconfig.json",
-          "hash": "824604371006306276"
-        },
-        {
-          "file": "apps/co-screen/tsconfig.spec.json",
-          "hash": "11378287594513225419"
-        },
-        {
-          "file": "apps/co-screen/vite.config.ts",
-          "hash": "3389250265267376684",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
       "admin": [
         {
           "file": "apps/admin/.babelrc",
@@ -4946,6 +3297,15 @@
         {
           "file": "apps/admin/jest.config.ts",
           "hash": "17486881110826544956"
+        },
+        {
+          "file": "apps/admin/postcss.config.js",
+          "hash": "8315643572311742817",
+          "deps": [
+            "npm:postcss-import",
+            "npm:tailwindcss",
+            "npm:autoprefixer"
+          ]
         },
         {
           "file": "apps/admin/project.json",
@@ -5149,7 +3509,7 @@
         },
         {
           "file": "apps/admin/src/Pages/Login/Login.tsx",
-          "hash": "13415465164479102289",
+          "hash": "11284824732340283591",
           "deps": [
             "ui",
             "npm:react-router-dom",
@@ -5213,10 +3573,6 @@
         {
           "file": "apps/admin/src/Pages/Organisation/index.tsx",
           "hash": "16235302626751791052"
-        },
-        {
-          "file": "apps/admin/src/Pages/PublicPage/PublicPage.tsx",
-          "hash": "13730816401146258972"
         },
         {
           "file": "apps/admin/src/Pages/Register/Components/BillingDetails.tsx",
@@ -5755,7 +4111,7 @@
         },
         {
           "file": "apps/admin/src/main.tsx",
-          "hash": "4731961929376199421",
+          "hash": "12498849458525929816",
           "deps": [
             "npm:react",
             "npm:react-dom"
@@ -5763,47 +4119,7 @@
         },
         {
           "file": "apps/admin/src/styles.scss",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "apps/admin/src/styles/_common.scss",
-          "hash": "7528768318594153194"
-        },
-        {
-          "file": "apps/admin/src/styles/_margins.scss",
-          "hash": "17096782810212154077"
-        },
-        {
-          "file": "apps/admin/src/styles/_minxins.scss",
-          "hash": "11960178257133344713"
-        },
-        {
-          "file": "apps/admin/src/styles/_typography.scss",
-          "hash": "15906873313660339630"
-        },
-        {
-          "file": "apps/admin/src/styles/_variables.scss",
-          "hash": "9514065309064381843"
-        },
-        {
-          "file": "apps/admin/src/styles/auth.scss",
-          "hash": "6804661613863259842"
-        },
-        {
-          "file": "apps/admin/src/styles/filter.scss",
-          "hash": "10997177481844056847"
-        },
-        {
-          "file": "apps/admin/src/styles/index.scss",
-          "hash": "18239625179309851029"
-        },
-        {
-          "file": "apps/admin/src/styles/padding.scss",
-          "hash": "5779724470957997311"
-        },
-        {
-          "file": "apps/admin/src/styles/quill.scss",
-          "hash": "8564624939625434236"
+          "hash": "2172668849966456987"
         },
         {
           "file": "apps/admin/src/types/index.ts",
@@ -5812,6 +4128,13 @@
         {
           "file": "apps/admin/src/vite-env.d.ts",
           "hash": "4346551397233632145"
+        },
+        {
+          "file": "apps/admin/tailwind.config.js",
+          "hash": "14242995927995164225",
+          "deps": [
+            "npm:tailwindcss"
+          ]
         },
         {
           "file": "apps/admin/tsconfig.app.json",
@@ -5832,6 +4155,1658 @@
             "npm:vite",
             "npm:@vitejs/plugin-react",
             "npm:@nx/vite"
+          ]
+        }
+      ],
+      "co-screen": [
+        {
+          "file": "apps/co-screen/.env.example",
+          "hash": "1629375566748642154"
+        },
+        {
+          "file": "apps/co-screen/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/co-screen/index.html",
+          "hash": "17195752053801648739"
+        },
+        {
+          "file": "apps/co-screen/jest.config.ts",
+          "hash": "13573378800732097977"
+        },
+        {
+          "file": "apps/co-screen/postcss.config.js",
+          "hash": "13598591179375906364"
+        },
+        {
+          "file": "apps/co-screen/project.json",
+          "hash": "7738431956459585992"
+        },
+        {
+          "file": "apps/co-screen/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/co-screen/src/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/co-screen/src/app/app.spec.tsx",
+          "hash": "11453869490004956352",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/app/app.tsx",
+          "hash": "12249789390943445042",
+          "deps": [
+            "ui",
+            "npm:react-toastify",
+            "npm:react",
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/co-screen/src/components/forgetPasswordModal.tsx",
+          "hash": "17140477209008098846",
+          "deps": [
+            "ui",
+            "npm:i18next",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/login.module.scss",
+          "hash": "11418399029589831016"
+        },
+        {
+          "file": "apps/co-screen/src/components/login.tsx",
+          "hash": "15677143284507754033",
+          "deps": [
+            "ui",
+            "npm:react-router-dom",
+            "npm:react-i18next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/routes.tsx",
+          "hash": "17592712419662302251",
+          "deps": [
+            "npm:react-router-dom",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/socket.tsx",
+          "hash": "10298422232549115300",
+          "deps": [
+            "npm:react",
+            "npm:socket.io-client"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/status.tsx",
+          "hash": "3577941260065535055",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@mui/x-data-grid-premium"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/main.tsx",
+          "hash": "3751753673953770956",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/styles.scss",
+          "hash": "2866083945719690482"
+        },
+        {
+          "file": "apps/co-screen/tailwind.config.js",
+          "hash": "14242995927995164225",
+          "deps": [
+            "npm:tailwindcss"
+          ]
+        },
+        {
+          "file": "apps/co-screen/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/co-screen/tsconfig.json",
+          "hash": "824604371006306276"
+        },
+        {
+          "file": "apps/co-screen/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/co-screen/vite.config.ts",
+          "hash": "3389250265267376684",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "organisation": [
+        {
+          "file": "apps/organisation/.DS_Store",
+          "hash": "13495788884776276622"
+        },
+        {
+          "file": "apps/organisation/.env-example",
+          "hash": "7839000509089865638"
+        },
+        {
+          "file": "apps/organisation/.env.example",
+          "hash": "17002092421539052989"
+        },
+        {
+          "file": "apps/organisation/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/organisation/index.html",
+          "hash": "251616744654156053"
+        },
+        {
+          "file": "apps/organisation/jest.config.ts",
+          "hash": "8933257161034305742"
+        },
+        {
+          "file": "apps/organisation/postcss.config.js",
+          "hash": "16465077120109045112",
+          "deps": [
+            "npm:postcss-import",
+            "npm:tailwindcss",
+            "npm:autoprefixer"
+          ]
+        },
+        {
+          "file": "apps/organisation/project.json",
+          "hash": "12039479299852331495"
+        },
+        {
+          "file": "apps/organisation/src/.DS_Store",
+          "hash": "6145100241134610483"
+        },
+        {
+          "file": "apps/organisation/src/api/client/Interceptor.ts",
+          "hash": "1456283681955095106",
+          "deps": [
+            "npm:react",
+            "npm:axios",
+            "npm:react-toastify",
+            "ui",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/fragments/order.ts",
+          "hash": "12743498482608718283",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/index.ts",
+          "hash": "12876037799643893209"
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/Account.ts",
+          "hash": "6409725773603111518",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/Inventory.ts",
+          "hash": "18046904464596260668",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/Order.ts",
+          "hash": "10831149177103640044",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/ProductManagement.ts",
+          "hash": "13044237638559977234",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/Receipe.ts",
+          "hash": "659470979000338956",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/Units.ts",
+          "hash": "6585281612821989995",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/mutations/UserManagement.ts",
+          "hash": "4662851806961991926",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/Account.ts",
+          "hash": "15173344263663238945",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/Inventory.ts",
+          "hash": "9562704499099262405",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/Orders.ts",
+          "hash": "13649825488878630912",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/ProductManagement.ts",
+          "hash": "15739643690351776681",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/Receipe.ts",
+          "hash": "4046796052005485851",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/Units.ts",
+          "hash": "1327356735839474904",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/UserManagement.ts",
+          "hash": "531740187000020210",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/api/queries/refreshToken.ts",
+          "hash": "12031490714559626070",
+          "deps": [
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/app.tsx",
+          "hash": "1952440830399833411",
+          "deps": [
+            "npm:react-router-dom",
+            "ui",
+            "npm:aws-sdk",
+            "npm:react-toastify",
+            "npm:@tanstack/react-query",
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/assets/logo.svg",
+          "hash": "4115867920610272835"
+        },
+        {
+          "file": "apps/organisation/src/assets/smallLogo.svg",
+          "hash": "12344569172406716174"
+        },
+        {
+          "file": "apps/organisation/src/commonUtils/CommonUtils.ts",
+          "hash": "7453327977931618111"
+        },
+        {
+          "file": "apps/organisation/src/components/.DS_Store",
+          "hash": "3478818338243194469"
+        },
+        {
+          "file": "apps/organisation/src/components/Account/account.module.scss",
+          "hash": "1967203094638751449"
+        },
+        {
+          "file": "apps/organisation/src/components/Account/account.tsx",
+          "hash": "6602449019252350709",
+          "deps": [
+            "npm:@mui/lab",
+            "npm:@mui/material",
+            "npm:react",
+            "ui",
+            "npm:react-router-dom",
+            "npm:@mui/icons-material",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/accountPreferences.tsx",
+          "hash": "97683888386475501",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react",
+            "ui",
+            "npm:@apollo/client",
+            "npm:yup",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/bill.tsx",
+          "hash": "11404374940504235401",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-hook-form",
+            "npm:react-toastify",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/changePassword.tsx",
+          "hash": "12094482296895143596",
+          "deps": [
+            "ui",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react-toastify",
+            "npm:react-i18next",
+            "npm:i18next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/editProfile.tsx",
+          "hash": "6981477202960593229",
+          "deps": [
+            "npm:@mui/icons-material",
+            "npm:react",
+            "ui",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react-router-dom",
+            "npm:react-toastify",
+            "npm:@react-google-maps/api",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/generateQR.tsx",
+          "hash": "11997923397004789060",
+          "deps": [
+            "ui",
+            "npm:react",
+            "npm:react-qr-code"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/index.ts",
+          "hash": "1259918280655135165"
+        },
+        {
+          "file": "apps/organisation/src/components/Account/language.tsx",
+          "hash": "17021234685377141457",
+          "deps": [
+            "ui",
+            "npm:react-i18next",
+            "npm:react-toastify",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/profileDetails.tsx",
+          "hash": "5077373031348720361",
+          "deps": [
+            "ui",
+            "npm:react-router-dom",
+            "npm:@mui/material",
+            "npm:react-i18next",
+            "npm:@mui/lab"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/profileView.tsx",
+          "hash": "12213563033063435762",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Account/theme.tsx",
+          "hash": "11816208931912545099",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/AddressAutocomplete/addressAutocomplete.tsx",
+          "hash": "10852887396221888270",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@react-google-maps/api"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/AddressAutocomplete/index.ts",
+          "hash": "13003301745530103565"
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Auth.module.scss",
+          "hash": "15350447044364321819"
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Login/forgetPasswordModal.tsx",
+          "hash": "979587396010450553",
+          "deps": [
+            "ui",
+            "npm:i18next",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Login/index.ts",
+          "hash": "4685521742094777712"
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Login/login.tsx",
+          "hash": "15983253702547082764",
+          "deps": [
+            "ui",
+            "npm:react-router-dom",
+            "npm:react-toastify",
+            "npm:react",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Registration/index.ts",
+          "hash": "3937659821659390890"
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Registration/previewDetail.tsx",
+          "hash": "8416692428733055053",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react-router-dom",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Registration/registration.tsx",
+          "hash": "17669521816691118779",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:react-router-dom",
+            "npm:react-toastify",
+            "npm:@react-google-maps/api",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Registration/stepFormOne.tsx",
+          "hash": "12484341121265367550",
+          "deps": [
+            "npm:react-hook-form",
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/Registration/stepFormTwo.tsx",
+          "hash": "1447866709000673913",
+          "deps": [
+            "ui",
+            "npm:react-hook-form",
+            "npm:react",
+            "npm:@mui/icons-material",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/ResetPassword/index.ts",
+          "hash": "17339073374089190593"
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/ResetPassword/resetPassword.tsx",
+          "hash": "15392455376881525566",
+          "deps": [
+            "ui",
+            "npm:i18next",
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Auth/index.ts",
+          "hash": "17543588481262691032"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/DeleteGroupConfirmModal/deleteGroupConfirmModal.tsx",
+          "hash": "4964092104635287870",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/DeleteGroupConfirmModal/index.ts",
+          "hash": "11742636567230301098"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/DeleteModal/deleteModal.tsx",
+          "hash": "15550768235529312215",
+          "deps": [
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/DeleteModal/index.ts",
+          "hash": "13720365717706694542"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Dropzone/dropzone.module.scss",
+          "hash": "16623611359694741801"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Dropzone/dropzone.tsx",
+          "hash": "12613225069634512726",
+          "deps": [
+            "npm:react",
+            "npm:react-dropzone",
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Dropzone/index.ts",
+          "hash": "17053843189780681575"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/ExportReportModal/ExportReportModal.tsx",
+          "hash": "2363459742474100073",
+          "deps": [
+            "ui",
+            "npm:react",
+            "npm:react-i18next",
+            "npm:date-fns"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/ExportReportModal/index.ts",
+          "hash": "7007448747920184364"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/FileUploadSection/fileUploadSection.tsx",
+          "hash": "13713278175349645206",
+          "deps": [
+            "ui",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Header/header.module.scss",
+          "hash": "12113843891927069710"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Header/header.tsx",
+          "hash": "8025732550458163217",
+          "deps": [
+            "ui",
+            "npm:react",
+            "npm:@mui/icons-material",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/Header/index.ts",
+          "hash": "4756858329168719436"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/ItemsDetail/index.ts",
+          "hash": "7048196803991213602"
+        },
+        {
+          "file": "apps/organisation/src/components/Common/ItemsDetail/itemDetail.tsx",
+          "hash": "4493587889531221755",
+          "deps": [
+            "npm:react",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Common/index.ts",
+          "hash": "5573933766054769215"
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/dashboard.module.scss",
+          "hash": "14438187761431618310"
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/dashboard.tsx",
+          "hash": "16403010094992351976",
+          "deps": [
+            "ui",
+            "npm:react-icons",
+            "npm:react",
+            "npm:react-i18next",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/dashboardCards.tsx",
+          "hash": "8096531829573000542",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/index.ts",
+          "hash": "14616188069614169909"
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/orderCount.tsx",
+          "hash": "11127794299844579823",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-i18next",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/recentOrder.tsx",
+          "hash": "17048019435431390615",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/revenueChart.tsx",
+          "hash": "14046892597366860472",
+          "deps": [
+            "ui",
+            "npm:react",
+            "npm:recharts",
+            "npm:react-i18next",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/topSelling.tsx",
+          "hash": "11877936750635634971",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Dashboard/totalCashPie.tsx",
+          "hash": "3772987949949159221",
+          "deps": [
+            "ui",
+            "npm:recharts",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Kitchen/card.tsx",
+          "hash": "12402495272770601684",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/material",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Kitchen/index.ts",
+          "hash": "576509309544685463"
+        },
+        {
+          "file": "apps/organisation/src/components/Kitchen/kitchen.module.scss",
+          "hash": "8654514714508787712"
+        },
+        {
+          "file": "apps/organisation/src/components/Kitchen/kitchen.tsx",
+          "hash": "5306090999307543554",
+          "deps": [
+            "npm:react",
+            "npm:@apollo/client",
+            "ui",
+            "npm:react-router-dom",
+            "npm:@mui/material",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Cashier/cashierList.tsx",
+          "hash": "12845816947440510640",
+          "deps": [
+            "ui",
+            "npm:react",
+            "npm:@apollo/client",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Cashier/cashierReport.tsx",
+          "hash": "7453232544379211377",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-router-dom",
+            "npm:@apollo/client",
+            "npm:@mui/x-date-pickers-pro",
+            "npm:dayjs",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Cashier/index.ts",
+          "hash": "9073618433108614974"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Cashier/userCashierDetail.tsx",
+          "hash": "11889200446077961558",
+          "deps": [
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react",
+            "npm:react-i18next",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Inventory/index.ts",
+          "hash": "6665466065447410121"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Inventory/inventory.tsx",
+          "hash": "17298718592609732402",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@apollo/client",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:@mui/icons-material",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Logs/index.ts",
+          "hash": "6522581955592901832"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Logs/logs.tsx",
+          "hash": "9528623433971789834",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "ui",
+            "npm:@mui/x-date-pickers-pro",
+            "npm:dayjs",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/index.ts",
+          "hash": "3352184959596170982"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/rawMaterial.tsx",
+          "hash": "13917083027459310011",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:react-i18next",
+            "npm:@mui/icons-material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/RawMaterial/rawMaterialForm.tsx",
+          "hash": "3102875804939477639",
+          "deps": [
+            "ui",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/form.tsx",
+          "hash": "9510571644578365379",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react-router-dom",
+            "npm:@apollo/client",
+            "npm:@mui/material",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/index.tsx",
+          "hash": "11330189998438333285"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/recipe.module.scss",
+          "hash": "10736825949623315593"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/Recipe/recipe.tsx",
+          "hash": "11165128086402864287",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:react-router-dom",
+            "ui",
+            "npm:@mui/material",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Inventory/index.ts",
+          "hash": "3955207534106696630"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/OrderDetails/orderDetails.tsx",
+          "hash": "979099096268745218",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:react-router-dom",
+            "ui",
+            "npm:react-i18next",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/OrderList/orderList.tsx",
+          "hash": "17880095840980055336",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-router-dom",
+            "npm:react-toastify",
+            "npm:@mui/icons-material",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/OrderList/orderTable.tsx",
+          "hash": "9167369964750168794",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-router-dom",
+            "npm:react",
+            "npm:@apollo/client",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/index.ts",
+          "hash": "1205618863636248683"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/order.module.scss",
+          "hash": "2208977435692860748"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/orderDetailsTable.tsx",
+          "hash": "11744973097968389420",
+          "deps": [
+            "ui",
+            "npm:dayjs",
+            "npm:@mui/icons-material",
+            "npm:react",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/orderHistory.tsx",
+          "hash": "15802790927283124663",
+          "deps": [
+            "ui",
+            "npm:@mui/material",
+            "npm:react",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/orderSummary.tsx",
+          "hash": "6202731095707717723",
+          "deps": [
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/payCounter.tsx",
+          "hash": "11145139042916013187",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react-router-dom",
+            "ui",
+            "npm:react",
+            "npm:@mui/icons-material",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Order/tipCouponModal.tsx",
+          "hash": "3510258743792015159",
+          "deps": [
+            "ui",
+            "npm:@hookform/resolvers",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Category/category.tsx",
+          "hash": "8199128764817367687",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Category/index.ts",
+          "hash": "3411949239235525801"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Characterstics/characterstics.tsx",
+          "hash": "9849255306950288369",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Characterstics/index.ts",
+          "hash": "14069004596041631656"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/comboOptions.tsx",
+          "hash": "14266387210557580756",
+          "deps": [
+            "npm:react-hook-form",
+            "npm:react",
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/comboProductsSelection.tsx",
+          "hash": "11892462272416486424",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/combos.tsx",
+          "hash": "17638197407349128086",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:@mui/icons-material",
+            "ui",
+            "npm:react-router-dom",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/combosForm.tsx",
+          "hash": "7478249968100861067",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:react-router-dom",
+            "npm:@apollo/client",
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/combosView.tsx",
+          "hash": "13855994531430828334",
+          "deps": [
+            "npm:react",
+            "npm:@apollo/client",
+            "npm:react-router-dom",
+            "ui",
+            "npm:i18next",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Combos/index.ts",
+          "hash": "9115389354879691154"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ComplementaryProduct/complementary.tsx",
+          "hash": "17778470674555127859",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:@apollo/client",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ComplementaryProduct/index.ts",
+          "hash": "4441612462290943642"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Modifier/index.ts",
+          "hash": "367415222958666117"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Modifier/modifier.tsx",
+          "hash": "2832406079658397744",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:i18next",
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/Product.modal.ts",
+          "hash": "14665774391695518327"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/basicDetails.tsx",
+          "hash": "987627290214448684",
+          "deps": [
+            "npm:react-hook-form",
+            "ui",
+            "npm:react-router-dom",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/commonTabs.tsx",
+          "hash": "7691818366287087372",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/material",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/extraDetails.tsx",
+          "hash": "11530183142330102541",
+          "deps": [
+            "ui",
+            "npm:react-hook-form",
+            "npm:react-router-dom",
+            "npm:react",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/formTypes.ts",
+          "hash": "17376359199628029187",
+          "deps": [
+            "npm:react-hook-form"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/index.ts",
+          "hash": "9515463142417284117"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/productForm.tsx",
+          "hash": "9631435498147858477",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:react-router-dom",
+            "npm:@apollo/client",
+            "ui",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductForm/validationSchema.ts",
+          "hash": "11539775966331433938",
+          "deps": [
+            "ui",
+            "npm:yup",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/index.ts",
+          "hash": "1378878126652930384"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/productManagement.module.scss",
+          "hash": "17583090672413145762"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductMaster/productManagement.tsx",
+          "hash": "11911297813025187858",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:@mui/icons-material",
+            "ui",
+            "npm:react-router-dom",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductView/commonDetailsView.tsx",
+          "hash": "13251819029051419418",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-slick"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductView/index.ts",
+          "hash": "9274177107088693735"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductView/productView.module.scss",
+          "hash": "18139885922174825707"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductView/productView.tsx",
+          "hash": "4911079944002432466",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:i18next",
+            "ui",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/ProductView/types.ts",
+          "hash": "1921108168695139813"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/Product/index.ts",
+          "hash": "1611948449096044155"
+        },
+        {
+          "file": "apps/organisation/src/components/Managements/index.ts",
+          "hash": "4780808370968418978"
+        },
+        {
+          "file": "apps/organisation/src/components/Tax/index.ts",
+          "hash": "1665809060856417963"
+        },
+        {
+          "file": "apps/organisation/src/components/Tax/tax.module.scss",
+          "hash": "1904683834433464315"
+        },
+        {
+          "file": "apps/organisation/src/components/Tax/tax.tsx",
+          "hash": "8451115314951011621",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Transaction/index.ts",
+          "hash": "6961150892355133278"
+        },
+        {
+          "file": "apps/organisation/src/components/Transaction/transaction.tsx",
+          "hash": "13033218966205609860",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Transaction/transactionFormModal.tsx",
+          "hash": "12443344255180082202",
+          "deps": [
+            "npm:react",
+            "ui",
+            "npm:react-hook-form",
+            "npm:@hookform/resolvers",
+            "npm:yup",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/Units/index.ts",
+          "hash": "11094164227715487761"
+        },
+        {
+          "file": "apps/organisation/src/components/Units/units.tsx",
+          "hash": "3632809575290402255",
+          "deps": [
+            "npm:react",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "ui",
+            "npm:@apollo/client",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/User/index.ts",
+          "hash": "16455189457810195197"
+        },
+        {
+          "file": "apps/organisation/src/components/User/userForm.tsx",
+          "hash": "7017052319131724185",
+          "deps": [
+            "ui",
+            "npm:react-hook-form",
+            "npm:@apollo/client",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/components/User/userList.tsx",
+          "hash": "17210578379703390959",
+          "deps": [
+            "npm:@apollo/client",
+            "npm:react",
+            "ui",
+            "npm:@mui/x-data-grid-premium",
+            "npm:react-hook-form",
+            "npm:yup",
+            "npm:@hookform/resolvers",
+            "npm:react-toastify",
+            "npm:i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/constants/index.ts",
+          "hash": "2510119414760349942"
+        },
+        {
+          "file": "apps/organisation/src/constants/messages.ts",
+          "hash": "5444174238596973454"
+        },
+        {
+          "file": "apps/organisation/src/context/socket.tsx",
+          "hash": "11736972974834282289",
+          "deps": [
+            "npm:react",
+            "npm:socket.io-client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/context/user.tsx",
+          "hash": "7101403459190286745",
+          "deps": [
+            "npm:axios",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/organisation/src/hoc/withPermission.tsx",
+          "hash": "14841504307339160464",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/hooks/index.ts",
+          "hash": "7095104498547180919"
+        },
+        {
+          "file": "apps/organisation/src/hooks/useFileUpload.ts",
+          "hash": "416536727117797462",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/hooks/useFinalPrice.ts",
+          "hash": "5756424535000021626",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/hooks/useProductList.ts",
+          "hash": "858757956443521476",
+          "deps": [
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/hooks/useStepForm.ts",
+          "hash": "12898557491584299318",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/hooks/useTransactionCodes.ts",
+          "hash": "11098777210108345452",
+          "deps": [
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/layout/Layout.module.scss",
+          "hash": "384939516101574517"
+        },
+        {
+          "file": "apps/organisation/src/layout/Layout.tsx",
+          "hash": "9830525943112247771",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:@mui/material",
+            "npm:react",
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react-i18next",
+            "npm:@apollo/client",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/layout/header.tsx",
+          "hash": "11013341114826816997",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "npm:@apollo/client",
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react",
+            "npm:react-toastify",
+            "npm:@tanstack/react-query",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/main.tsx",
+          "hash": "17913026649747484406",
+          "deps": [
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/pages/Auth/Auth.tsx",
+          "hash": "15335283618887041222",
+          "deps": [
+            "npm:react-router-dom",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/pages/Auth/index.ts",
+          "hash": "10055867674555374016"
+        },
+        {
+          "file": "apps/organisation/src/pages/Profile/Profile.tsx",
+          "hash": "18265826908645779973"
+        },
+        {
+          "file": "apps/organisation/src/pages/Profile/index.ts",
+          "hash": "16101952292047954576"
+        },
+        {
+          "file": "apps/organisation/src/pages/noAccess.tsx",
+          "hash": "8184680771316784103",
+          "deps": [
+            "ui",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/routes/appRoutes.tsx",
+          "hash": "16108422937819342927",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@mui/material",
+            "npm:react-i18next",
+            "npm:@tanstack/react-query",
+            "ui",
+            "npm:@apollo/client"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/routes/index.ts",
+          "hash": "8234680082801519771"
+        },
+        {
+          "file": "apps/organisation/src/routes/privateRoutes.tsx",
+          "hash": "6889831725211465495",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:i18next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/routes/publicRoutes.tsx",
+          "hash": "7660678765598288417",
+          "deps": [
+            "npm:react-router-dom",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/styles.scss",
+          "hash": "4930613235665952370"
+        },
+        {
+          "file": "apps/organisation/src/svg.d.ts",
+          "hash": "7594992203284815493",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/utils/deleteImage.ts",
+          "hash": "2035278663035560859",
+          "deps": [
+            "npm:aws-sdk"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/utils/permission.tsx",
+          "hash": "8153711136475619095",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:react",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/utils/productUtil.ts",
+          "hash": "15819879062198510772"
+        },
+        {
+          "file": "apps/organisation/src/utils/uploadImage.ts",
+          "hash": "17514877254648562744",
+          "deps": [
+            "npm:aws-sdk",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/organisation/src/vite-env.d.ts",
+          "hash": "4346551397233632145"
+        },
+        {
+          "file": "apps/organisation/tailwind.config.js",
+          "hash": "14242995927995164225",
+          "deps": [
+            "npm:tailwindcss"
+          ]
+        },
+        {
+          "file": "apps/organisation/tsconfig.app.json",
+          "hash": "7323242329642577182"
+        },
+        {
+          "file": "apps/organisation/tsconfig.json",
+          "hash": "749806647945258561"
+        },
+        {
+          "file": "apps/organisation/vite.config.ts",
+          "hash": "10443397684192132330",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite",
+            "npm:vite-plugin-svgr"
           ]
         }
       ],
@@ -5892,6 +5867,17 @@
             "npm:react-toastify",
             "npm:i18next"
           ]
+        },
+        {
+          "file": "ui/src/assets/index.tsx",
+          "hash": "1974064125242903675",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "ui/src/assets/logo.svg",
+          "hash": "4115867920610272835"
         },
         {
           "file": "ui/src/components/Card/card.tsx",

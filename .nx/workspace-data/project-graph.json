@@ -22957,6 +22957,21 @@
     "admin": [
       {
         "source": "admin",
+        "target": "npm:postcss-import",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:tailwindcss",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "admin",
         "target": "npm:@mui/material",
         "type": "static"
       },
@@ -54138,5 +54153,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1755717084017
+  "computedAt": 1755861895451
 }
