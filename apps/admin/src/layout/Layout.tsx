@@ -1,6 +1,11 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Header from '../Containers/Header';
 import SideNavigation from '../Containers/SideNavigation';
+import { Iconbutton } from '@ethos-frontend/ui';
+import {
+  ArrowBackIosNewOutlined,
+  ArrowForwardIosOutlined,
+} from '@mui/icons-material';
 
 interface Props {
   children?: ReactNode;
@@ -31,14 +36,14 @@ export default function Layout({ children }: Props): JSX.Element {
           collapsed ? 'w-16' : 'w-72'
         }`}
       >
-        <button
-          type="button"
-          aria-label="Toggle sidebar"
-          className="absolute top-4 right-4 cursor-pointer bg-transparent border-0"
-          onClick={toggle}
-        >
-          {collapsed ? '»' : '«'}
-        </button>
+        <div className="absolute top-4 right-4">
+          <Iconbutton
+            MuiIcon={collapsed ? ArrowForwardIosOutlined : ArrowBackIosNewOutlined}
+            size="small"
+            aria-label="Toggle sidebar"
+            onClick={toggle}
+          />
+        </div>
         {!collapsed && <SideNavigation />}
       </aside>
       <div className="flex flex-1 flex-col">
