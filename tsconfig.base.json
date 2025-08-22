@@ -28,6 +28,7 @@
       "@ethos-frontend/locale": ["ui/src/locale/index.ts"],
       "@ethos-frontend/ui": ["ui/src/index.ts"],
       "@ethos-frontend/utils": ["ui/src/utils/index.ts"],
+      "@ethos-frontend/assets": ["ui/src/assets/index.tsx"],
       "@organisation/api/*": ["apps/organisation/src/api/*"]
     }
   },
