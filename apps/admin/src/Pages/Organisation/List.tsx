@@ -12,9 +12,9 @@ import {
   GridSortModel,
 } from "@mui/x-data-grid-premium";
 import { Menu, MenuItem } from "@mui/material";
-import WarningDialog from "../../Components/WarningDialog";
-import RejectDialog from "../../Components/RejectDialog";
-import CommissionDialog from "../../Components/CommissionDialog";
+import WarningDialog from "../../components/WarningDialog";
+import RejectDialog from "../../components/RejectDialog";
+import CommissionDialog from "../../components/CommissionDialog";
 import { toast } from "react-toastify";
 import { Search, MoreVert } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
@@ -63,7 +63,7 @@ export default function List() {
 
   useEffect(() => {
     if (data) {
-      const mapped = (data?.data || []).map((org: any) => ({
+      const mapped = (data?.data.data || [])?.map((org: any) => ({
         id: org._id,
         name: `${org.ownerFName} ${org.ownerLName}`,
         email: org.email,
@@ -73,7 +73,7 @@ export default function List() {
         orgName: org.orgName,
       }));
       setRows(mapped);
-      setRowCount(data?.totalItems || 0);
+      setRowCount(data?.data?.totalItems || 0);
     }
   }, [data]);
 
@@ -213,7 +213,7 @@ export default function List() {
 
         {selectedRow?.status === "blocked" && (
           <MenuItem onClick={() => handleUserAction("blocked")}>
-            Active
+            Unblock
           </MenuItem>
         )}
 
@@ -251,8 +251,7 @@ export default function List() {
       <WarningDialog
         open={deleteOpen}
         handleClose={() => setDeleteOpen(false)}
-        title="Delete"
-        description="Do you want to delete this Organisation ?"
+        description="Do you want to delete this Organisation?"
         type="delete"
         onClick={handleDelete}
         cancelBtnText="Cancel"

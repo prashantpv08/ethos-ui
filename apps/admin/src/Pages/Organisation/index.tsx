@@ -1,8 +1,4 @@
-import List from "./List";
-
-interface Props {
-  page: string;
-}
+import List from "./list";
 
 const Organisation = () => {
   return <List />;

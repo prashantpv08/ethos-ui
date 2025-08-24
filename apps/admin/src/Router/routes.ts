@@ -1,24 +1,16 @@
 import { lazy } from "react";
-import { ROUTES } from "../helpers/contants";
+import { ROUTES } from "../helpers/constants";
 import { routeTypes } from "../types";
+import Login from "../pages/Login/login";
 
-const DashboardWrapper = lazy(() => import("../Pages/Dashboard"));
-const AuthLayout = lazy(() => import("../Containers/AuthLayout"));
-const Organisation = lazy(() => import("../Pages/Organisation"));
+const Organisation = lazy(() => import("../pages/Organisation"));
 
 export const pageRoutes: routeTypes[] = [
-  {
-    id: 1,
-    name: "Dashboard",
-    path: ROUTES.DASHBOARD,
-    Component: DashboardWrapper,
-    isPrivate: true,
-  },
   {
     id: 2,
     name: "Login",
     path: ROUTES.LOGIN,
-    Component: AuthLayout,
+    Component: Login,
     isPrivate: false,
     pageProp: { page: "Login" },
   },
@@ -26,7 +18,7 @@ export const pageRoutes: routeTypes[] = [
   {
     id: 13,
     name: "Organisation",
-    path: ROUTES.ORGANISATION,
+    path: ROUTES.DASHBOARD,
     Component: Organisation,
     isPrivate: true,
     pageProp: { page: "organisation" },

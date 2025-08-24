@@ -10,7 +10,7 @@ import {
   useResponsive,
 } from "@ethos-frontend/utils";
 import { useNavigate } from "react-router-dom";
-import { ROUTES } from "../../helpers/contants";
+import { ROUTES } from "../../helpers/constants";
 import { useTranslation } from "react-i18next";
 
 export default function Login() {

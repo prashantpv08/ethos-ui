@@ -12,7 +12,7 @@ export default defineConfig({
     port: 4200,
     host: 'localhost',
     fs: {
-      allow: [resolve(__dirname, '../../ui/src/fonts/assets')],
+      allow: [resolve(__dirname, '../../ui/src/fonts')],
     },
   },
 
@@ -27,6 +27,7 @@ export default defineConfig({
     },
   },
 
+  assetsInclude: ['**/*.eot'],
   plugins: [react(), nxViteTsPaths()],
 
   build: {

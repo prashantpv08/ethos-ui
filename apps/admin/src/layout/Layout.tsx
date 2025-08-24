@@ -1,32 +1,42 @@
-import { ReactNode, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../Containers/Header';
-import SideNavigation from '../Containers/SideNavigation';
-import { Iconbutton } from '@ethos-frontend/ui';
+import { ReactNode, useLayoutEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import SideNavigation from "../components/SideNavigation";
+import { Iconbutton } from "@ethos-frontend/ui";
 import {
   ArrowBackIosNewOutlined,
   ArrowForwardIosOutlined,
-} from '@mui/icons-material';
-import { EthosLogo, EthosSmallLogo } from '@ethos-frontend/assets';
+} from "@mui/icons-material";
+import { EthosLogo, EthosSmallLogo } from "@ethos-frontend/assets";
 
 interface Props {
   children?: ReactNode;
 }
 
-export default function Layout({ children }: Props): JSX.Element {
-  const [collapsed, setCollapsed] = useState(false);
+export default function Layout({ children }: Props) {
+  const [collapsed, setCollapsed] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    const stored = window.localStorage.getItem("adminSidebarCollapsed");
+    return stored === "true";
+  });
 
-  useEffect(() => {
-    const stored = localStorage.getItem('adminSidebarCollapsed');
-    if (stored !== null) {
-      setCollapsed(stored === 'true');
+  useLayoutEffect(() => {
+    try {
+      const stored = window.localStorage.getItem("adminSidebarCollapsed");
+      if (stored !== null) setCollapsed(stored === "true");
+    } catch {
+      // ignore
     }
   }, []);
 
   const toggle = () => {
     setCollapsed((prev) => {
       const next = !prev;
-      localStorage.setItem('adminSidebarCollapsed', next ? 'true' : 'false');
+      try {
+        window.localStorage.setItem("adminSidebarCollapsed", String(next));
+      } catch {
+        // ignore
+      }
       return next;
     });
   };
@@ -34,28 +44,42 @@ export default function Layout({ children }: Props): JSX.Element {
   return (
     <div className="flex min-h-screen bg-gray-100">
       <aside
-        className={`relative overflow-y-auto bg-white transition-all duration-300 ${
-          collapsed ? 'w-16' : 'w-72'
+        className={`relative bg-white border-r transition-[width] duration-300 ease-in-out shrink-0 ${
+          collapsed ? "w-16" : "w-72"
         }`}
+        aria-label="Sidebar"
+        aria-expanded={!collapsed}
+        data-collapsed={collapsed}
       >
-        <Link to="/" className="flex items-center justify-center py-4">
+        <button
+          type="button"
+          aria-label="Toggle sidebar"
+          onClick={toggle}
+          className="absolute z-20 -right-3 top-20 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/10"
+        >
+          <Iconbutton
+            MuiIcon={
+              collapsed ? ArrowForwardIosOutlined : ArrowBackIosNewOutlined
+            }
+            size="small"
+          />
+        </button>
+        <Link
+          to="/"
+          className={`flex items-center justify-center ${collapsed ? "p-2" : "p-4"}`}
+        >
           {collapsed ? <EthosSmallLogo /> : <EthosLogo />}
         </Link>
-        <div className="absolute top-4 right-4">
-          <Iconbutton
-            MuiIcon={collapsed ? ArrowForwardIosOutlined : ArrowBackIosNewOutlined}
-            size="small"
-            aria-label="Toggle sidebar"
-            onClick={toggle}
-          />
-        </div>
-        {!collapsed && <SideNavigation />}
+
+        <SideNavigation collapsed={collapsed} />
       </aside>
-      <div className="flex flex-1 flex-col">
+
+      <div className="flex flex-1 min-w-0 flex-col">
         <Header />
-        <main className="flex-1 overflow-y-auto p-4 bg-white">{children}</main>
+        <main className="flex-1 min-w-0 overflow-y-auto p-4 bg-white">
+          {children}
+        </main>
       </div>
     </div>
   );
 }
-

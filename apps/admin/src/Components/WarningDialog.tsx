@@ -3,7 +3,6 @@ import { Dailog as Dialog } from "@ethos-frontend/ui";
 interface Props {
   open: boolean;
   handleClose: () => void;
-  title: string;
   description?: string;
   type: "success" | "warning" | "delete";
   onClick: (e?: any) => void;
@@ -12,9 +11,7 @@ interface Props {
 }
 
 export default function WarningDialog({
-  title,
   description,
-  type,
   open,
   cancelBtnText,
   confirmBtnText,
@@ -28,7 +25,8 @@ export default function WarningDialog({
       onConfirm={onClick}
       cancelText={cancelBtnText}
       confirmText={confirmBtnText}
-      title={title}
+      title="Remove Organisation"
+      size='md'
     >
       {description}
     </Dialog>

@@ -41,6 +41,12 @@
       "static/chunks/_pages-dir-browser_ui_src_components_ControlledRadio_index_ts.js"
     ]
   },
+  "../../../ui/src/components/index.ts -> ./ForgotPasswordForm": {
+    "id": "../../../ui/src/components/index.ts -> ./ForgotPasswordForm",
+    "files": [
+      "static/chunks/_pages-dir-browser_ui_src_components_ForgotPasswordForm_index_ts.js"
+    ]
+  },
   "../../../ui/src/components/index.ts -> ./FormFields": {
     "id": "../../../ui/src/components/index.ts -> ./FormFields",
     "files": [
@@ -53,6 +59,12 @@
       "static/chunks/_pages-dir-browser_ui_src_components_Grid_index_ts.js"
     ]
   },
+  "../../../ui/src/components/index.ts -> ./LanguageDropdown": {
+    "id": "../../../ui/src/components/index.ts -> ./LanguageDropdown",
+    "files": [
+      "static/chunks/_pages-dir-browser_ui_src_components_LanguageDropdown_index_ts.js"
+    ]
+  },
   "../../../ui/src/components/index.ts -> ./LoginForm": {
     "id": "../../../ui/src/components/index.ts -> ./LoginForm",
     "files": [
@@ -63,6 +75,18 @@
     "id": "../../../ui/src/components/index.ts -> ./PhoneInputWithCountry",
     "files": [
       "static/chunks/_pages-dir-browser_ui_src_components_PhoneInputWithCountry_index_ts.js"
+    ]
+  },
+  "../../../ui/src/components/index.ts -> ./RegisterForm": {
+    "id": "../../../ui/src/components/index.ts -> ./RegisterForm",
+    "files": [
+      "static/chunks/_pages-dir-browser_ui_src_components_RegisterForm_index_ts.js"
+    ]
+  },
+  "../../../ui/src/components/index.ts -> ./ResetPasswordForm": {
+    "id": "../../../ui/src/components/index.ts -> ./ResetPasswordForm",
+    "files": [
+      "static/chunks/_pages-dir-browser_ui_src_components_ResetPasswordForm_index_ts.js"
     ]
   },
   "../../../ui/src/index.ts -> ./lib/autocomplete": {

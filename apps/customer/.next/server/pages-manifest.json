@@ -2,9 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/explore": "pages/explore.js",
-  "/checkout": "pages/checkout.js",
-  "/cart": "pages/cart.js",
-  "/confirmation": "pages/confirmation.js",
-  "/payment": "pages/payment.js"
+  "/error": "pages/error.js",
+  "/": "pages/index.js",
+  "/[id]": "pages/[id].js",
+  "/api/login": "pages/api/login.js",
+  "/explore": "pages/explore.js"
 }

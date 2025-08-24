@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import {
   Dailog as Dialog,
   AutoComplete,
   Select,
   TextField,
-} from '@ethos-frontend/ui';
-import { useRestMutation, useRestQuery } from '@ethos-frontend/hook';
-import { API_URL } from '@ethos-frontend/constants';
-import { useForm, Controller } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+} from "@ethos-frontend/ui";
+import { useRestMutation, useRestQuery } from "@ethos-frontend/hook";
+import { API_URL } from "@ethos-frontend/constants";
+import { useForm, Controller } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 interface Option {
   value: string;
@@ -35,11 +35,12 @@ const schema = yup.object({
       yup.object({
         value: yup.string().required(),
         label: yup.string().required(),
-      }),
+      })
     )
-    .min(1, 'Organisation is required'),
-  commissionType: yup.string().required('Commission type is required'),
-  commissionValue: yup.string().required('Commission value is required'),
+    .min(1, "Organisation is required")
+    .required(),
+  commissionType: yup.string().required("Commission type is required"),
+  commissionValue: yup.string().required("Commission value is required"),
 });
 
 export default function CommissionDialog({ open, onClose, onSaved }: Props) {
@@ -53,16 +54,16 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
     resolver: yupResolver(schema),
     defaultValues: {
       orgIds: [],
-      commissionType: '',
-      commissionValue: '',
+      commissionType: "",
+      commissionValue: "",
     },
-    mode: 'onChange',
+    mode: "onChange",
   });
 
   const { data: orgData } = useRestQuery<any>(
-    'active-orgs',
+    "active-orgs",
     API_URL.activeOrg,
-    { enabled: open },
+    { enabled: open }
   );
 
   useEffect(() => {
@@ -75,10 +76,9 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
     }
   }, [orgData]);
 
-  const { mutate: saveCommission } = useRestMutation(
-    API_URL.updateCommission,
-    { method: 'PATCH' },
-  );
+  const { mutate: saveCommission } = useRestMutation(API_URL.updateCommission, {
+    method: "PATCH",
+  });
 
   const onSubmit = (data: FormValues) => {
     saveCommission(
@@ -93,7 +93,7 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
           onSaved();
           reset();
         },
-      },
+      }
     );
   };
 
@@ -117,6 +117,7 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
           control={control}
           render={({ field }) => (
             <AutoComplete
+              fullWidth
               label="Select Organisations"
               options={orgOptions}
               value={field.value}
@@ -134,8 +135,8 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
             <Select
               label="Commission Type"
               items={[
-                { value: 'Flat', label: 'Flat' },
-                { value: 'Percentage', label: 'Percentage' },
+                { value: "Flat", label: "Flat" },
+                { value: "Percentage", label: "Percentage" },
               ]}
               value={field.value}
               onChange={(e) => field.onChange(e.target.value as string)}

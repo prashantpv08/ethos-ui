@@ -99,7 +99,10 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "options": {}
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "e2e"]
+      }
     }
   },
   "useInferencePlugins": false

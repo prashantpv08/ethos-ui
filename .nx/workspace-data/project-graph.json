@@ -22905,26 +22905,6 @@
       },
       {
         "source": "customer",
-        "target": "npm:@stripe/react-stripe-js",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@stripe/react-stripe-js",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@stripe/stripe-js",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@stripe/stripe-js",
-        "type": "static"
-      },
-      {
-        "source": "customer",
         "target": "npm:@nx/next",
         "type": "static"
       },
@@ -22946,6 +22926,16 @@
       {
         "source": "customer",
         "target": "npm:@mui/icons-material",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:@stripe/stripe-js",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:@stripe/react-stripe-js",
         "type": "static"
       },
       {
@@ -22972,12 +22962,42 @@
       },
       {
         "source": "admin",
-        "target": "npm:react",
+        "target": "npm:react-toastify",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:@tanstack/react-query",
         "type": "static"
       },
       {
         "source": "admin",
         "target": "ui",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:react-hook-form",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:@hookform/resolvers",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:yup",
         "type": "static"
       },
       {
@@ -22992,27 +23012,7 @@
       },
       {
         "source": "admin",
-        "target": "npm:react-router-dom",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:yup",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:@hookform/resolvers",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:react-hook-form",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:react-toastify",
+        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -23022,27 +23022,7 @@
       },
       {
         "source": "admin",
-        "target": "npm:dayjs",
-        "type": "static"
-      },
-      {
-        "source": "admin",
         "target": "npm:@mui/x-data-grid-premium",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:@tanstack/react-query",
-        "type": "static"
-      },
-      {
-        "source": "admin",
-        "target": "npm:react-dom",
         "type": "static"
       },
       {
@@ -54148,5 +54128,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1755889225598
+  "computedAt": 1756056083225
 }

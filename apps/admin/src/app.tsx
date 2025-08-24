@@ -1,4 +1,4 @@
-import RoutesWrapper from "./Router";
+import RoutesWrapper from "./router";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { BrowserRouter } from "react-router-dom";
