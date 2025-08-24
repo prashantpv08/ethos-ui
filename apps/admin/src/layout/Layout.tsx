@@ -45,7 +45,7 @@ export default function Layout({ children }: Props) {
     <div className="flex min-h-screen bg-gray-100">
       <aside
         className={`relative bg-white border-r transition-[width] duration-300 ease-in-out shrink-0 ${
-          collapsed ? "w-16" : "w-72"
+          collapsed ? "w-16" : "w-56"
         }`}
         aria-label="Sidebar"
         aria-expanded={!collapsed}

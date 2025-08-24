@@ -1,8 +1,8 @@
 {
   "run": {
-    "command": "nx run-many -t build",
-    "startTime": "2025-08-24T18:59:23.999Z",
-    "endTime": "2025-08-24T19:04:20.673Z",
+    "command": "nx run-many -t build --produ",
+    "startTime": "2025-08-24T19:51:01.551Z",
+    "endTime": "2025-08-24T19:53:44.870Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "ui:build:production",
       "target": "build",
       "projectName": "ui",
-      "hash": "7233516209265018785",
-      "startTime": "2025-08-24T18:59:24.011Z",
-      "endTime": "2025-08-24T19:00:08.267Z",
+      "hash": "18004685912361497294",
+      "startTime": "2025-08-24T19:51:01.561Z",
+      "endTime": "2025-08-24T19:51:43.685Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -21,9 +21,9 @@
       "taskId": "co-screen:build:production",
       "target": "build",
       "projectName": "co-screen",
-      "hash": "5030196155246839641",
-      "startTime": "2025-08-24T19:00:08.335Z",
-      "endTime": "2025-08-24T19:01:16.490Z",
+      "hash": "3245897680441099621",
+      "startTime": "2025-08-24T19:51:43.764Z",
+      "endTime": "2025-08-24T19:52:41.792Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +32,9 @@
       "taskId": "admin:build:production",
       "target": "build",
       "projectName": "admin",
-      "hash": "5882109940053102962",
-      "startTime": "2025-08-24T19:00:08.335Z",
-      "endTime": "2025-08-24T19:01:53.624Z",
+      "hash": "4887370374742623616",
+      "startTime": "2025-08-24T19:51:43.764Z",
+      "endTime": "2025-08-24T19:52:46.150Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -43,9 +43,9 @@
       "taskId": "organisation:build",
       "target": "build",
       "projectName": "organisation",
-      "hash": "10436522986384837750",
-      "startTime": "2025-08-24T19:00:08.335Z",
-      "endTime": "2025-08-24T19:02:36.201Z",
+      "hash": "2677868425269623255",
+      "startTime": "2025-08-24T19:51:43.764Z",
+      "endTime": "2025-08-24T19:53:09.660Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -54,9 +54,9 @@
       "taskId": "customer:build:production",
       "target": "build",
       "projectName": "customer",
-      "hash": "2958238622471004359",
-      "startTime": "2025-08-24T19:01:16.875Z",
-      "endTime": "2025-08-24T19:04:20.560Z",
+      "hash": "11083254293838402087",
+      "startTime": "2025-08-24T19:52:41.894Z",
+      "endTime": "2025-08-24T19:53:44.829Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

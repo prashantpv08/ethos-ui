@@ -22867,6 +22867,11 @@
       },
       {
         "source": "admin",
+        "target": "npm:dayjs",
+        "type": "static"
+      },
+      {
+        "source": "admin",
         "target": "npm:@mui/x-data-grid-premium",
         "type": "static"
       },
@@ -53973,5 +53978,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1756062802184
+  "computedAt": 1756065005139
 }

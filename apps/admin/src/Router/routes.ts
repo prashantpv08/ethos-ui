@@ -3,9 +3,9 @@ import { ROUTES } from "../helpers/constants";
 import { routeTypes } from "../types";
 import Login from "../pages/Login/login";
 
-const Organisation = lazy(() => import("../Pages/Organisation"));
+const Organisation = lazy(() => import("../pages/Organisation/list"));
 const OrganisationDetails = lazy(
-  () => import("../Pages/Organisation/Details")
+  () => import("../pages/Organisation/details")
 );
 
 export const pageRoutes: routeTypes[] = [

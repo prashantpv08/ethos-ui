@@ -200,7 +200,7 @@ export default function List() {
   return (
     <div className="p-4">
       <div className="flex items-center justify-between pb-4">
-        <Heading variant="h5">Organisation</Heading>
+        <Heading variant="h5">Organisations List</Heading>
         <div className="flex items-center gap-2">
           <TextField
             onChange={handleSearch}
