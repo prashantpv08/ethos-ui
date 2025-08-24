@@ -3,7 +3,10 @@ import { ROUTES } from "../helpers/constants";
 import { routeTypes } from "../types";
 import Login from "../pages/Login/login";
 
-const Organisation = lazy(() => import("../pages/Organisation"));
+const Organisation = lazy(() => import("../Pages/Organisation"));
+const OrganisationDetails = lazy(
+  () => import("../Pages/Organisation/Details")
+);
 
 export const pageRoutes: routeTypes[] = [
   {
@@ -20,6 +23,14 @@ export const pageRoutes: routeTypes[] = [
     name: "Organisation",
     path: ROUTES.DASHBOARD,
     Component: Organisation,
+    isPrivate: true,
+    pageProp: { page: "organisation" },
+  },
+  {
+    id: 14,
+    name: "Organisation Details",
+    path: ROUTES.ORG_DETAIL,
+    Component: OrganisationDetails,
     isPrivate: true,
     pageProp: { page: "organisation" },
   },
