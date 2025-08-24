@@ -1,4 +1,5 @@
 import { ChangeEvent, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Table,
   TextField,
@@ -20,9 +21,11 @@ import { Search, MoreVert } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 import { useRestMutation, useRestQuery } from "@ethos-frontend/hook";
 import { API_URL } from "@ethos-frontend/constants";
+import { ROUTES } from "../../helpers/constants";
 
 export default function List() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [rows, setRows] = useState<GridRowsProp>([]);
   const [rowCount, setRowCount] = useState(0);
   const [page, setPage] = useState(0);
@@ -123,9 +126,37 @@ export default function List() {
   };
 
   const columns: GridColDef[] = [
-    { field: "orgName", headerName: "Organisation Name", flex: 1 },
+    {
+      field: "orgName",
+      headerName: "Organisation Name",
+      flex: 1,
+      renderCell: (params) => (
+        <span
+          className="cursor-pointer text-blue-600"
+          onClick={() =>
+            navigate(ROUTES.ORG_DETAIL.replace(":id", params.row.id as string))
+          }
+        >
+          {params.row.orgName}
+        </span>
+      ),
+    },
     { field: "name", headerName: "Owner Name", flex: 1 },
-    { field: "orgNumber", headerName: "Organisation Number", flex: 1 },
+    {
+      field: "orgNumber",
+      headerName: "Organisation Number",
+      flex: 1,
+      renderCell: (params) => (
+        <span
+          className="cursor-pointer text-blue-600"
+          onClick={() =>
+            navigate(ROUTES.ORG_DETAIL.replace(":id", params.row.id as string))
+          }
+        >
+          {params.row.orgNumber}
+        </span>
+      ),
+    },
     { field: "email", headerName: "Email", flex: 1, minWidth: 300 },
     { field: "businessType", headerName: "Business Type", flex: 1 },
     { field: "status", headerName: "Status", flex: 1 },
