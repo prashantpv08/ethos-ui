@@ -1,22 +1,22 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from 'react';
 import {
   Dailog as Dialog,
   AutoComplete,
   Select,
   TextField,
-} from "@ethos-frontend/ui";
-import { useRestMutation, useRestQuery } from "@ethos-frontend/hook";
-import { API_URL } from "@ethos-frontend/constants";
-import { useForm, Controller, useWatch } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+} from '@ethos-frontend/ui';
+import { useRestMutation, useRestQuery } from '@ethos-frontend/hook';
+import { API_URL } from '@ethos-frontend/constants';
+import { useForm, Controller, useWatch } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 interface Option {
   value: string;
   label: string;
 }
 type FormValues = yup.InferType<typeof schema>;
-
+type CommissionType = 'Flat' | 'Percentage' | 'Both';
 interface Props {
   open: boolean;
   onClose: () => void;
@@ -25,9 +25,9 @@ interface Props {
 
 const money = yup
   .number()
-  .transform((val, orig) => (orig === "" || orig === null ? undefined : val))
-  .typeError("Must be a number")
-  .min(0, "Must be ≥ 0");
+  .transform((val, orig) => (orig === '' || orig === null ? undefined : val))
+  .typeError('Must be a number')
+  .min(0, 'Must be ≥ 0');
 
 const schema = yup.object({
   orgIds: yup
@@ -36,30 +36,24 @@ const schema = yup.object({
       yup.object({
         value: yup.string().required(),
         label: yup.string().required(),
-      })
+      }),
     )
-    .min(1, "Organisation is required")
+    .min(1, 'Organisation is required')
     .required(),
   commissionType: yup
     .string()
-    .oneOf(["Flat", "Percentage", "Both"], "Commission type is required")
-    .required("Commission type is required"),
+    .oneOf(['Flat', 'Percentage', 'Both'], 'Commission type is required')
+    .required('Commission type is required'),
 
-  // conditional requirements
-  commissionValue: money.when("commissionType", {
-    is: (t: string) => t === "Flat" || t === "Percentage",
-    then: (s) => s.required("Commission value is required"),
-    otherwise: (s) => s.strip(), // drop from payload when not used
+  commissionFlatValue: money.when('commissionType', {
+    is: (t: CommissionType) => t === 'Flat' || t === 'Both',
+    then: (s) => s.required('Flat value is required'),
+    otherwise: (s) => s.optional(),
   }),
-  commissionFlatValue: money.when("commissionType", {
-    is: "Both",
-    then: (s) => s.required("Flat value is required"),
-    otherwise: (s) => s.strip(),
-  }),
-  commissionPercentValue: money.when("commissionType", {
-    is: "Both",
-    then: (s) => s.required("Percent value is required"),
-    otherwise: (s) => s.strip(),
+  commissionPercentValue: money.when('commissionType', {
+    is: (t: CommissionType) => t === 'Percentage' || t === 'Both',
+    then: (s) => s.required('Percent value is required'),
+    otherwise: (s) => s.optional(),
   }),
 });
 
@@ -75,19 +69,18 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
     defaultValues: {
       orgIds: [],
       commissionType: undefined as any,
-      commissionValue: undefined,
       commissionFlatValue: undefined,
       commissionPercentValue: undefined,
     },
-    mode: "onChange",
+    mode: 'onChange',
   });
 
-  const commissionType = useWatch({ control, name: "commissionType" });
+  const commissionType = useWatch({ control, name: 'commissionType' });
 
   const { data: orgData } = useRestQuery<any>(
-    "active-orgs",
+    'active-orgs',
     API_URL.activeOrg,
-    { enabled: open }
+    { enabled: open },
   );
 
   useEffect(() => {
@@ -101,60 +94,48 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
   }, [orgData]);
 
   const { mutate: saveCommission } = useRestMutation(API_URL.updateCommission, {
-    method: "PATCH",
+    method: 'PATCH',
   });
 
   const onSubmit = (data: FormValues) => {
     const orgIds = data.orgIds.map((o) => o.value);
 
-    if (data.commissionType === "Both") {
-      // Send BOTH-specific payload
-      saveCommission(
-        {
-          orgIds,
-          commissionType: "Both",
-          commissionFlatValue: Number(data.commissionFlatValue),
-          commissionPercentValue: Number(data.commissionPercentValue),
-        },
-        {
-          onSuccess: () => {
-            onClose();
-            onSaved();
-            reset();
-          },
-        }
-      );
-    } else {
-      // FLAT or PERCENTAGE -> legacy payload
-      saveCommission(
-        {
-          orgIds,
-          commissionType: data.commissionType,
-          commissionValue: Number(data.commissionValue),
-        },
-        {
-          onSuccess: () => {
-            onClose();
-            onSaved();
-            reset();
-          },
-        }
-      );
+    const payload: any = {
+      orgIds,
+      commissionType: data.commissionType,
+    };
+
+    if (data.commissionType === 'Flat' || data.commissionType === 'Both') {
+      payload.commissionFlatValue = data.commissionFlatValue;
     }
+    if (
+      data.commissionType === 'Percentage' ||
+      data.commissionType === 'Both'
+    ) {
+      payload.commissionPercentValue = data.commissionPercentValue;
+    }
+
+    saveCommission(payload, {
+      onSuccess: () => {
+        onClose();
+        onSaved();
+        reset();
+      },
+    });
   };
 
   const commissionTypeItems = useMemo(
     () => [
-      { value: "Flat", label: "Flat" },
-      { value: "Percentage", label: "Percentage" },
-      { value: "Both", label: "Both (Flat + %)" },
+      { value: 'Flat', label: 'Flat' },
+      { value: 'Percentage', label: 'Percentage' },
+      { value: 'Both', label: 'Both (Flat + %)' },
     ],
-    []
+    [],
   );
 
-  const showSingleValue =
-    commissionType === "Flat" || commissionType === "Percentage";
-  const showBothValues = commissionType === "Both";
+  const showFlat = commissionType === 'Flat' || commissionType === 'Both';
+  const showPercent =
+    commissionType === 'Percentage' || commissionType === 'Both';
 
   return (
     <Dialog
@@ -194,74 +175,55 @@ export default function CommissionDialog({ open, onClose, onSaved }: Props) {
             <Select
               label="Commission Type"
               items={commissionTypeItems}
-              value={field.value ?? ""}
+              value={field.value ?? ''}
               onChange={(e) => field.onChange(e.target.value as string)}
               error={!!errors.commissionType}
               helperText={errors.commissionType?.message}
             />
           )}
         />
-        {showSingleValue && (
+        <div className='flex gap-4 flex-1'>
+        {showFlat && (
           <Controller
-            name="commissionValue"
+            name="commissionFlatValue"
             control={control}
             render={({ field }) => (
               <TextField
-                label={
-                  commissionType === "Flat"
-                    ? "Commission Value (flat amount)"
-                    : "Commission Value (%)"
-                }
+                label="Flat Value"
+                fullWidth
                 type="number"
-                value={field.value ?? ""}
+                value={field.value ?? ''}
                 onChange={(e) => {
                   const v = e.target.value;
-                  field.onChange(v === "" ? undefined : Number(v));
+                  field.onChange(v === '' ? undefined : Number(v));
                 }}
-                error={!!errors.commissionValue}
-                helperText={errors.commissionValue?.message as string}
+                error={!!errors.commissionFlatValue}
+                helperText={errors.commissionFlatValue?.message as string}
               />
             )}
           />
         )}
-        {showBothValues && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Controller
-              name="commissionFlatValue"
-              control={control}
-              render={({ field }) => (
-                <TextField
-                  label="Flat Value"
-                  type="number"
-                  value={field.value ?? ""}
-                  onChange={(e) => {
-                    const v = e.target.value;
-                    field.onChange(v === "" ? undefined : Number(v));
-                  }}
-                  error={!!errors.commissionFlatValue}
-                  helperText={errors.commissionFlatValue?.message as string}
-                />
-              )}
-            />
-            <Controller
-              name="commissionPercentValue"
-              control={control}
-              render={({ field }) => (
-                <TextField
-                  label="Percent Value (%)"
-                  type="number"
-                  value={field.value ?? ""}
-                  onChange={(e) => {
-                    const v = e.target.value;
-                    field.onChange(v === "" ? undefined : Number(v));
-                  }}
-                  error={!!errors.commissionPercentValue}
-                  helperText={errors.commissionPercentValue?.message as string}
-                />
-              )}
-            />
-          </div>
+        {showPercent && (
+          <Controller
+            name="commissionPercentValue"
+            control={control}
+            render={({ field }) => (
+              <TextField
+                label="Percent Value (%)"
+                type="number"
+                fullWidth
+                value={field.value ?? ''}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  field.onChange(v === '' ? undefined : Number(v));
+                }}
+                error={!!errors.commissionPercentValue}
+                helperText={errors.commissionPercentValue?.message as string}
+              />
+            )}
+          />
         )}
+        </div>
       </div>
     </Dialog>
   );

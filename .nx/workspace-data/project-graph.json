@@ -22675,237 +22675,12 @@
     "customer": [
       {
         "source": "customer",
-        "target": "npm:@apollo/client",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@apollo/client",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/lab",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/lab",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/system",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/x-data-grid-premium",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/x-date-pickers",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/x-date-pickers-pro",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@mui/x-license",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@tanstack/react-query",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@tanstack/react-query",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:axios",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:crypto-js",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:dayjs",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:i18next",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:i18next",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:i18next-browser-languagedetector",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:i18next-http-backend",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:js-cookie",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:jwt-decode",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:next",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:next",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-dom",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-i18next",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-i18next",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-is",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-router-dom",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-toastify",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-toastify",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:node-fetch",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:node-fetch",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@hookform/resolvers",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:@hookform/resolvers",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:libphonenumber-js",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-hook-form",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-hook-form",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-lottie",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-lottie",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-multi-carousel",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-multi-carousel",
-        "type": "static"
-      },
-      {
-        "source": "customer",
-        "target": "npm:react-phone-input-2",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:yup",
-        "type": "dynamic"
-      },
-      {
-        "source": "customer",
-        "target": "npm:yup",
-        "type": "static"
-      },
-      {
-        "source": "customer",
         "target": "npm:@nx/next",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react",
         "type": "static"
       },
       {
@@ -22915,7 +22690,37 @@
       },
       {
         "source": "customer",
+        "target": "npm:@apollo/client",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:axios",
+        "type": "static"
+      },
+      {
+        "source": "customer",
         "target": "ui",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:next",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react-i18next",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react-multi-carousel",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react-lottie",
         "type": "static"
       },
       {
@@ -22930,12 +22735,52 @@
       },
       {
         "source": "customer",
+        "target": "npm:@tanstack/react-query",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react-hook-form",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:yup",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:@hookform/resolvers",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:react-toastify",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:i18next",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:@mui/lab",
+        "type": "static"
+      },
+      {
+        "source": "customer",
         "target": "npm:@stripe/stripe-js",
         "type": "static"
       },
       {
         "source": "customer",
         "target": "npm:@stripe/react-stripe-js",
+        "type": "static"
+      },
+      {
+        "source": "customer",
+        "target": "npm:node-fetch",
         "type": "static"
       },
       {
@@ -54128,5 +53973,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1756060112593
+  "computedAt": 1756062802184
 }

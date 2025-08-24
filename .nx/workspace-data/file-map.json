@@ -43,76 +43,76 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "storybook-migration-summary.md",
-        "hash": "4565494848689173010"
+        "file": ".vscode/extensions.json",
+        "hash": "10066300031063478629"
       },
       {
-        "file": ".DS_Store",
-        "hash": "15676146132430466888"
+        "file": ".eslintrc.json",
+        "hash": "13447780663185909745"
       },
       {
         "file": "tax.html",
         "hash": "3998199932679906846"
       },
       {
-        "file": "README.md",
-        "hash": "3529177930900412919"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14674157652840731827"
-      },
-      {
-        "file": "package.json",
-        "hash": "2823075340304183719"
-      },
-      {
-        "file": "appspec.yml",
-        "hash": "1771599891193535147"
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "18056836014932079878"
       },
       {
-        "file": "nx.json",
-        "hash": "1710823921016680181"
-      },
-      {
-        "file": "CHANGELOG.md",
-        "hash": "16184507339836904816"
-      },
-      {
-        "file": "scripts/start_server.sh",
-        "hash": "5631448983292931722"
-      },
-      {
-        "file": "scripts/restart_server.sh",
-        "hash": "14753641358808028572"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": "apps/.DS_Store",
-        "hash": "16019197583954815094"
+        "file": "README.md",
+        "hash": "3529177930900412919"
       },
       {
         "file": "jest.preset.js",
         "hash": "15554043170078602512"
       },
       {
+        "file": "nx.json",
+        "hash": "1710823921016680181"
+      },
+      {
+        "file": "package.json",
+        "hash": "2823075340304183719"
+      },
+      {
+        "file": "storybook-migration-summary.md",
+        "hash": "4565494848689173010"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8618838976421826986"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "924875193486690378"
+      },
+      {
+        "file": ".vscode/mcp.json",
+        "hash": "16669523274055152517"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "16184507339836904816"
       }
     ],
     "projectFileMap": {
       "customer": [
-        {
-          "file": "apps/customer/.DS_Store",
-          "hash": "12084904154283225665"
-        },
         {
           "file": "apps/customer/.env.example",
           "hash": "14531445945950726122"
@@ -120,2040 +120,6 @@
         {
           "file": "apps/customer/.eslintrc.json",
           "hash": "14563287906453647769"
-        },
-        {
-          "file": "apps/customer/.next/build-manifest.json",
-          "hash": "12398840028453500456"
-        },
-        {
-          "file": "apps/customer/.next/cache/.rscinfo",
-          "hash": "9874463652209655200"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/-8jwmtcISW7t06sPMw6-XBLba51GryNdSQktqOY41ko/60.1742580379279.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/-mMC56N__uprdQeZ7OuE8isGsguqGs39dOzvZL97tjY/60.1756055989526.RqgFDVBu75AcMt6iH9pIYmyqEiOEe_OFV9PLkWgJp80.IjEzODYyYTQ3NWQ2ZjVjNTcyNTU0MGM3NmZjN2EyNDI1Ig.webp",
-          "hash": "14609849401113069689"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/1UPFNs4q3OLlI0kfuBlTVLgVQKaXP67RmO4RPHO7R44/60.1750358010903.bLi7DKMt3VCWMq5zB6JUdyrHqNWc53Pe91rzfU3Q9T8.IjAwOTVlNGIwOGY3NGVmNDgyYzEyMmRkN2NjMzEzNjBhIg.webp",
-          "hash": "1957629649000702424"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/1X2zMJP4VMDvV4HhPjGytJOM3_hvdk2xfPOSFY5jeFk/60.1742478946018.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/2fOumPjiUXyRT4c4qE_RC-vn3LRNUyicyUifIdTJKNk/60.1748115405427.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/4UIxL3cJw53JYVzDqAwQnE7Q29KrsAtCyyBw6F_Mt1g/60.1742491117258.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/4YkVOJvy4-mdltMKykseRtqMQjNuctRSMwIcmjd_ZQQ/60.1756055989222.MXsxUYc99k9ixEwkHpsvs6YbjXeCr1XRwgFCvNcbbX0.IjI2OTk3NjJiZTlkN2FjOGJhZTdlM2RmODJlMDBmNDUwIg.webp",
-          "hash": "18151549989398100381"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/5SM8dtZi5JKZJSeBRxQVkIHW602TDB1wX5eK_BENEZs/60.1742490455367.2ltRUy1MDH8vht23CcddYZ1OFkvNW64iNFJl2BG7oh0.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "11998452600696820902"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/5bm6X7qcgjaLoNQx6i4HftVuB7TMIdGnzArERXKwUzY/60.1747941414982.dRANiFIi8u7lvZMO0WDcL0vdee4BQkpaGEYqZb48Elo.IjJmNDFiNTFkZjlhYmFjZTk1ZTUzY2Q4YTllMDE1ZTlhIg.webp",
-          "hash": "7844277430219320208"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/70bS2FvjS4X7pBznKxGw_1h-4GgKe5_jWxFHhmDYyuw/60.1744904120481.6YiMubbUJCUmLH0FUdSiTvfs1m8c-Xfoq0wEglPDTgA.ImU4YTUwYTE5MzY0NGYzOTZlY2E3ZWZmNDk3ODNhNmI3Ig.webp",
-          "hash": "11182326044132425541"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/7wP4gBIo4al6GUiXRPxSfH8fLHzYv70eqEeAVAUI_3o/60.1746880439447.RAh_OuYWBAt2oTkD--Da-tY4w-ppnjDHFlRzAqkBeRE.ImZmYjBkZDYzYTQyZmViNGJkZTM2YjMyYzk1M2IyNmJkIg.webp",
-          "hash": "9137471764027065028"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/9-ud4j_kFZqbgKTKmduf4eFdfPcWXC5mlHkWapqVILs/60.1742583208272.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/95tDJMg9mUZE1nOHwhSgsVcL0u5e6uOX-5kFKrXOSE0/60.1756055989853.Apowhj4tVAyvyQv458Ce_S587e65TenaKAWGM06TRjE.ImQzMzllOGQ2NjlmMmFiOTgyNDNiNjU2ZWNmM2NiMGIyIg.webp",
-          "hash": "18169553893223176134"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/9Nab9TFOp5Y7wPX47K1nhNoS34i8V7iXui-GU5rmOaw/60.1748123755715.V8U_wonXB6xqNtVPqZr-ccDQjz0n3uywXiroVzM0FF0.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "10709256611564909864"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/9QjUnEWzX6AYDVyxnGQPEZRXLioR52qJsmCkcMLyUxo/60.1742481780983.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/A56pfPVRBzoW3xQYBN9YSaB1K-HdUBOz_gB8L-YWZXI/60.1748123762493.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/AFNTIXmmUK4kk_lJDNZK4qitmtBK89GcQ1wOOWxyiRA/60.1747941414981.oD5dHbAPjmEBAU3A_8-RhWZ0HapB1zZfcV9A9U3MgLk.IjZhNWIwMjZkMTUyY2ZlN2I2YWJjMjg3NGYxNGYxODAwIg.webp",
-          "hash": "9861539857766576452"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/AfoV3CdeMCN4XsR3vuts4V8X01KVjHmaoxU8Gj8ia7I/60.1750357979556.HMwoM8GbBE1vEqGpe0yTUd3jf2XDqglkW8O30zg-0Ag.IjAwOTVlNGIwOGY3NGVmNDgyYzEyMmRkN2NjMzEzNjBhIg.webp",
-          "hash": "9880701544942075086"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/D0_3WN58R6DV5BK-_u3DE2mZK9u90_9WKHi_fti0VzY/60.1746880438278.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/DEroi9QPIoMYrL4Egi4yaAzMX433gnL2M-xebeH6vx8/60.1743111169411.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/DyJ7K8dR_0FqanheFjj9w9sAGxBAU9PNTPIy3K8kYpQ/3.1750357959246.T1EFsFqTsKFapSDZfmhxwae-wMkrBzD6wDPEKBgI8Qs.IjgxODdjNjUyMGI2NWZlY2QzNTkzYmFhNzJmZGZkNjI0Ig.webp",
-          "hash": "9692094775341474241"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/El3Fca_zkZPsc-Dqzeo6QLHc6Y4UaSE5uYJkmGRxxaE/60.1744558687675.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/GuD9ZbjLHc0qDKzXvuGeXwHmvqpEYp3l7qgfG5TusPE/60.1748115361736.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/HGDJ5i934P9hKjBbXXKTSJsFeQcEJfsLHzuxFbd_3yY/60.1747941414963.0toXZ8y-5ooBX_wvb0jG-Jqhqx3vYzESncWeQVk-GGc.IjdmMTE3ZDJkZDRhNmRhNTYzNmNjZjk0YzdjZmNlODczIg.webp",
-          "hash": "534724041918704671"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/HTskzoappu3WidyVYDBTa1ewsj-GGC2HI9K3mCVxxk8/60.1742491310630.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/IwtppFqhDx_EEB8ouDOdZPpil2K8i-QEszx_P4wu7lc/60.1748115368981.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/JAGLGOKdrJISbXwPr3D0MqlcY0YCojFLSaV3kQrJKe8/60.1744581167922.pwhYX_7vXfnktbBpC0ycwF3MJ2EPh8cvfBR9CUpR58k.ImE0MTE1MzU5ZGZiZWFjZjA3ZjZjYmQzY2VlMzNjMTBhIg.webp",
-          "hash": "13294298833938407777"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/JSIeSgMUDpenWn4FdzZSBIj3cUj4uLKH9lG7c78WoGs/60.1744558861365.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/LiPSyRV_PWh4sgLLxv2D7WP2uZRL3tFhQXHvPONGYFg/60.1748115418203.pnhaPT9k2C1gd9RzTxEHnJEMoTQL7zym3-tzxzImApc.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "18337811930892320836"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/Msfb1dHkcRE6hVmA9ha0BZZml5o0lUSgGeGfJkPmOJ0/60.1747941420600.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/NDX8sm8-LdSBb6CObn_1ttMcVnU2vDi4Ab6L7Kf_ehA/60.1747941408230.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ROV84YMKwgq8yFfIC5WxnBwccRartGjePIAyVFW1dYg/60.1756055990737.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/TxKLU6HrkK6QYcA3Rm82ODb8dQlmwD2R04jvkpgmE-0/60.1742491187945.pnhaPT9k2C1gd9RzTxEHnJEMoTQL7zym3-tzxzImApc.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "18337811930892320836"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/UbqOgMEbQreCY1MxW4xxoqffMQteMMqva953rC0SVLg/3.1744904321688.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/VXUPdVVmL-Oak1ceGC9ODLU6B2ze9SWTYoLbQ39jTiA/60.1742481541006.2ltRUy1MDH8vht23CcddYZ1OFkvNW64iNFJl2BG7oh0.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "11998452600696820902"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/VXzc-c3jGfdhtmzTochVD2pitUFTgmscNi71n-3UtRg/3.1744613600764.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/VwxI47_mlc5McLc5L1IXRTmlztcC7AKLnlifwfwIcFA/60.1744904321983.oD5dHbAPjmEBAU3A_8-RhWZ0HapB1zZfcV9A9U3MgLk.IjZhNWIwMjZkMTUyY2ZlN2I2YWJjMjg3NGYxNGYxODAwIg.webp",
-          "hash": "9861539857766576452"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/WAZbWtruPPLvZhXQyDvnfOg9Iy-SALyHI56L_kLNxQE/60.1743109626351.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/WmbFmxvRXtbRN8pBLgkut6c4Bokbe1djZ14QnOjjcTU/60.1756055989583.ua2f6244-MBN3kVJVJ7DFxKqx3t9842WeDLKXIKTvXs.ImJiYzMyY2M5MDc2NWE1NjIwZDJiNDk1YjdhNDI4M2U0Ig.webp",
-          "hash": "8353490253096298703"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/X3w7Tjca253Ffj0ghwWvtBZLHBKrhOIFQrtB-cSbPEM/60.1756055989171.j8jVandD18zo7C2Pp7MDqJkzzqTwOmZVi7mNA_tGCVU.IjVhN2IwZTJmZjhkZTJlYzYxZGM0OTZlZTFhZTRjNzk2Ig.webp",
-          "hash": "15181372986587406056"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/Xf8M_rkrFffLDg3g8xCWKEJ-AjxS9mTIIXo7YbN24t4/60.1748115384006.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/YuNo6iUV7fCMQFizjAWmY_EGBXcmuOWHVI5aY65OFSI/60.1743109641328.pnhaPT9k2C1gd9RzTxEHnJEMoTQL7zym3-tzxzImApc.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "18337811930892320836"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ZK_66VjPKo4qLwF0H5H4hlDPzr_8VZiYCw5PPHpNsGk/60.1747941419154.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ZYUzYIvScCfiNnS09P8cKqSSMzKhC0zVUwGCZi9THis/60.1756055989934.6x5SXNJvXaH7y-hk5oNOYXVxoacw7IX7pfEN5XagI04.Ijg1NTZiMGQ4NjhjYTUwOWM5N2MzNmViNGZiOWI3NmM4Ig.webp",
-          "hash": "17879931237381203641"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/Zp6thrIOIhuF50mdPPMF0eipewl-KNrYdP2BmgEbg5k/60.1743692773553.0toXZ8y-5ooBX_wvb0jG-Jqhqx3vYzESncWeQVk-GGc.IjdmMTE3ZDJkZDRhNmRhNTYzNmNjZjk0YzdjZmNlODczIg.webp",
-          "hash": "534724041918704671"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/_uH8ZvF_xxbtHIJL0doxxi-ZJ96zPob5T0HjKHKBErA/60.1756055989161.ykEkt85gf0ajWILYEbtZOCW9MO5D0DLVmkO6fplmuwY.IjAxNGMxZmFlMTZmMDE5ZWFiNzhjYTU4NjY4NzRkZTU5Ig.webp",
-          "hash": "3919947392530399220"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/agWOEQ2UeN6G378tuizq8VB_nhrw2PqkUjqMqK2hqsQ/60.1748123782575.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/aho-imAa3AIO-FonV30_Ay9RoUcSbJ5JDzN0vlxzD_0/60.1748115380544.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/asS294NkfSgICw4oKE1OOrs3VdR2upWhbT1G75XQCC4/60.1746969774186.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/bYor4iIxGMWZuzrV00rHpaCupfidljK1AXnMbimaaL8/60.1747941408221.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/cEFLzQJzOB4--GbmbMraWhxaCNY_m8lX1QC0xKT9yIc/60.1742491464519.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/cJVTJnqKYpzD6QoLx1fkMGhWqBQSiji7GlSX8GuZkkM/60.1756055989467.Yt7L377HMtD6AaLG5hPpvdYMod-dk6axDbaUr2ad5cY.IjE2NTVlODMxMTg5MzA5NjY1YWRlOTQyYmY0MDZhMTM5Ig.webp",
-          "hash": "9512787411283156998"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/doTQpMe0o12wjnI1XcdDviO-VSFRh-Ekovz0FdprmiM/60.1756055990173.5jjdh1INbnJnO9pRSkkGcijpENrK2MK8_99qZdxfIUc.IjRmODE5OGYwMTBhMTJjYzY1N2ZjMzcyMjE2ODg2OTk2Ig.webp",
-          "hash": "14636890442099137167"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/dux2J9NAOwGdaM70yqjRMmMMe9UMl9nlJKNTx3cdg6A/60.1756055990726.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/eUBQQCi7MpAa0srDNGcJS8YhyaYNoLsv5Q7LzmbwF-w/60.1756055989517.PbQVXWABzB0TINeuIvK52bydpjkoUfz35xrz-QyaPEc.ImEzNDMzMGI0YzE2NjQzOGRlZjZiYWE3OTgzZWIwNmIwIg.webp",
-          "hash": "3418241414502217642"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/f6N3kwfmIIx5RJx4wyTYRMKYxlgA948Ttml_PHPutH4/60.1744570451130.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/fKhGkYgtN9FstJvsM1ChfG4BFTzitJ7KboZo6pmnchk/60.1748123771995.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/fa27X3Wdl_W4F3Xv4HBSKKHQTF65xLPjDvpsz8rcrwo/60.1743108673523.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/faW21XP5EWZyNQBtSQndit6qFHP3C164PW4VuIglpmU/60.1748123753128.2bYPYVHJ62JRqBWOVucBRsHQjoXmNzI1z2ppd8jM8Q4.ImNlZDI2NDQ4YjFjMTYwYThjYjhhMmRlMDA2MDJiZDc4Ig.webp",
-          "hash": "4852907275236070309"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ffKMkSDzMGsHlRMftcPD2ykZuLMSA9_5hnXUZhbNssE/60.1748115397513.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ghkDUFMJNsnejhvi3eKYMGabE2SZ3tyf98qUKrylXsg/60.1748115392153.2ltRUy1MDH8vht23CcddYZ1OFkvNW64iNFJl2BG7oh0.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "11998452600696820902"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/hL9Ud0vpNHGQfuxbKpybGSG4Xoo8wSYGVw8SyZUms-w/60.1743693016334.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/hc4sG-LQNdSVq24s36rI0X1-azuarS32pR1Z1Gd7KI0/60.1743108673516.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/iGUuKpp09mtoRi-hFYz_Q_G72PCMnqij-oVT_R3dabM/60.1742573491825.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/iOCLoZSTafdvQ791pFXEfCHqFlB62AlEddMLK6biGXA/60.1746969774468.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ie7G9340Ho8DgWiCQN0jeqD-Px0BdPngqjcNi7X3STo/60.1747941414965.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ijoxj-mhSuoIHDwnHRgTcqN-sYh9rXWMkBJitQHg-Uk/60.1746887281945.0Q6FC6YCnVuekRxKZEftKjSf0vMyNbjKQ_aF2x-I83Q.ImZmYjBkZDYzYTQyZmViNGJkZTM2YjMyYzk1M2IyNmJkIg.webp",
-          "hash": "7324079207299570242"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/ijx2h_vzHJYfYSvKLzrPZSj9W3BWu_zuow1VvF18tQk/60.1756055989980.xFYFlGhbKM3TJiLaImuDFmLae00EMxyFK57dSC8wly8.ImRjZmI3YTllYjI5OTNmMjk1YTE2NTYxOWVjMjllN2IxIg.webp",
-          "hash": "6542246701171884751"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/jjf0rf3ufeqKdFHQBgNew05a6ayDaABiNNJ_d1ZO5CA/60.1744558861364.oD5dHbAPjmEBAU3A_8-RhWZ0HapB1zZfcV9A9U3MgLk.IjZhNWIwMjZkMTUyY2ZlN2I2YWJjMjg3NGYxNGYxODAwIg.webp",
-          "hash": "9861539857766576452"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/jk9mWpgNAvVctD6X2kVTU4mKyXvmKMdc8a-ZWBIQy0k/60.1744896796901.5zLHBiTehPAqB9z4-4uvxEsl_enVUZuAAOA1Rtpx3Lg.Ijc0NzI2NzM4ZDZjZjg3MzZlY2NkNTNjNDhlYzJkOTBmIg.webp",
-          "hash": "12341782614680850579"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/l63Koni7qr0wL1h5-_kc3zq0MGvTNgpmrJ5Gi9JfTrw/60.1742583186376.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/myWyjZkr3a3KX9iW5-K5nrw64425076EtZbG7aCnNZQ/60.1743111168736.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/nUST2SXtUtyiyoTae0Xg5zH3k_aPEWjqte67FnHr34w/60.1744570451138.6YiMubbUJCUmLH0FUdSiTvfs1m8c-Xfoq0wEglPDTgA.ImU4YTUwYTE5MzY0NGYzOTZlY2E3ZWZmNDk3ODNhNmI3Ig.webp",
-          "hash": "11182326044132425541"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/pi9tauBkJujbn28qkT5yzL8Bc4xKfU7nw2aHjZoRTZs/60.1746887255398.qLl7-0RFCWBpbMXmaUIHB6u1I6njtgU-KP8D6kQc-Jw.ImZmYjBkZDYzYTQyZmViNGJkZTM2YjMyYzk1M2IyNmJkIg.webp",
-          "hash": "11417911931868516964"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/rEA4wOF_pm9tuovHSWZeGlXH6pxoFD7fk9loa87zGYA/60.1743111169488.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/tE_i_HANciT7PW34qJnxfKBPxV0XvsAcsJUzxKVXjgo/60.1756055981258.sU3H9n-ROdEpWAHiVPzltn1NneNh6Lr5NhuihcHxrjo.Ijk3MGQ4ZmQ4ZDk1YWRkNDkzZTlkYTNiY2YyOWEzNDFjIg.webp",
-          "hash": "17901012151288356501"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/vc64gmZqPAarXBKEi4SywP-8PsctgDmsF07zpY-nbFQ/60.1744896796890.oD5dHbAPjmEBAU3A_8-RhWZ0HapB1zZfcV9A9U3MgLk.IjZhNWIwMjZkMTUyY2ZlN2I2YWJjMjg3NGYxNGYxODAwIg.webp",
-          "hash": "9861539857766576452"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/vfu4dfatOMto6pqsrPAw8nA2AFi0s_cVLy3WXCLPtCw/60.1742754118530.1pl1y1s42s6cw2j00dJ9uQ6GHiglpR2ONkEE9ApNWjM.Ijk0MTgwMWQ3OGYwOGYwODMxNzJlMGJiODVjYTFjZTY3Ig.webp",
-          "hash": "471335513234827335"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/wD1f388kZo8AZgNZxqL1tgcUiBy-PWot7Tzks4QLYVE/60.1744571587649.j9419iry3vEi_ND1GUw0bFFS51rWZaXcMF7uiTj0rsY.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13900492873309674104"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/wiG-1qyrq9cFlU2EmGyc6y0Cu7guVSDD-W5R5rbww_k/60.1743111169660.1EBuoWU0ReN9_rlEvWL5UVGh0iIldUP9OlVJBgkkP18.ImNiOWIzZGI1ZmRlNDk0OTc1NDY5Y2I3ZTk4MzkxZDIzIg.webp",
-          "hash": "13090315269247893385"
-        },
-        {
-          "file": "apps/customer/.next/cache/images/wm-JKjy3VIc0LR1vrB-MEYI_JOgs1mOZWjZ2kfApFlQ/60.1744904120481.7jOJCsuIcmUUAbKgceg8sSqm3z6AjjjCb8m7iWcvUsM.IjcwYTMzNTgxYzEzZGY2ODQ4ZTU5ZTJiM2VmNzMyODFjIg.webp",
-          "hash": "14614247938321421338"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development-fallback/0.pack.gz",
-          "hash": "12231645555436251480"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development-fallback/index.pack.gz",
-          "hash": "1339567590800322420"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/0.pack.gz",
-          "hash": "7251542711613184158"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/1.pack.gz",
-          "hash": "2723532527666695213"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/10.pack.gz",
-          "hash": "14390838744635651281"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/11.pack.gz",
-          "hash": "10823925998994328199"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/12.pack.gz",
-          "hash": "10169087663433885665"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/13.pack.gz",
-          "hash": "103737131087382422"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/14.pack.gz",
-          "hash": "11415149100527338267"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/15.pack.gz",
-          "hash": "12571577497280915981"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/16.pack.gz",
-          "hash": "9424352372432406114"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/17.pack.gz",
-          "hash": "16826882907475971011"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/18.pack.gz",
-          "hash": "11912362195152554069"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/19.pack.gz",
-          "hash": "3818906140876948752"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/2.pack.gz",
-          "hash": "15589465941441410236"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/20.pack.gz",
-          "hash": "17501776380393658056"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/21.pack.gz",
-          "hash": "9013450214302723562"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/22.pack.gz",
-          "hash": "13447596271001479869"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/23.pack.gz",
-          "hash": "14997794006871203659"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/24.pack.gz",
-          "hash": "17873651198617538236"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/25.pack.gz",
-          "hash": "3207995153357267197"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/26.pack.gz",
-          "hash": "10547884287975699733"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/27.pack.gz",
-          "hash": "421909378776116603"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/28.pack.gz",
-          "hash": "265354319426971957"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/29.pack.gz",
-          "hash": "787062320703192945"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/3.pack.gz",
-          "hash": "6206465572387375814"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/30.pack.gz",
-          "hash": "4672738357242931383"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/4.pack.gz",
-          "hash": "6404828845718505166"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/5.pack.gz",
-          "hash": "9914821827869732374"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/6.pack.gz",
-          "hash": "8780984365307027934"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/7.pack.gz",
-          "hash": "17025249966378154131"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/8.pack.gz",
-          "hash": "11046911207638221667"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/9.pack.gz",
-          "hash": "4937809676421328497"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/index.pack.gz",
-          "hash": "9486061257819961893"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/client-development/index.pack.gz.old",
-          "hash": "16389330189786441708"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/0.pack.gz",
-          "hash": "12766912817237889191"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/1.pack.gz",
-          "hash": "3154617155154690646"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/10.pack.gz",
-          "hash": "3491360956970848697"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/11.pack.gz",
-          "hash": "5569609461596277111"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/12.pack.gz",
-          "hash": "5695302987468641617"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/13.pack.gz",
-          "hash": "15821089519360897061"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/14.pack.gz",
-          "hash": "10735151185225095677"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/15.pack.gz",
-          "hash": "2613443269378934586"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/16.pack.gz",
-          "hash": "4728973360470134064"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/17.pack.gz",
-          "hash": "7454981632419869014"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/18.pack.gz",
-          "hash": "16459807946425289405"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/19.pack.gz",
-          "hash": "13754349161738006007"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/2.pack.gz",
-          "hash": "6908007205677764918"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/20.pack.gz",
-          "hash": "1969594904846571838"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/21.pack.gz",
-          "hash": "16762176029568147908"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/22.pack.gz",
-          "hash": "2531031707656507459"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/23.pack.gz",
-          "hash": "16245760040221267343"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/24.pack.gz",
-          "hash": "7627723408298344159"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/25.pack.gz",
-          "hash": "7630989154016031109"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/26.pack.gz",
-          "hash": "3864591459654017171"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/27.pack.gz",
-          "hash": "6360540322517579465"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/28.pack.gz",
-          "hash": "8194009366621375128"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/29.pack.gz",
-          "hash": "2754354406213291200"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/3.pack.gz",
-          "hash": "18022550574827200292"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/30.pack.gz",
-          "hash": "14238553179174340657"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/31.pack.gz",
-          "hash": "9452420727932175761"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/32.pack.gz",
-          "hash": "12741053296352051572"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/33.pack.gz",
-          "hash": "2153177345603248526"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/34.pack.gz",
-          "hash": "17147914822187247366"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/35.pack.gz",
-          "hash": "13500563649925266611"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/36.pack.gz",
-          "hash": "13955150755521717409"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/4.pack.gz",
-          "hash": "6737770204285821944"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/5.pack.gz",
-          "hash": "14482767438168415447"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/6.pack.gz",
-          "hash": "10683806370170607212"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/7.pack.gz",
-          "hash": "12823742290792174358"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/8.pack.gz",
-          "hash": "9865981496867157850"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/9.pack.gz",
-          "hash": "4950081456417099430"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/index.pack.gz",
-          "hash": "3831975650292736135"
-        },
-        {
-          "file": "apps/customer/.next/cache/webpack/server-development/index.pack.gz.old",
-          "hash": "13266499665647541023"
-        },
-        {
-          "file": "apps/customer/.next/package.json",
-          "hash": "11338307439248427064"
-        },
-        {
-          "file": "apps/customer/.next/react-loadable-manifest.json",
-          "hash": "252845500954039480"
-        },
-        {
-          "file": "apps/customer/.next/server/_error.js",
-          "hash": "13579001816856913333",
-          "deps": [
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_Card_index_ts.js",
-          "hash": "11932327287963394533"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ControlledCheckbox_index_ts.js",
-          "hash": "298764245762162583"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ControlledDropdown_index_ts.js",
-          "hash": "16733657900503008746"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ControlledInput_index_ts.js",
-          "hash": "1976362520176314019"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ControlledRadio_index_ts.js",
-          "hash": "14590392508226598033"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ForgotPasswordForm_index_ts.js",
-          "hash": "4228094424521622667"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_FormFields_index_ts.js",
-          "hash": "18377226595401880043"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_Grid_index_ts.js",
-          "hash": "11287270877659614937"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_LanguageDropdown_index_ts.js",
-          "hash": "9677713264904029695"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_LoginForm_index_ts.js",
-          "hash": "7054106128462883238"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_PhoneInputWithCountry_index_ts.js",
-          "hash": "781580323894771695"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_RegisterForm_index_ts.js",
-          "hash": "5622159320165146031"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_components_ResetPasswordForm_index_ts.js",
-          "hash": "1571191113956902796"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_autocomplete_index_tsx.js",
-          "hash": "15618082309556586003"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_checkbox_index_ts.js",
-          "hash": "3465116184383703031"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_chip_index_ts.js",
-          "hash": "4983613563717973243"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_counter_index_ts.js",
-          "hash": "15031369550215659999"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_dateRangePicker_index_ts.js",
-          "hash": "18284683451484976640"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_dateTimeRangePicker_index_ts.js",
-          "hash": "3365891248955080214"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_dialog_index_ts.js",
-          "hash": "13291493680262140280"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_drawer_index_ts.js",
-          "hash": "8496729114914633568"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_iconButton_index_ts.js",
-          "hash": "6414614548295974097"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_link_index_ts.js",
-          "hash": "5985423352194611326"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_modal_index_ts.js",
-          "hash": "17782049249102476252"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_primaryButton_index_ts.js",
-          "hash": "3579822913469666531"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_radio_index_ts.js",
-          "hash": "5585790453240488206"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_select_index_tsx.js",
-          "hash": "7618870598916214662"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_snackbar_index_ts.js",
-          "hash": "7741229093973888266"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_stepper_index_ts.js",
-          "hash": "17052913441144099687"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_switch_index_ts.js",
-          "hash": "5130343063423914976"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_tab_index_ts.js",
-          "hash": "876661459594624433"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_table_index_ts.js",
-          "hash": "13236756791003644411"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_textarea_index_ts.js",
-          "hash": "3481166682813684807"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_textfield_index_ts.js",
-          "hash": "8768011111502433422"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_theme_index_tsx.js",
-          "hash": "5592818676271986885"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_tooltip_index_ts.js",
-          "hash": "1252883662788096952"
-        },
-        {
-          "file": "apps/customer/.next/server/_pages-dir-node_ui_src_lib_typography_index_ts.js",
-          "hash": "14223188765510942745"
-        },
-        {
-          "file": "apps/customer/.next/server/interception-route-rewrite-manifest.js",
-          "hash": "10484309360224763022"
-        },
-        {
-          "file": "apps/customer/.next/server/middleware-build-manifest.js",
-          "hash": "7360827243226955862"
-        },
-        {
-          "file": "apps/customer/.next/server/middleware-manifest.json",
-          "hash": "9889576824779923310"
-        },
-        {
-          "file": "apps/customer/.next/server/middleware-react-loadable-manifest.js",
-          "hash": "10268588473366599996"
-        },
-        {
-          "file": "apps/customer/.next/server/next-font-manifest.js",
-          "hash": "15898322349402098388"
-        },
-        {
-          "file": "apps/customer/.next/server/next-font-manifest.json",
-          "hash": "10018914908525406557"
-        },
-        {
-          "file": "apps/customer/.next/server/pages-manifest.json",
-          "hash": "7684743709866859049"
-        },
-        {
-          "file": "apps/customer/.next/server/pages/[id].js",
-          "hash": "9499072199487875762",
-          "deps": [
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/_app.js",
-          "hash": "7123133226668839067",
-          "deps": [
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/_document.js",
-          "hash": "17222389447502314392",
-          "deps": [
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/_error.js",
-          "hash": "4705881894505880045",
-          "deps": [
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/api/login.js",
-          "hash": "16397519091136444461",
-          "deps": [
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:node-fetch",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/error.js",
-          "hash": "8455589872653938322",
-          "deps": [
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/explore.js",
-          "hash": "12939504381088868465",
-          "deps": [
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@hookform/resolvers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:libphonenumber-js",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-hook-form",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-lottie",
-              "dynamic"
-            ],
-            [
-              "npm:react-multi-carousel",
-              "dynamic"
-            ],
-            [
-              "npm:react-phone-input-2",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ],
-            [
-              "npm:yup",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/pages/index.js",
-          "hash": "4544400392836980298",
-          "deps": [
-            [
-              "npm:next",
-              "dynamic"
-            ],
-            [
-              "npm:@apollo/client",
-              "dynamic"
-            ],
-            [
-              "npm:@hookform/resolvers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/lab",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/system",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-data-grid-premium",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-date-pickers-pro",
-              "dynamic"
-            ],
-            [
-              "npm:@mui/x-license",
-              "dynamic"
-            ],
-            [
-              "npm:@tanstack/react-query",
-              "dynamic"
-            ],
-            [
-              "npm:axios",
-              "dynamic"
-            ],
-            [
-              "npm:crypto-js",
-              "dynamic"
-            ],
-            [
-              "npm:dayjs",
-              "dynamic"
-            ],
-            [
-              "npm:i18next",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-browser-languagedetector",
-              "dynamic"
-            ],
-            [
-              "npm:i18next-http-backend",
-              "dynamic"
-            ],
-            [
-              "npm:js-cookie",
-              "dynamic"
-            ],
-            [
-              "npm:jwt-decode",
-              "dynamic"
-            ],
-            [
-              "npm:libphonenumber-js",
-              "dynamic"
-            ],
-            [
-              "npm:react",
-              "dynamic"
-            ],
-            [
-              "npm:react-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-hook-form",
-              "dynamic"
-            ],
-            [
-              "npm:react-i18next",
-              "dynamic"
-            ],
-            [
-              "npm:react-is",
-              "dynamic"
-            ],
-            [
-              "npm:react-lottie",
-              "dynamic"
-            ],
-            [
-              "npm:react-multi-carousel",
-              "dynamic"
-            ],
-            [
-              "npm:react-phone-input-2",
-              "dynamic"
-            ],
-            [
-              "npm:react-router-dom",
-              "dynamic"
-            ],
-            [
-              "npm:react-toastify",
-              "dynamic"
-            ],
-            [
-              "npm:yup",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_autocomplete_index_tsx.js",
-          "hash": "16533700381845844442"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_checkbox_index_ts.js",
-          "hash": "4329092407349796630"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_chip_index_ts.js",
-          "hash": "9915219606891493577"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_counter_index_ts.js",
-          "hash": "15349618115317552844"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_dateRangePicker_index_ts.js",
-          "hash": "10373356347207324185"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_dateTimeRangePicker_index_ts.js",
-          "hash": "16926406153615186706"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_dialog_index_ts.js",
-          "hash": "14141533409989115264"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_drawer_index_ts.js",
-          "hash": "15308378496119264733"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_iconButton_index_ts.js",
-          "hash": "7473163915840600622"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_link_index_ts.js",
-          "hash": "5258924561533556627"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_modal_index_ts.js",
-          "hash": "1326260733766760351"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_primaryButton_index_ts.js",
-          "hash": "15066056602798882185"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_radio_index_ts.js",
-          "hash": "3986868066700441956"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_select_index_tsx.js",
-          "hash": "1964413004060470226"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_snackbar_index_ts.js",
-          "hash": "1797504677342090093"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_stepper_index_ts.js",
-          "hash": "17651143774416835661"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_switch_index_ts.js",
-          "hash": "14110174877647277276"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_tab_index_ts.js",
-          "hash": "1708932354352863096"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_table_index_ts.js",
-          "hash": "13187070509869071772"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_textarea_index_ts.js",
-          "hash": "6516656777719097567"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_textfield_index_ts.js",
-          "hash": "14461838605795773972"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_theme_index_tsx.js",
-          "hash": "2084657311829340925"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_tooltip_index_ts.js",
-          "hash": "4396224228539282887"
-        },
-        {
-          "file": "apps/customer/.next/server/ui_src_lib_typography_index_ts.js",
-          "hash": "3923118270107627955"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@babel+runtime@7.26.9.js",
-          "hash": "8134370971993019132"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@mui+icons-material@6.4.6_@mui+material@6.4.6_@types+react@19.0.10_react@19.0.0.js",
-          "hash": "747970816481822159"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@mui+material@6.4.6_@emotion+react@11.14.0_@emotion+styled@11.14.0_@types+react@19.0.10_react-dom@19.0.0_react@19.0.0.js",
-          "hash": "1482211361768287320"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@mui+utils@6.4.6_@types+react@19.0.10_react@19.0.0.js",
-          "hash": "12861694730263716097"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@popperjs+core@2.11.8.js",
-          "hash": "114722860806511583"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/@swc+helpers@0.5.15.js",
-          "hash": "10027553547136000942"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/clsx@2.1.1.js",
-          "hash": "9530137303211806120"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/date-fns@2.30.0.js",
-          "hash": "1725701026905863153"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/dom-helpers@5.2.1.js",
-          "hash": "3546321923783536259"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/next@15.2.0_@babel+core@7.26.9_react-dom@19.0.0_react@19.0.0_sass@1.85.1.js",
-          "hash": "13596079652580400190"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/object-assign@4.1.1.js",
-          "hash": "9732214420962046112"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/prop-types@15.8.1.js",
-          "hash": "734758442309185364"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/react-is@16.13.1.js",
-          "hash": "17342531213567350331"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/react-multi-carousel@2.8.5.js",
-          "hash": "14532688536382145212"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/react-phone-input-2@2.15.1_react-dom@19.0.0_react@19.0.0.js",
-          "hash": "5224630272514395883"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/react-toastify@11.0.5_react-dom@19.0.0_react@19.0.0.js",
-          "hash": "12351848552507233176"
-        },
-        {
-          "file": "apps/customer/.next/server/vendor-chunks/react-transition-group@4.4.5_react-dom@19.0.0_react@19.0.0.js",
-          "hash": "6695423212618876281"
-        },
-        {
-          "file": "apps/customer/.next/server/webpack-api-runtime.js",
-          "hash": "14315219203256540043"
-        },
-        {
-          "file": "apps/customer/.next/server/webpack-runtime.js",
-          "hash": "3321267919628849912"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_error.js",
-          "hash": "8604734264204492133"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_node_modules_pnpm_cross-fetch_4_0_0_node_modules_cross-fetch_dist_browser--5a2c6d.js",
-          "hash": "2512429690738604856"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_node_modules_pnpm_exceljs_4_4_0_node_modules_exceljs_dist_exceljs_min_js.js",
-          "hash": "16170583235829993185"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_Card_index_ts.js",
-          "hash": "5076857236175717597"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ControlledCheckbox_index_ts.js",
-          "hash": "1675296812123941126"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ControlledDropdown_index_ts.js",
-          "hash": "159448863173027296"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ControlledInput_index_ts.js",
-          "hash": "17105778982139073587"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ControlledRadio_index_ts.js",
-          "hash": "11127277362121033640"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ForgotPasswordForm_index_ts.js",
-          "hash": "1507985657400375682"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_FormFields_index_ts.js",
-          "hash": "7236082349218759375"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_Grid_index_ts.js",
-          "hash": "1708626832777738750"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_LanguageDropdown_index_ts.js",
-          "hash": "4392984049366970267"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_LoginForm_index_ts.js",
-          "hash": "15957864978078778945"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_PhoneInputWithCountry_index_ts.js",
-          "hash": "5457098353734729917"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_RegisterForm_index_ts.js",
-          "hash": "8135267792046030558"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_components_ResetPasswordForm_index_ts.js",
-          "hash": "1892651920399667912"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_autocomplete_index_tsx.js",
-          "hash": "8930810450751781784"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_checkbox_index_ts.js",
-          "hash": "16545777277802753566"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_chip_index_ts.js",
-          "hash": "3072632887086953437"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_counter_index_ts.js",
-          "hash": "18138086948640765464"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_dateRangePicker_index_ts.js",
-          "hash": "11973549679589673306"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_dateTimeRangePicker_index_ts.js",
-          "hash": "16675717576095550253"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_dialog_index_ts.js",
-          "hash": "12129907332671420860"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_drawer_index_ts.js",
-          "hash": "4641335184903568223"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_iconButton_index_ts.js",
-          "hash": "896698670732299557"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_link_index_ts.js",
-          "hash": "17903559163977129525"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_modal_index_ts.js",
-          "hash": "15256697596264673076"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_primaryButton_index_ts.js",
-          "hash": "6223205887305430297"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_radio_index_ts.js",
-          "hash": "4682533797431817759"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_select_index_tsx.js",
-          "hash": "1324641157723387901"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_snackbar_index_ts.js",
-          "hash": "1974503619666481721"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_stepper_index_ts.js",
-          "hash": "16406562864377046431"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_switch_index_ts.js",
-          "hash": "5245672387403340738"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_tab_index_ts.js",
-          "hash": "14733729295945300288"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_table_index_ts.js",
-          "hash": "7230096637273085327"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_textarea_index_ts.js",
-          "hash": "3884300729685441672"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_textfield_index_ts.js",
-          "hash": "3438622145031409130"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_theme_index_tsx.js",
-          "hash": "16814354625131991248"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_tooltip_index_ts.js",
-          "hash": "7101179558041591971"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/_pages-dir-browser_ui_src_lib_typography_index_ts.js",
-          "hash": "3806411819239554976"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/main.js",
-          "hash": "8192968353029769740"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/[id].js",
-          "hash": "5641880060844060676"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/_app.js",
-          "hash": "3434643453657799894"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/_error.js",
-          "hash": "5946523778511623111"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/error.js",
-          "hash": "9350326641004059401"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/explore.js",
-          "hash": "10392188702913374262"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/pages/index.js",
-          "hash": "1433607108093097378"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/polyfills.js",
-          "hash": "8152964857117933876"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/react-refresh.js",
-          "hash": "14445839670520826716"
-        },
-        {
-          "file": "apps/customer/.next/static/chunks/webpack.js",
-          "hash": "10310752994690379389"
-        },
-        {
-          "file": "apps/customer/.next/static/development/_buildManifest.js",
-          "hash": "18416405581226451093"
-        },
-        {
-          "file": "apps/customer/.next/static/development/_ssgManifest.js",
-          "hash": "17018243955171961484"
-        },
-        {
-          "file": "apps/customer/.next/static/media/icomoon.132509c1.woff",
-          "hash": "332814687279774687"
-        },
-        {
-          "file": "apps/customer/.next/static/media/icomoon.6e1dd0de.svg",
-          "hash": "16712182160090216977"
-        },
-        {
-          "file": "apps/customer/.next/static/media/icomoon.73412cae.ttf",
-          "hash": "15815996966089764246"
-        },
-        {
-          "file": "apps/customer/.next/static/media/icomoon.f6471168.eot",
-          "hash": "3721213137930980534"
-        },
-        {
-          "file": "apps/customer/.next/static/media/logo.4e7c4d14.svg",
-          "hash": "4115867920610272835"
-        },
-        {
-          "file": "apps/customer/.next/static/media/revicons.652e7269.eot",
-          "hash": "7583819126177996877"
-        },
-        {
-          "file": "apps/customer/.next/static/media/revicons.b96bdb22.ttf",
-          "hash": "844441952816900993"
-        },
-        {
-          "file": "apps/customer/.next/static/media/revicons.ff59b316.woff",
-          "hash": "3809767918247825115"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/23a04f0558e68ede.webpack.hot-update.json",
-          "hash": "13405125561290911638"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/633457081244afec._.hot-update.json",
-          "hash": "10481436618516908015"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/d00ee01392ab67b4.webpack.hot-update.json",
-          "hash": "13405125561290911638"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/e9033e5da2285e84.webpack.hot-update.json",
-          "hash": "13405125561290911638"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/fb974b12deb55344.webpack.hot-update.json",
-          "hash": "13405125561290911638"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/webpack.23a04f0558e68ede.hot-update.js",
-          "hash": "12427603736471066530"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/webpack.d00ee01392ab67b4.hot-update.js",
-          "hash": "903005997216219818"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/webpack.e9033e5da2285e84.hot-update.js",
-          "hash": "80976610217918447"
-        },
-        {
-          "file": "apps/customer/.next/static/webpack/webpack.fb974b12deb55344.hot-update.js",
-          "hash": "316045717534094537"
-        },
-        {
-          "file": "apps/customer/.next/trace",
-          "hash": "15467321547049487093"
         },
         {
           "file": "apps/customer/env.example",
@@ -2265,10 +231,6 @@
         {
           "file": "apps/customer/src/assets/takeaway.json",
           "hash": "1690136994134559924"
-        },
-        {
-          "file": "apps/customer/src/components/.DS_Store",
-          "hash": "17929498839126645249"
         },
         {
           "file": "apps/customer/src/components/CartDetails/cartDetails.module.scss",
@@ -2913,10 +875,6 @@
       ],
       "ui": [
         {
-          "file": "ui/.DS_Store",
-          "hash": "12502685009549052017"
-        },
-        {
           "file": "ui/.eslintrc.json",
           "hash": "7388911630545237055"
         },
@@ -2954,10 +912,6 @@
         {
           "file": "ui/project.json",
           "hash": "5629585574542866370"
-        },
-        {
-          "file": "ui/src/.DS_Store",
-          "hash": "13957736378219861929"
         },
         {
           "file": "ui/src/apolloWrapper/index.tsx",
@@ -3086,7 +1040,7 @@
         },
         {
           "file": "ui/src/components/LanguageDropdown/languageDropdown.tsx",
-          "hash": "1260459878456051883",
+          "hash": "17648477900049342014",
           "deps": [
             "npm:react",
             "npm:react-i18next"
@@ -3816,10 +1770,6 @@
           "hash": "1378169322418160128"
         },
         {
-          "file": "ui/src/locale/.DS_Store",
-          "hash": "16326789591572498970"
-        },
-        {
           "file": "ui/src/locale/en/translations.json",
           "hash": "17513682011749283153"
         },
@@ -3905,11 +1855,154 @@
           ]
         }
       ],
-      "organisation": [
+      "co-screen": [
         {
-          "file": "apps/organisation/.DS_Store",
-          "hash": "13495788884776276622"
+          "file": "apps/co-screen/.env.example",
+          "hash": "1629375566748642154"
         },
+        {
+          "file": "apps/co-screen/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/co-screen/index.html",
+          "hash": "17195752053801648739"
+        },
+        {
+          "file": "apps/co-screen/jest.config.ts",
+          "hash": "13573378800732097977"
+        },
+        {
+          "file": "apps/co-screen/postcss.config.js",
+          "hash": "13598591179375906364"
+        },
+        {
+          "file": "apps/co-screen/project.json",
+          "hash": "7738431956459585992"
+        },
+        {
+          "file": "apps/co-screen/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/co-screen/src/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/co-screen/src/app/app.spec.tsx",
+          "hash": "11453869490004956352",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/app/app.tsx",
+          "hash": "12249789390943445042",
+          "deps": [
+            "ui",
+            "npm:react-toastify",
+            "npm:react",
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/co-screen/src/components/forgetPasswordModal.tsx",
+          "hash": "17140477209008098846",
+          "deps": [
+            "ui",
+            "npm:i18next",
+            "npm:react-toastify"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/login.module.scss",
+          "hash": "11418399029589831016"
+        },
+        {
+          "file": "apps/co-screen/src/components/login.tsx",
+          "hash": "727277144043884504",
+          "deps": [
+            "ui",
+            "npm:react-router-dom",
+            "npm:react-i18next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/routes.tsx",
+          "hash": "17592712419662302251",
+          "deps": [
+            "npm:react-router-dom",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/socket.tsx",
+          "hash": "10298422232549115300",
+          "deps": [
+            "npm:react",
+            "npm:socket.io-client"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/components/status.tsx",
+          "hash": "3577941260065535055",
+          "deps": [
+            "ui",
+            "npm:@mui/icons-material",
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@mui/x-data-grid-premium"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/main.tsx",
+          "hash": "3751753673953770956",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/co-screen/src/styles.scss",
+          "hash": "2866083945719690482"
+        },
+        {
+          "file": "apps/co-screen/tailwind.config.js",
+          "hash": "14242995927995164225",
+          "deps": [
+            "npm:tailwindcss"
+          ]
+        },
+        {
+          "file": "apps/co-screen/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/co-screen/tsconfig.json",
+          "hash": "824604371006306276"
+        },
+        {
+          "file": "apps/co-screen/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/co-screen/vite.config.ts",
+          "hash": "3389250265267376684",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "organisation": [
         {
           "file": "apps/organisation/.env-example",
           "hash": "7839000509089865638"
@@ -3942,10 +2035,6 @@
         {
           "file": "apps/organisation/project.json",
           "hash": "12039479299852331495"
-        },
-        {
-          "file": "apps/organisation/src/.DS_Store",
-          "hash": "6145100241134610483"
         },
         {
           "file": "apps/organisation/src/api/client/Interceptor.ts",
@@ -4098,10 +2187,6 @@
         {
           "file": "apps/organisation/src/commonUtils/CommonUtils.ts",
           "hash": "7453327977931618111"
-        },
-        {
-          "file": "apps/organisation/src/components/.DS_Store",
-          "hash": "3478818338243194469"
         },
         {
           "file": "apps/organisation/src/components/Account/account.module.scss",
@@ -5456,7 +3541,7 @@
         },
         {
           "file": "apps/admin/src/components/CommissionDialog.tsx",
-          "hash": "9932592055457414023",
+          "hash": "5709601343102966137",
           "deps": [
             "npm:react",
             "ui",
@@ -5531,10 +3616,6 @@
             "npm:react",
             "npm:react-dom"
           ]
-        },
-        {
-          "file": "apps/admin/src/pages/.DS_Store",
-          "hash": "4830886466639317145"
         },
         {
           "file": "apps/admin/src/pages/Login/login.tsx",
@@ -5612,153 +3693,6 @@
         {
           "file": "apps/admin/vite.config.ts",
           "hash": "13892712581622996273",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "co-screen": [
-        {
-          "file": "apps/co-screen/.env.example",
-          "hash": "1629375566748642154"
-        },
-        {
-          "file": "apps/co-screen/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/co-screen/index.html",
-          "hash": "17195752053801648739"
-        },
-        {
-          "file": "apps/co-screen/jest.config.ts",
-          "hash": "13573378800732097977"
-        },
-        {
-          "file": "apps/co-screen/postcss.config.js",
-          "hash": "13598591179375906364"
-        },
-        {
-          "file": "apps/co-screen/project.json",
-          "hash": "7738431956459585992"
-        },
-        {
-          "file": "apps/co-screen/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/co-screen/src/app/app.module.scss",
-          "hash": "8887387885984320532"
-        },
-        {
-          "file": "apps/co-screen/src/app/app.spec.tsx",
-          "hash": "11453869490004956352",
-          "deps": [
-            "npm:@testing-library/react",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/app/app.tsx",
-          "hash": "12249789390943445042",
-          "deps": [
-            "ui",
-            "npm:react-toastify",
-            "npm:react",
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/co-screen/src/components/forgetPasswordModal.tsx",
-          "hash": "17140477209008098846",
-          "deps": [
-            "ui",
-            "npm:i18next",
-            "npm:react-toastify"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/login.module.scss",
-          "hash": "11418399029589831016"
-        },
-        {
-          "file": "apps/co-screen/src/components/login.tsx",
-          "hash": "727277144043884504",
-          "deps": [
-            "ui",
-            "npm:react-router-dom",
-            "npm:react-i18next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/routes.tsx",
-          "hash": "17592712419662302251",
-          "deps": [
-            "npm:react-router-dom",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/socket.tsx",
-          "hash": "10298422232549115300",
-          "deps": [
-            "npm:react",
-            "npm:socket.io-client"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/components/status.tsx",
-          "hash": "3577941260065535055",
-          "deps": [
-            "ui",
-            "npm:@mui/icons-material",
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:@mui/x-data-grid-premium"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/main.tsx",
-          "hash": "3751753673953770956",
-          "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/co-screen/src/styles.scss",
-          "hash": "2866083945719690482"
-        },
-        {
-          "file": "apps/co-screen/tailwind.config.js",
-          "hash": "14242995927995164225",
-          "deps": [
-            "npm:tailwindcss"
-          ]
-        },
-        {
-          "file": "apps/co-screen/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "apps/co-screen/tsconfig.json",
-          "hash": "824604371006306276"
-        },
-        {
-          "file": "apps/co-screen/tsconfig.spec.json",
-          "hash": "11378287594513225419"
-        },
-        {
-          "file": "apps/co-screen/vite.config.ts",
-          "hash": "3389250265267376684",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",

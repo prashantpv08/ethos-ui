@@ -1,9 +1,65 @@
 {
   "run": {
-    "command": "nx serve organisation",
-    "startTime": "2025-08-23T09:52:26.892Z",
-    "endTime": "2025-08-23T09:52:26.900Z",
+    "command": "nx run-many -t build",
+    "startTime": "2025-08-24T18:59:23.999Z",
+    "endTime": "2025-08-24T19:04:20.673Z",
     "inner": false
   },
-  "tasks": []
+  "tasks": [
+    {
+      "taskId": "ui:build:production",
+      "target": "build",
+      "projectName": "ui",
+      "hash": "7233516209265018785",
+      "startTime": "2025-08-24T18:59:24.011Z",
+      "endTime": "2025-08-24T19:00:08.267Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "co-screen:build:production",
+      "target": "build",
+      "projectName": "co-screen",
+      "hash": "5030196155246839641",
+      "startTime": "2025-08-24T19:00:08.335Z",
+      "endTime": "2025-08-24T19:01:16.490Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "admin:build:production",
+      "target": "build",
+      "projectName": "admin",
+      "hash": "5882109940053102962",
+      "startTime": "2025-08-24T19:00:08.335Z",
+      "endTime": "2025-08-24T19:01:53.624Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "organisation:build",
+      "target": "build",
+      "projectName": "organisation",
+      "hash": "10436522986384837750",
+      "startTime": "2025-08-24T19:00:08.335Z",
+      "endTime": "2025-08-24T19:02:36.201Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "customer:build:production",
+      "target": "build",
+      "projectName": "customer",
+      "hash": "2958238622471004359",
+      "startTime": "2025-08-24T19:01:16.875Z",
+      "endTime": "2025-08-24T19:04:20.560Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
 }
