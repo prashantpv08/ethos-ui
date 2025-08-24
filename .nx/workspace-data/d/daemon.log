@@ -5455,3 +5455,249 @@ Error: write EPIPE
 [NX Daemon Server] - 2025-08-24T17:21:23.266Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2025-08-24T17:21:23.267Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2025-08-24T17:21:23.267Z - Time taken for 'total execution time for createProjectGraph()' 94.71474981307983ms
+[NX Daemon Server] - 2025-08-24T17:27:36.735Z - [WATCHER]: apps/customer/.next was deleted
+[NX Daemon Server] - 2025-08-24T17:27:36.738Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T17:27:43.151Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T17:27:43.152Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T17:27:43.152Z - [REQUEST]: apps/customer/.next
+[NX Daemon Server] - 2025-08-24T17:27:43.173Z - Time taken for 'hash changed files from watcher' 7.902832984924316ms
+[NX Daemon Server] - 2025-08-24T17:27:43.277Z - Time taken for 'build-project-configs' 89.3197078704834ms
+[NX Daemon Server] - 2025-08-24T17:27:43.411Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T17:27:43.411Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T17:27:43.411Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T17:27:43.411Z - Time taken for 'total execution time for createProjectGraph()' 109.40966701507568ms
+[NX Daemon Server] - 2025-08-24T18:08:26.493Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:08:26.497Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:08:32.909Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:08:32.910Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:08:32.910Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:08:32.928Z - Time taken for 'hash changed files from watcher' 9.139625072479248ms
+[NX Daemon Server] - 2025-08-24T18:08:33.062Z - Time taken for 'build-project-configs' 112.12087488174438ms
+[NX Daemon Server] - 2025-08-24T18:08:33.158Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:08:33.158Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:08:33.158Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:08:33.158Z - Time taken for 'total execution time for createProjectGraph()' 71.25575017929077ms
+[NX Daemon Server] - 2025-08-24T18:08:56.477Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:08:56.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:09:02.889Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:09:02.890Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:09:02.890Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:09:02.896Z - Time taken for 'hash changed files from watcher' 1.7353339195251465ms
+[NX Daemon Server] - 2025-08-24T18:09:02.974Z - Time taken for 'build-project-configs' 71.50770807266235ms
+[NX Daemon Server] - 2025-08-24T18:09:03.030Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:09:03.031Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:09:03.031Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:09:03.031Z - Time taken for 'total execution time for createProjectGraph()' 46.107916831970215ms
+[NX Daemon Server] - 2025-08-24T18:09:06.901Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:09:06.902Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:09:13.306Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:09:13.307Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:09:13.307Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:09:13.315Z - Time taken for 'hash changed files from watcher' 1.1766667366027832ms
+[NX Daemon Server] - 2025-08-24T18:09:13.365Z - Time taken for 'build-project-configs' 44.38849973678589ms
+[NX Daemon Server] - 2025-08-24T18:09:13.428Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:09:13.429Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:09:13.429Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:09:13.429Z - Time taken for 'total execution time for createProjectGraph()' 58.9001669883728ms
+[NX Daemon Server] - 2025-08-24T18:09:25.585Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:09:25.586Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:09:31.992Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:09:31.994Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:09:31.994Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:09:32.002Z - Time taken for 'hash changed files from watcher' 2.417541980743408ms
+[NX Daemon Server] - 2025-08-24T18:09:32.064Z - Time taken for 'build-project-configs' 53.06141710281372ms
+[NX Daemon Server] - 2025-08-24T18:09:32.122Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:09:32.123Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:09:32.123Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:09:32.123Z - Time taken for 'total execution time for createProjectGraph()' 54.624207973480225ms
+[NX Daemon Server] - 2025-08-24T18:09:52.843Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:09:52.846Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:09:59.250Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:09:59.256Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:09:59.256Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:09:59.264Z - Time taken for 'hash changed files from watcher' 2.2153749465942383ms
+[NX Daemon Server] - 2025-08-24T18:09:59.315Z - Time taken for 'build-project-configs' 39.45795822143555ms
+[NX Daemon Server] - 2025-08-24T18:09:59.374Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:09:59.374Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:09:59.374Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:09:59.374Z - Time taken for 'total execution time for createProjectGraph()' 54.559332847595215ms
+[NX Daemon Server] - 2025-08-24T18:10:00.857Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:10:00.859Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:10:07.261Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:10:07.262Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:10:07.262Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:10:07.272Z - Time taken for 'hash changed files from watcher' 1.7099170684814453ms
+[NX Daemon Server] - 2025-08-24T18:10:07.361Z - Time taken for 'build-project-configs' 84.32962465286255ms
+[NX Daemon Server] - 2025-08-24T18:10:07.402Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:10:07.402Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:10:07.402Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:10:07.402Z - Time taken for 'total execution time for createProjectGraph()' 36.90666675567627ms
+[NX Daemon Server] - 2025-08-24T18:10:58.513Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:10:58.515Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:11:02.168Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:11:02.168Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:11:04.918Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:11:04.919Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:11:04.919Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:11:04.937Z - Time taken for 'hash changed files from watcher' 1.5155420303344727ms
+[NX Daemon Server] - 2025-08-24T18:11:04.989Z - Time taken for 'build-project-configs' 55.940917015075684ms
+[NX Daemon Server] - 2025-08-24T18:11:05.067Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:11:05.067Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:11:05.067Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:11:05.067Z - Time taken for 'total execution time for createProjectGraph()' 63.772292137145996ms
+[NX Daemon Server] - 2025-08-24T18:11:33.326Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:11:33.328Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:11:39.733Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:11:39.734Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:11:39.734Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:11:39.743Z - Time taken for 'hash changed files from watcher' 1.9274578094482422ms
+[NX Daemon Server] - 2025-08-24T18:11:39.813Z - Time taken for 'build-project-configs' 66.0063328742981ms
+[NX Daemon Server] - 2025-08-24T18:11:39.868Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:11:39.869Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:11:39.869Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:11:39.869Z - Time taken for 'total execution time for createProjectGraph()' 41.990166664123535ms
+[NX Daemon Server] - 2025-08-24T18:12:06.191Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:12:06.192Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:12:12.596Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:12:12.597Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:12:12.597Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:12:12.604Z - Time taken for 'hash changed files from watcher' 1.3004999160766602ms
+[NX Daemon Server] - 2025-08-24T18:12:12.658Z - Time taken for 'build-project-configs' 48.613749980926514ms
+[NX Daemon Server] - 2025-08-24T18:12:12.709Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:12:12.709Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:12:12.709Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:12:12.710Z - Time taken for 'total execution time for createProjectGraph()' 44.1710000038147ms
+[NX Daemon Server] - 2025-08-24T18:12:18.944Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:12:18.946Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:12:25.349Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:12:25.350Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:12:25.350Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:12:25.364Z - Time taken for 'hash changed files from watcher' 1.3164591789245605ms
+[NX Daemon Server] - 2025-08-24T18:12:25.457Z - Time taken for 'build-project-configs' 84.34887504577637ms
+[NX Daemon Server] - 2025-08-24T18:12:25.508Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:12:25.508Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:12:25.509Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:12:25.509Z - Time taken for 'total execution time for createProjectGraph()' 49.02545928955078ms
+[NX Daemon Server] - 2025-08-24T18:12:48.650Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:12:48.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:12:55.058Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:12:55.060Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:12:55.060Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:12:55.069Z - Time taken for 'hash changed files from watcher' 2.109250068664551ms
+[NX Daemon Server] - 2025-08-24T18:12:55.120Z - Time taken for 'build-project-configs' 44.20333290100098ms
+[NX Daemon Server] - 2025-08-24T18:12:55.174Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:12:55.175Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:12:55.175Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:12:55.175Z - Time taken for 'total execution time for createProjectGraph()' 45.1258749961853ms
+[NX Daemon Server] - 2025-08-24T18:13:47.637Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:13:47.639Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:13:54.044Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:13:54.045Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:13:54.045Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:13:54.052Z - Time taken for 'hash changed files from watcher' 2.5526251792907715ms
+[NX Daemon Server] - 2025-08-24T18:13:54.108Z - Time taken for 'build-project-configs' 48.37958383560181ms
+[NX Daemon Server] - 2025-08-24T18:13:54.158Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:13:54.158Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:13:54.158Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:13:54.159Z - Time taken for 'total execution time for createProjectGraph()' 45.73441696166992ms
+[NX Daemon Server] - 2025-08-24T18:20:04.800Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:20:04.803Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:20:11.210Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:20:11.211Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:20:11.211Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:20:11.231Z - Time taken for 'hash changed files from watcher' 4.993124961853027ms
+[NX Daemon Server] - 2025-08-24T18:20:11.272Z - Time taken for 'build-project-configs' 33.9387092590332ms
+[NX Daemon Server] - 2025-08-24T18:20:11.335Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:20:11.335Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:20:11.335Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:20:11.335Z - Time taken for 'total execution time for createProjectGraph()' 53.849249839782715ms
+[NX Daemon Server] - 2025-08-24T18:20:18.756Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:20:18.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:20:25.161Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:20:25.162Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:20:25.162Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:20:25.175Z - Time taken for 'hash changed files from watcher' 1.9757080078125ms
+[NX Daemon Server] - 2025-08-24T18:20:25.239Z - Time taken for 'build-project-configs' 59.9606671333313ms
+[NX Daemon Server] - 2025-08-24T18:20:25.291Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:20:25.291Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:20:25.291Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:20:25.291Z - Time taken for 'total execution time for createProjectGraph()' 44.52762460708618ms
+[NX Daemon Server] - 2025-08-24T18:20:50.089Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:20:50.090Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:20:52.888Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:20:52.889Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:20:56.495Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:20:56.496Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:20:56.496Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:20:56.502Z - Time taken for 'hash changed files from watcher' 2.049957752227783ms
+[NX Daemon Server] - 2025-08-24T18:20:56.536Z - Time taken for 'build-project-configs' 29.846291065216064ms
+[NX Daemon Server] - 2025-08-24T18:20:56.593Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:20:56.593Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:20:56.593Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:20:56.593Z - Time taken for 'total execution time for createProjectGraph()' 48.36070919036865ms
+[NX Daemon Server] - 2025-08-24T18:21:33.099Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:21:33.171Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:21:39.583Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:21:39.584Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:21:39.585Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:21:39.593Z - Time taken for 'hash changed files from watcher' 2.3837499618530273ms
+[NX Daemon Server] - 2025-08-24T18:21:39.650Z - Time taken for 'build-project-configs' 52.84962463378906ms
+[NX Daemon Server] - 2025-08-24T18:21:39.703Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:21:39.703Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:21:39.703Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:21:39.703Z - Time taken for 'total execution time for createProjectGraph()' 40.76950025558472ms
+[NX Daemon Server] - 2025-08-24T18:24:31.359Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:24:31.360Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:24:37.768Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:24:37.769Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:24:37.769Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:24:37.780Z - Time taken for 'hash changed files from watcher' 3.4081668853759766ms
+[NX Daemon Server] - 2025-08-24T18:24:37.859Z - Time taken for 'build-project-configs' 73.44654083251953ms
+[NX Daemon Server] - 2025-08-24T18:24:37.909Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:24:37.910Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:24:37.910Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:24:37.910Z - Time taken for 'total execution time for createProjectGraph()' 45.68879222869873ms
+[NX Daemon Server] - 2025-08-24T18:24:51.235Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:24:51.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:24:57.643Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:24:57.644Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:24:57.644Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:24:57.653Z - Time taken for 'hash changed files from watcher' 2.2565836906433105ms
+[NX Daemon Server] - 2025-08-24T18:24:57.721Z - Time taken for 'build-project-configs' 63.545833110809326ms
+[NX Daemon Server] - 2025-08-24T18:24:57.762Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:24:57.763Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:24:57.763Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:24:57.763Z - Time taken for 'total execution time for createProjectGraph()' 35.00320816040039ms
+[NX Daemon Server] - 2025-08-24T18:26:04.139Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:26:04.140Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:26:10.547Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:26:10.549Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:26:10.549Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:26:10.558Z - Time taken for 'hash changed files from watcher' 2.826625347137451ms
+[NX Daemon Server] - 2025-08-24T18:26:10.617Z - Time taken for 'build-project-configs' 52.90474987030029ms
+[NX Daemon Server] - 2025-08-24T18:26:10.664Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:26:10.665Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:26:10.665Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:26:10.665Z - Time taken for 'total execution time for createProjectGraph()' 41.24504232406616ms
+[NX Daemon Server] - 2025-08-24T18:26:51.754Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:26:51.755Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:26:58.165Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:26:58.166Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:26:58.166Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:26:58.185Z - Time taken for 'hash changed files from watcher' 6.684332847595215ms
+[NX Daemon Server] - 2025-08-24T18:26:58.251Z - Time taken for 'build-project-configs' 58.212417125701904ms
+[NX Daemon Server] - 2025-08-24T18:26:58.312Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:26:58.313Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:26:58.313Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:26:58.313Z - Time taken for 'total execution time for createProjectGraph()' 49.659667015075684ms
+[NX Daemon Server] - 2025-08-24T18:28:25.976Z - [WATCHER]: apps/admin/src/components/CommissionDialog.tsx was modified
+[NX Daemon Server] - 2025-08-24T18:28:25.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-08-24T18:28:32.393Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-08-24T18:28:32.394Z - [REQUEST]: apps/admin/src/components/CommissionDialog.tsx
+[NX Daemon Server] - 2025-08-24T18:28:32.394Z - [REQUEST]: 
+[NX Daemon Server] - 2025-08-24T18:28:32.414Z - Time taken for 'hash changed files from watcher' 8.577125072479248ms
+[NX Daemon Server] - 2025-08-24T18:28:32.498Z - Time taken for 'build-project-configs' 77.36058330535889ms
+[NX Daemon Server] - 2025-08-24T18:28:32.616Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-08-24T18:28:32.617Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-08-24T18:28:32.617Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-08-24T18:28:32.617Z - Time taken for 'total execution time for createProjectGraph()' 96.64079093933105ms
