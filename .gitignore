@@ -1,4 +1,24 @@
 # Environment variable files
 .env
 **/.env
-node_modules
+
+node_modules/
+dist/
+
+# Next.js
+.next
+scripts/
+appspec.yml
+/.nx-cache
+/.nx
+apps/*/.env
+!apps/*/.env.example
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
